@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { Poem } from '@/types/poem';
 import { TTSControls } from '@/components/TTSControls';
+import { getLanguageCodeFromPoemId } from '@/lib/poemUtils';
 
 export default function PoemPage() {
   const params = useParams();
@@ -66,7 +67,8 @@ export default function PoemPage() {
     );
   }
 
-  const langCode = poem.id.split('-')[0];
+  // Get proper Google TTS language code from poem ID
+  const languageCode = getLanguageCodeFromPoemId(poem.id);
 
   return (
     <main className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
@@ -89,7 +91,7 @@ export default function PoemPage() {
         <div className="mb-6">
           <TTSControls
             text={poem.content}
-            languageCode={langCode}
+            languageCode={languageCode}
           />
         </div>
 
@@ -107,7 +109,7 @@ export default function PoemPage() {
               poem.isRTL ? 'text-right' : 'text-left'
             }`}
             dir={poem.isRTL ? 'rtl' : 'ltr'}
-            lang={langCode}
+            lang={languageCode}
           >
             {poem.title}
           </h1>
@@ -118,7 +120,7 @@ export default function PoemPage() {
               poem.isRTL ? 'text-right' : 'text-left'
             }`}
             dir={poem.isRTL ? 'rtl' : 'ltr'}
-            lang={langCode}
+            lang={languageCode}
           >
             <pre className="whitespace-pre-wrap font-sans text-lg leading-relaxed text-gray-200">
               {poem.content}

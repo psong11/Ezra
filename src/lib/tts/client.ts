@@ -11,6 +11,7 @@ export interface TTSOptions {
   speakingRate?: number;
   pitch?: number;
   volumeGainDb?: number;
+  model?: string; // Model name for voices that require it
 }
 
 export interface VoiceInfo {
@@ -18,6 +19,7 @@ export interface VoiceInfo {
   languageCode: string;
   ssmlGender: string;
   naturalSampleRateHertz: number;
+  model?: string; // Optional model name for voices that require it
 }
 
 export interface VoicesResponse {

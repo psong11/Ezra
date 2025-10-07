@@ -17,6 +17,7 @@ export interface SynthesisParams {
   speakingRate?: number;
   pitch?: number;
   volumeGainDb?: number;
+  model?: string; // Model name for voices that require it (e.g., Journey voices)
 }
 
 /**
@@ -59,6 +60,25 @@ function isRetryableError(error: any): boolean {
   
   // Retry on 429 (rate limit) and 5xx (server errors)
   return code === 429 || (code >= 500 && code < 600);
+}
+
+/**
+ * Check if a voice is a Journey voice (unsupported)
+ * Journey voices have single-word star names and may not be available
+ */
+export function isJourneyVoice(voiceName: string): boolean {
+  // Journey voices are the new generation voices that may not be accessible
+  // They typically have star names like Achernar, Achird, etc.
+  const journeyVoicePattern = /^[A-Z][a-z]+$/; // Single capitalized word
+  return journeyVoicePattern.test(voiceName);
+}
+
+/**
+ * Check if a voice is a standard/supported voice
+ */
+export function isStandardVoice(voiceName: string): boolean {
+  // Standard voices have format like "en-US-Standard-A" or "en-US-Wavenet-A"
+  return voiceName.includes('-');
 }
 
 /**
@@ -129,6 +149,7 @@ export class GoogleTTSClient {
       speakingRate = 1.0,
       pitch = 0.0,
       volumeGainDb = 0.0,
+      model,
     } = params;
 
     // Validate input
@@ -138,6 +159,17 @@ export class GoogleTTSClient {
 
     const inputText = text || ssml || '';
     const useSSML = ssml || isSSML(inputText);
+
+    // Check for unsupported Journey voices
+    if (voiceName && isJourneyVoice(voiceName) && !model) {
+      throw new Error(
+        `Voice "${voiceName}" requires a model parameter. ` +
+        `Journey voices may not be available. Please use a standard voice like "en-US-Standard-A" or "en-US-Wavenet-A".`
+      );
+    }
+
+    // Use provided model if available
+    const effectiveModel = model;
 
     // Check if chunking is needed
     const chunks = chunkText(inputText);
@@ -149,6 +181,7 @@ export class GoogleTTSClient {
         voice: {
           languageCode,
           ...(voiceName && { name: voiceName }),
+          ...(effectiveModel && { model: effectiveModel }),
         },
         audioConfig: {
           audioEncoding: audioEncoding as any,
@@ -173,6 +206,7 @@ export class GoogleTTSClient {
         voice: {
           languageCode,
           ...(voiceName && { name: voiceName }),
+          ...(effectiveModel && { model: effectiveModel }),
         },
         audioConfig: {
           audioEncoding: audioEncoding as any,

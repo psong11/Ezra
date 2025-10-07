@@ -12,6 +12,7 @@ export function generateCacheKey(params: {
   speakingRate?: number;
   pitch?: number;
   volumeGainDb?: number;
+  model?: string;
 }): string {
   const {
     text,
@@ -21,6 +22,7 @@ export function generateCacheKey(params: {
     speakingRate = 1.0,
     pitch = 0.0,
     volumeGainDb = 0.0,
+    model = '',
   } = params;
 
   // Create deterministic string from all parameters
@@ -32,6 +34,7 @@ export function generateCacheKey(params: {
     speakingRate.toFixed(2),
     pitch.toFixed(2),
     volumeGainDb.toFixed(2),
+    model,
   ].join('|');
 
   // Generate SHA-256 hash

@@ -11,12 +11,13 @@ import { isSSML } from '@/lib/tts/chunking';
 const TTSRequestSchema = z.object({
   text: z.string().optional(),
   ssml: z.string().optional(),
-  voiceName: z.string().optional(),
-  languageCode: z.string().default('en-US'),
+  voiceName: z.string().optional().transform(val => val === '' ? undefined : val),
+  languageCode: z.string().default('en-US').transform(val => val === '' ? 'en-US' : val),
   audioEncoding: z.enum(['MP3', 'OGG_OPUS', 'LINEAR16']).default('MP3'),
   speakingRate: z.number().min(0.25).max(4.0).default(1.0),
   pitch: z.number().min(-20.0).max(20.0).default(0.0),
   volumeGainDb: z.number().min(-96.0).max(16.0).default(0.0),
+  model: z.string().optional().transform(val => val === '' ? undefined : val),
 }).refine(
   (data: { text?: string; ssml?: string }): boolean => !!(data.text || data.ssml),
   { message: 'Either text or ssml must be provided' }
@@ -43,6 +44,7 @@ export async function POST(request: NextRequest) {
       speakingRate,
       pitch,
       volumeGainDb,
+      model,
     } = validatedData;
 
     // Determine input text (auto-detect SSML)
@@ -70,6 +72,26 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // Validate voice and language code compatibility
+    if (voiceName && languageCode) {
+      // Extract language from voice name (e.g., "en-US" from "en-US-Standard-A")
+      const voiceLanguageMatch = voiceName.match(/^([a-z]{2}-[A-Z]{2})/);
+      if (voiceLanguageMatch) {
+        const voiceLanguage = voiceLanguageMatch[1];
+        // Compare case-insensitively
+        if (voiceLanguage.toLowerCase() !== languageCode.toLowerCase()) {
+          return NextResponse.json(
+            {
+              error: 'Language code mismatch',
+              message: `Voice "${voiceName}" requires language code "${voiceLanguage}" but "${languageCode}" was provided.`,
+              suggestion: `Use languageCode: "${voiceLanguage}" with this voice.`,
+            },
+            { status: 400 }
+          );
+        }
+      }
+    }
+
     // Generate cache key
     const cacheKey = generateCacheKey({
       text: inputText,
@@ -79,6 +101,7 @@ export async function POST(request: NextRequest) {
       speakingRate,
       pitch,
       volumeGainDb,
+      model,
     });
 
     const extension = getAudioExtension(audioEncoding);
@@ -192,6 +215,7 @@ async function synthesizeAudio(
     speakingRate: params.speakingRate,
     pitch: params.pitch,
     volumeGainDb: params.volumeGainDb,
+    model: params.model,
   };
 
   return await client.synthesize(synthesisParams);

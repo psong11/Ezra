@@ -21,8 +21,18 @@ export async function GET() {
     const voices = await client.listVoices();
 
     // Transform to simplified format
+    // Filter out Journey voices (single-word names) as they may not be accessible
     const voiceList: VoiceInfo[] = voices
-      .filter(voice => voice.name && voice.languageCodes && voice.languageCodes.length > 0)
+      .filter(voice => {
+        // Must have name and language codes
+        if (!voice.name || !voice.languageCodes || voice.languageCodes.length === 0) {
+          return false;
+        }
+        // Filter out Journey voices (e.g., "Achernar", "Achird")
+        // Keep standard voices like "en-US-Standard-A", "en-US-Wavenet-A"
+        const isJourneyVoice = /^[A-Z][a-z]+$/.test(voice.name);
+        return !isJourneyVoice;
+      })
       .map(voice => ({
         name: voice.name || '',
         languageCode: voice.languageCodes?.[0] || '',

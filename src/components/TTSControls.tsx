@@ -86,12 +86,18 @@ export function TTSControls({ text, languageCode, onError }: TTSControlsProps) {
     if (voices.length === 0) return;
 
     if (languageCode) {
-      const langCode = languageCode.split('-')[0]; // Get base language (e.g., 'en' from 'en-US')
-      const filtered = voices.filter(v => v.languageCode.startsWith(langCode));
+      const langCode = languageCode.split('-')[0].toLowerCase(); // Get base language (e.g., 'en' from 'en-US')
+      const filtered = voices.filter(v => 
+        v.languageCode.toLowerCase().startsWith(langCode)
+      );
       setFilteredVoices(filtered);
 
-      // Auto-select first matching voice if not set
-      if (!settings.voiceName && filtered.length > 0) {
+      // Auto-select first matching voice if not set or current voice doesn't match language
+      const currentVoice = voices.find(v => v.name === settings.voiceName);
+      const needsNewVoice = !settings.voiceName || 
+        (currentVoice && !currentVoice.languageCode.toLowerCase().startsWith(langCode));
+      
+      if (needsNewVoice && filtered.length > 0) {
         setSettings(prev => ({ ...prev, voiceName: filtered[0].name }));
       }
     } else {
@@ -116,10 +122,21 @@ export function TTSControls({ text, languageCode, onError }: TTSControlsProps) {
     }
 
     try {
+      // If a specific voice is selected, use its language code
+      // Otherwise, use the provided language code or default to en-US
+      let effectiveLanguageCode = languageCode || 'en-US';
+      
+      if (settings.voiceName) {
+        const selectedVoice = voices.find(v => v.name === settings.voiceName);
+        if (selectedVoice) {
+          effectiveLanguageCode = selectedVoice.languageCode;
+        }
+      }
+
       await speak({
         text,
         voiceName: settings.voiceName || undefined,
-        languageCode,
+        languageCode: effectiveLanguageCode,
         audioEncoding: 'MP3',
         speakingRate: settings.speakingRate,
         pitch: settings.pitch,
@@ -127,7 +144,7 @@ export function TTSControls({ text, languageCode, onError }: TTSControlsProps) {
     } catch (err) {
       console.error('TTS error:', err);
     }
-  }, [isPlaying, stop, speak, text, settings, languageCode]);
+  }, [isPlaying, stop, speak, text, settings, languageCode, voices]);
 
   // Keyboard shortcut (S key)
   useEffect(() => {

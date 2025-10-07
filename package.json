@@ -9,7 +9,9 @@
     "start": "next start",
     "lint": "next lint",
     "test": "vitest",
-    "test:ui": "vitest --ui"
+    "test:ui": "vitest --ui",
+    "test:tts": "npx tsx scripts/test-google-tts.ts",
+    "test:tts-api": "npx tsx scripts/test-tts-api.ts"
   },
   "dependencies": {
     "@google-cloud/text-to-speech": "^5.8.1",
