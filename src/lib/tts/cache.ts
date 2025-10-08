@@ -67,21 +67,35 @@ interface CacheMetadata {
 
 /**
  * TTS Cache Manager
- * Handles both disk caching and in-memory LRU cache
+ * Handles both disk caching (local dev) and in-memory LRU cache (production)
  */
 export class TTSCache {
   private lruCache: LRUCache<string, CacheMetadata>;
   private cacheDir: string;
+  private useFileSystem: boolean;
 
   constructor(cacheDir: string = 'public/tts-cache', lruSize: number = 200) {
     this.lruCache = new LRUCache<string, CacheMetadata>(lruSize);
     this.cacheDir = cacheDir;
+    
+    // Disable filesystem caching in production (Vercel has read-only filesystem)
+    this.useFileSystem = process.env.NODE_ENV !== 'production';
+    
+    if (!this.useFileSystem) {
+      console.log('📦 TTS Cache: Using memory-only mode (production)');
+    } else {
+      console.log('📦 TTS Cache: Using filesystem + memory mode (development)');
+    }
   }
 
   /**
-   * Initialize cache directory
+   * Initialize cache directory (only in development)
    */
   async initialize(): Promise<void> {
+    if (!this.useFileSystem) {
+      return; // Skip filesystem operations in production
+    }
+    
     try {
       await fs.mkdir(this.cacheDir, { recursive: true });
     } catch (error) {
@@ -114,7 +128,12 @@ export class TTSCache {
       return true;
     }
 
-    // Check disk
+    // In production, only use memory cache
+    if (!this.useFileSystem) {
+      return false;
+    }
+
+    // Check disk (development only)
     const filePath = this.getCachePath(hash, extension);
     const exists = existsSync(filePath);
 
@@ -141,6 +160,12 @@ export class TTSCache {
    * Get cached audio buffer
    */
   async get(hash: string, extension: string): Promise<Buffer | null> {
+    // In production, we don't store buffers in memory (too large)
+    // Only filesystem cache is supported for retrieval
+    if (!this.useFileSystem) {
+      return null;
+    }
+
     const filePath = this.getCachePath(hash, extension);
     
     try {
@@ -161,22 +186,30 @@ export class TTSCache {
     buffer: Buffer,
     mimeType: string
   ): Promise<void> {
+    // Update LRU cache metadata (lightweight)
+    this.lruCache.set(hash, {
+      hash,
+      extension,
+      mimeType,
+      size: buffer.length,
+      createdAt: Date.now(),
+    });
+
+    // Skip filesystem operations in production
+    if (!this.useFileSystem) {
+      console.log('⚡ Memory cache updated (production mode)');
+      return;
+    }
+
+    // Write to disk (development only)
     const filePath = this.getCachePath(hash, extension);
 
     try {
       await fs.writeFile(filePath, buffer);
-
-      // Update LRU cache
-      this.lruCache.set(hash, {
-        hash,
-        extension,
-        mimeType,
-        size: buffer.length,
-        createdAt: Date.now(),
-      });
+      console.log('💾 File cache updated (development mode)');
     } catch (error) {
       console.error('Failed to write cache file:', error);
-      throw error;
+      // Don't throw - continue even if file cache fails
     }
   }
 
@@ -192,6 +225,11 @@ export class TTSCache {
    */
   async clear(): Promise<void> {
     this.lruCache.clear();
+
+    // Skip filesystem operations in production
+    if (!this.useFileSystem) {
+      return;
+    }
 
     try {
       const files = await fs.readdir(this.cacheDir);
@@ -214,16 +252,19 @@ export class TTSCache {
     let diskFiles = 0;
     let totalSize = 0;
 
-    try {
-      const files = await fs.readdir(this.cacheDir);
-      diskFiles = files.length;
+    // Skip filesystem operations in production
+    if (this.useFileSystem) {
+      try {
+        const files = await fs.readdir(this.cacheDir);
+        diskFiles = files.length;
 
-      const stats = await Promise.all(
-        files.map(file => fs.stat(path.join(this.cacheDir, file)))
-      );
-      totalSize = stats.reduce((sum, stat) => sum + stat.size, 0);
-    } catch (error) {
-      console.error('Failed to get cache stats:', error);
+        const stats = await Promise.all(
+          files.map(file => fs.stat(path.join(this.cacheDir, file)))
+        );
+        totalSize = stats.reduce((sum, stat) => sum + stat.size, 0);
+      } catch (error) {
+        console.error('Failed to get cache stats:', error);
+      }
     }
 
     return {
