@@ -1,8 +1,9 @@
 /**
  * Split text into chunks at sentence boundaries
- * Google TTS has a soft limit of ~5000 characters
+ * Google TTS has a hard limit of 5000 BYTES (not characters)
+ * Hebrew characters are 2-3 bytes each in UTF-8
  */
-export const MAX_CHUNK_LENGTH = 5000;
+export const MAX_CHUNK_BYTES = 4500; // Use 4500 to be safe (leave buffer for request overhead)
 
 /**
  * Split text on sentence boundaries (. ! ? followed by space or newline)
@@ -39,13 +40,25 @@ export function isSSML(text: string): boolean {
 }
 
 /**
+ * Get byte length of a string in UTF-8
+ */
+function getByteLength(text: string): number {
+  return Buffer.byteLength(text, 'utf8');
+}
+
+/**
  * Split text into chunks suitable for Google TTS
  * Preserves sentence boundaries and handles SSML
+ * Uses BYTE length (not character length) to comply with Google's 5000 byte limit
  */
-export function chunkText(text: string, maxLength: number = MAX_CHUNK_LENGTH): string[] {
-  if (text.length <= maxLength) {
+export function chunkText(text: string, maxBytes: number = MAX_CHUNK_BYTES): string[] {
+  const textBytes = getByteLength(text);
+  
+  if (textBytes <= maxBytes) {
     return [text];
   }
+
+  console.log(`📝 Text is ${textBytes} bytes, chunking into ${maxBytes}-byte segments...`);
 
   // For SSML, don't chunk - let the caller handle it
   if (isSSML(text)) {
@@ -58,8 +71,10 @@ export function chunkText(text: string, maxLength: number = MAX_CHUNK_LENGTH): s
   let currentChunk = '';
 
   for (const sentence of sentences) {
+    const sentenceBytes = getByteLength(sentence);
+    
     // If single sentence is too long, split it by words
-    if (sentence.length > maxLength) {
+    if (sentenceBytes > maxBytes) {
       if (currentChunk) {
         chunks.push(currentChunk.trim());
         currentChunk = '';
@@ -68,26 +83,28 @@ export function chunkText(text: string, maxLength: number = MAX_CHUNK_LENGTH): s
       // Split long sentence by words
       const words = sentence.split(/\s+/);
       for (const word of words) {
-        if (currentChunk.length + word.length + 1 > maxLength) {
+        const testChunk = currentChunk + (currentChunk ? ' ' : '') + word;
+        if (getByteLength(testChunk) > maxBytes) {
           if (currentChunk) {
             chunks.push(currentChunk.trim());
           }
           currentChunk = word;
         } else {
-          currentChunk += (currentChunk ? ' ' : '') + word;
+          currentChunk = testChunk;
         }
       }
       continue;
     }
 
-    // Check if adding this sentence would exceed limit
-    if (currentChunk.length + sentence.length + 1 > maxLength) {
+    // Check if adding this sentence would exceed byte limit
+    const testChunk = currentChunk + (currentChunk ? ' ' : '') + sentence;
+    if (getByteLength(testChunk) > maxBytes) {
       if (currentChunk) {
         chunks.push(currentChunk.trim());
       }
       currentChunk = sentence;
     } else {
-      currentChunk += (currentChunk ? ' ' : '') + sentence;
+      currentChunk = testChunk;
     }
   }
 
@@ -96,7 +113,13 @@ export function chunkText(text: string, maxLength: number = MAX_CHUNK_LENGTH): s
     chunks.push(currentChunk.trim());
   }
 
-  return chunks.length > 0 ? chunks : [text];
+  const finalChunks = chunks.length > 0 ? chunks : [text];
+  console.log(`✅ Split into ${finalChunks.length} chunks`);
+  finalChunks.forEach((chunk, i) => {
+    console.log(`   Chunk ${i + 1}: ${getByteLength(chunk)} bytes`);
+  });
+  
+  return finalChunks;
 }
 
 /**
