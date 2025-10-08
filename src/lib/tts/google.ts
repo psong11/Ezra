@@ -1,6 +1,6 @@
 import { TextToSpeechClient, protos } from '@google-cloud/text-to-speech';
 import { chunkText, concatenateAudioBuffers, isSSML } from './chunking';
-import { env, isUsingServiceAccount } from '../env';
+import { env, getGoogleCredentials } from '../env';
 
 type ISynthesizeSpeechRequest = protos.google.cloud.texttospeech.v1.ISynthesizeSpeechRequest;
 type IVoice = protos.google.cloud.texttospeech.v1.IVoice;
@@ -92,15 +92,8 @@ export class GoogleTTSClient {
   private readonly VOICES_CACHE_TTL = 3600000; // 1 hour
 
   constructor(retryConfig: Partial<RetryConfig> = {}) {
-    // Initialize client with ADC or service account
-    const clientConfig: any = {};
-    
-    if (isUsingServiceAccount() && env.GOOGLE_APPLICATION_CREDENTIALS) {
-      console.log('🔑 Using service account from:', env.GOOGLE_APPLICATION_CREDENTIALS);
-      clientConfig.keyFilename = env.GOOGLE_APPLICATION_CREDENTIALS;
-    } else {
-      console.log('🔑 Using Application Default Credentials (ADC)');
-    }
+    // Initialize client with credentials (JSON, file path, or ADC)
+    const clientConfig: any = getGoogleCredentials();
 
     if (env.GOOGLE_CLOUD_PROJECT) {
       clientConfig.projectId = env.GOOGLE_CLOUD_PROJECT;
