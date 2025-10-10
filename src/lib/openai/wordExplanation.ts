@@ -15,19 +15,34 @@ export function generateWordExplanationPrompt(request: WordExplanationRequest): 
     ? `${bookName} ${chapterNum}:${verseNum}`
     : 'Biblical text';
 
-  return `You are a biblical language guide explaining words in a natural, intuitive, and inspiring way.
+  return `You are a biblical scholar providing detailed linguistic analysis. Format your response with clear sections using the following structure:
 
 Word: ${word}
 Language: ${language}
 Verse context: ${verseContext} – "${verse}"
 
-Your task:
-1. Explain what the word "${word}" literally means and how it works grammatically in the sentence.
-2. Describe it intuitively — what image, sound, or feeling it might evoke for a child first learning the word.
-3. Mention what kinds of words it's usually associated with (e.g., other nouns, animals, actions, symbols).
-4. If relevant, mention one or two meaningful connections to other Bible verses that use the same or similar words"
+Please provide a clear-cut response with these exact sections:
 
-Keep the total under 120 words, warm in tone, slightly academic. Make it feel natural and inspiring.`;
+**Word**
+[Show the word in its original script on one line, then the transliteration in parentheses on the line below it]
+
+**Grammatical Parsing**
+[Provide the grammatical analysis: part of speech, stem, tense/aspect, person/gender/number, etc.]
+[Then explain WHY the word is parsed this way - what morphological features, prefixes, suffixes, vowel patterns, or word structure elements indicate this parsing?]
+
+**English Translation(s)**
+[List the closest English translation(s). If there are multiple interpretations/nuances, list them all]
+
+**Extra-Biblical Usage**
+[Explain how this word is used in extra-biblical sources (ancient inscriptions, famous writings, cognate languages) from the same historical context]
+
+**First Biblical Occurrence**
+[Cite the first verse in the Bible where this word appears, with the reference]
+
+**Other Biblical Examples**
+[Provide 2-3 other example verses where this word is used, with references]
+
+Keep each section concise, informative, curious, rhythmically narrative. Use scholarly yet accessible language.`;
 }
 
 /**
@@ -48,14 +63,14 @@ export async function getWordExplanation(
       messages: [
         {
           role: 'system',
-          content: 'You are a biblical language guide who explains Hebrew, Greek, or any other ancient language words in a way that feels natural, intuitive, and inspiring',
+          content: 'You are a biblical Hebrew scholar specializing in linguistic analysis, grammar, and historical context. You provide detailed, structured explanations of biblical words with academic rigor.',
         },
         {
           role: 'user',
           content: prompt,
         },
       ],
-      max_tokens: 180, // Increased for 120 words (~150 tokens)
+      max_tokens: 600, // Increased for detailed structured response
       temperature: TEMPERATURE,
     });
 
@@ -63,11 +78,14 @@ export async function getWordExplanation(
 
     console.log('✅ OpenAI explanation received');
 
+    // Format the explanation for better display
+    const formattedExplanation = formatExplanation(explanation.trim());
+
     return {
       word: request.word,
       language: request.language,
       verse: request.verse,
-      explanation: explanation.trim(),
+      explanation: formattedExplanation,
       cached: false,
       timestamp: new Date().toISOString(),
     };
@@ -78,23 +96,19 @@ export async function getWordExplanation(
 }
 
 /**
- * Parse explanation into structured sections (optional helper)
+ * Format the explanation for HTML display
+ * Converts markdown-style formatting to HTML
  */
-export function parseExplanation(explanation: string) {
-  const sections = {
-    coreMeaning: '',
-    context: '',
-    nuance: '',
-  };
-
-  // Simple parsing - could be enhanced
-  const coreMatch = explanation.match(/1\.\s*CORE MEANING:(.*?)(?=2\.|$)/s);
-  const contextMatch = explanation.match(/2\.\s*CONTEXT:(.*?)(?=3\.|$)/s);
-  const nuanceMatch = explanation.match(/3\.\s*NUANCE:(.*?)$/s);
-
-  if (coreMatch) sections.coreMeaning = coreMatch[1].trim();
-  if (contextMatch) sections.context = contextMatch[1].trim();
-  if (nuanceMatch) sections.nuance = nuanceMatch[1].trim();
-
-  return sections;
+export function formatExplanation(text: string): string {
+  return text
+    // Bold section headers (**Text** -> <strong>Text</strong>)
+    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+    // Italic text (*Text* -> <em>Text</em>)
+    .replace(/\*([^*]+)\*/g, '<em>$1</em>')
+    // Double line breaks to paragraph spacing
+    .replace(/\n\n/g, '<br><br>')
+    // Single line breaks to line breaks
+    .replace(/\n/g, '<br>')
+    // Preserve verse references in brackets [Book X:Y]
+    .replace(/\[([^\]]+)\]/g, '<span class="text-amber-600 font-medium">[$1]</span>');
 }

@@ -279,65 +279,37 @@ export default function ChapterReader({
 
   return (
     <div className="space-y-6">
-      {/* TTS Controls */}
-      <div className="bg-white rounded-xl shadow-lg p-6">
-        <h3 className="text-lg font-semibold text-gray-800 mb-4">
-          Audio Controls
-        </h3>
-        
-        <div className="space-y-4">
-          {/* Playback Speed Selector */}
-          <div className="space-y-2">
-            <label className="text-sm font-medium text-gray-700">
-              Playback Speed
-            </label>
-            <div className="flex gap-2">
-              {[0.5, 1.0, 1.5].map((rate) => (
-                <button
-                  key={rate}
-                  onClick={() => handlePlaybackRateChange(rate)}
-                  className={`flex-1 px-3 py-2 rounded-lg font-medium transition-colors ${
-                    playbackRate === rate
-                      ? 'bg-amber-600 text-white'
-                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                  }`}
-                >
-                  {rate}x
-                </button>
-              ))}
-            </div>
+      {/* Listen to Full Chapter Button */}
+      <div className="space-y-4">
+        <button
+          onClick={handleGenerateSpeech}
+          disabled={isGenerating}
+          className="w-full px-6 py-3 bg-amber-600 text-white rounded-lg hover:bg-amber-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors font-semibold shadow-lg"
+        >
+          {isGenerating ? '🔄 Generating...' : '🔊 Listen to Full Chapter'}
+        </button>
+
+        {error && (
+          <div className="p-4 bg-red-50 border border-red-200 rounded-lg">
+            <p className="text-red-700 text-sm">{error}</p>
           </div>
+        )}
 
-          <button
-            onClick={handleGenerateSpeech}
-            disabled={isGenerating}
-            className="w-full px-6 py-3 bg-amber-600 text-white rounded-lg hover:bg-amber-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors font-semibold"
-          >
-            {isGenerating ? '🔄 Generating...' : '🔊 Listen to Full Chapter'}
-          </button>
-
-          {error && (
-            <div className="p-4 bg-red-50 border border-red-200 rounded-lg">
-              <p className="text-red-700 text-sm">{error}</p>
-            </div>
-          )}
-
-          {audioUrl && (
-            <div className="space-y-2">
-              <audio
-                ref={audioRef}
-                controls
-                className="w-full"
-                onEnded={() => setAudioUrl(null)}
-              >
-                <source src={audioUrl} type="audio/mpeg" />
-              </audio>
-              <p className="text-sm text-gray-500 text-center">
-                Click on individual verses to hear them separately
-              </p>
-            </div>
-          )}
-        </div>
+        {audioUrl && (
+          <div className="space-y-2">
+            <audio
+              ref={audioRef}
+              controls
+              className="w-full"
+              onEnded={() => setAudioUrl(null)}
+            >
+              <source src={audioUrl} type="audio/mpeg" />
+            </audio>
+            <p className="text-sm text-gray-500 text-center">
+              Click on individual verses to hear them separately
+            </p>
+          </div>
+        )}
       </div>
 
       {/* Chapter Text - Verse by Verse */}
@@ -346,31 +318,36 @@ export default function ChapterReader({
           {chapterData.verses.map((verse) => (
             <div
               key={verse.verse}
-              className={`flex gap-4 p-4 rounded-lg transition-all ${
+              className={`group relative p-4 rounded-lg transition-all ${
                 selectedVerse === verse.verse
                   ? 'bg-amber-50 border-2 border-amber-300'
                   : 'hover:bg-gray-50 border-2 border-transparent'
               }`}
             >
-              {/* Verse Number */}
-              <div className="flex-shrink-0">
-                <button
-                  onClick={() => handleGenerateVerseSpeech(verse.verse)}
-                  disabled={isGenerating}
-                  className="w-10 h-10 flex items-center justify-center bg-amber-100 text-amber-700 rounded-full font-bold hover:bg-amber-200 transition-colors disabled:opacity-50"
-                  title="Click to hear this verse"
-                >
-                  {verse.verse}
-                </button>
-              </div>
+              {/* Audio Button - Always visible on mobile, hover-reveal on desktop */}
+              <button
+                onClick={() => handleGenerateVerseSpeech(verse.verse)}
+                disabled={isGenerating}
+                className="absolute top-4 right-4 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-200 w-8 h-8 flex items-center justify-center bg-amber-600 text-white rounded-full hover:bg-amber-700 disabled:bg-gray-400 disabled:cursor-not-allowed shadow-md"
+                title="Play this verse"
+                aria-label={`Play verse ${verse.verse}`}
+              >
+                {selectedVerse === verse.verse && isGenerating ? (
+                  <span className="text-xs">⏳</span>
+                ) : (
+                  <span className="text-xs">▶</span>
+                )}
+              </button>
 
-              {/* Verse Text */}
+              {/* Verse Text with superscript number */}
               <div className="flex-1">
                 <div
                   dir="rtl"
                   lang="he"
-                  className="text-xl leading-relaxed text-gray-800 flex flex-wrap gap-x-2 gap-y-1"
+                  className="text-3xl leading-relaxed text-gray-800 flex flex-wrap gap-x-2 gap-y-1"
                 >
+                  {/* Verse number as superscript (right side for RTL) */}
+                  <sup className="text-lg text-amber-600 font-bold ml-1">{verse.verse}</sup>
                   {verse.text.split(/\s+/).map((word, wordIndex) => {
                     const isActive = clickedWord?.verse === verse.verse && clickedWord?.wordIndex === wordIndex;
                     

@@ -32,9 +32,11 @@ export default function WordTooltip({ explanation, isLoading, error }: WordToolt
         )}
 
         {explanation && !isLoading && !error && (
-          <div className="text-left text-sm leading-relaxed whitespace-pre-wrap break-words" dir="ltr">
-            {explanation}
-          </div>
+          <div 
+            className="text-left text-sm leading-relaxed break-words prose prose-invert prose-sm max-w-none"
+            dir="ltr"
+            dangerouslySetInnerHTML={{ __html: explanation }}
+          />
         )}
       </div>
 
