@@ -27,8 +27,8 @@ Please provide a clear-cut response with these exact sections:
 [Show the word in its original script on one line, then the transliteration in parentheses on the line below it]
 
 **Grammatical Parsing**
-[Provide the grammatical analysis: part of speech, stem, tense/aspect, person/gender/number, etc.]
-[Then explain WHY the word is parsed this way - what morphological features, prefixes, suffixes, vowel patterns, or word structure elements indicate this parsing?]
+[Provide the grammatical analysis: root, part of speech, stem, tense/aspect, person/gender/number, etc.]
+[Then explain intuitively WHY the word is parsed this way - what morphological features, prefixes, suffixes, vowel patterns, or word structure elements indicate this parsing?]
 
 **English Translation(s)**
 [List the closest English translation(s). If there are multiple interpretations/nuances, list them all]
@@ -37,10 +37,10 @@ Please provide a clear-cut response with these exact sections:
 [Explain how this word is used in extra-biblical sources (ancient inscriptions, famous writings, cognate languages) from the same historical context]
 
 **First Biblical Occurrence**
-[Cite the first verse in the Bible where this word appears, with the reference]
+[Cite the first snippet in the Bible where this word appears, with the reference]
 
 **Other Biblical Examples**
-[Provide 2-3 other example verses where this word is used, with references]
+[Provide 2-3 other example snippets where this word is used, with references]
 
 Keep each section concise, informative, curious, rhythmically narrative. Use scholarly yet accessible language.`;
 }
@@ -63,7 +63,7 @@ export async function getWordExplanation(
       messages: [
         {
           role: 'system',
-          content: 'You are a biblical Hebrew scholar specializing in linguistic analysis, grammar, and historical context. You provide detailed, structured explanations of biblical words with academic rigor.',
+          content: 'You are a biblical scholar specializing in linguistic analysis, grammar, and historical context. You provide detailed, structured explanations of biblical words with academic rigor.',
         },
         {
           role: 'user',

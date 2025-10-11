@@ -4,18 +4,30 @@
 
 import { BibleBookData } from '@/types/bible';
 import genesisData from '@/data/bible/hebrew/genesis.json';
+import exodusData from '@/data/bible/hebrew/exodus.json';
+import leviticusData from '@/data/bible/hebrew/leviticus.json';
+import numbersData from '@/data/bible/hebrew/numbers.json';
+import deuteronomyData from '@/data/bible/hebrew/deuteronomy.json';
 
 /**
  * Load a Bible book's data
  */
 export async function loadBook(bookId: string): Promise<BibleBookData> {
-  // For now, only Genesis is available
-  // TODO: Add dynamic loading when more books are added
-  if (bookId === 'genesis') {
-    return genesisData as BibleBookData;
+  // Load Torah books
+  switch (bookId) {
+    case 'genesis':
+      return genesisData as BibleBookData;
+    case 'exodus':
+      return exodusData as BibleBookData;
+    case 'leviticus':
+      return leviticusData as BibleBookData;
+    case 'numbers':
+      return numbersData as BibleBookData;
+    case 'deuteronomy':
+      return deuteronomyData as BibleBookData;
+    default:
+      throw new Error(`Book not found: ${bookId}. Available books: genesis, exodus, leviticus, numbers, deuteronomy`);
   }
-  
-  throw new Error(`Book not found: ${bookId}. Only Genesis is currently available.`);
 }
 
 /**

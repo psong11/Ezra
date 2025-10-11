@@ -16,8 +16,43 @@ export const BIBLE_BOOKS: BibleBook[] = [
     totalChapters: 50,
     abbreviation: 'Gen'
   },
-  // TODO: Add remaining 38 books of Tanakh
-  // Exodus, Leviticus, Numbers, Deuteronomy (Torah)
+  {
+    id: 'exodus',
+    name: 'שמות',
+    nameEnglish: 'Exodus',
+    testament: 'tanakh',
+    order: 2,
+    totalChapters: 40,
+    abbreviation: 'Exod'
+  },
+  {
+    id: 'leviticus',
+    name: 'ויקרא',
+    nameEnglish: 'Leviticus',
+    testament: 'tanakh',
+    order: 3,
+    totalChapters: 27,
+    abbreviation: 'Lev'
+  },
+  {
+    id: 'numbers',
+    name: 'במדבר',
+    nameEnglish: 'Numbers',
+    testament: 'tanakh',
+    order: 4,
+    totalChapters: 36,
+    abbreviation: 'Num'
+  },
+  {
+    id: 'deuteronomy',
+    name: 'דברים',
+    nameEnglish: 'Deuteronomy',
+    testament: 'tanakh',
+    order: 5,
+    totalChapters: 34,
+    abbreviation: 'Deut'
+  },
+  // TODO: Add remaining 34 books of Tanakh
   // Joshua - Esther (Prophets and Writings)
 ];
 
