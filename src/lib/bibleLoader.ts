@@ -71,6 +71,17 @@ export async function loadBook(bookId: string): Promise<BibleBookData> {
 }
 
 /**
+ * Get a specific chapter from a book
+ */
+export function getChapter(book: BibleBookData, chapter: number) {
+  const chapterData = book.chapters.find(c => c.chapter === chapter);
+  if (!chapterData) {
+    throw new Error(`Chapter ${chapter} not found in ${book.book.nameEnglish}`);
+  }
+  return chapterData;
+}
+
+/**
  * Get the text of a specific chapter
  */
 export function getChapterText(book: BibleBookData, chapter: number): string {
