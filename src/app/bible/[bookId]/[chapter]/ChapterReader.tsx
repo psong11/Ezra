@@ -16,6 +16,7 @@ interface Props {
   hebrewName: string;
   chapterNum: number;
   chapterData: BibleChapter;
+  isHebrew: boolean;
 }
 
 export default function ChapterReader({
@@ -24,6 +25,7 @@ export default function ChapterReader({
   hebrewName,
   chapterNum,
   chapterData,
+  isHebrew,
 }: Props) {
   const [isGenerating, setIsGenerating] = useState(false);
   const [audioUrl, setAudioUrl] = useState<string | null>(null);
@@ -342,12 +344,12 @@ export default function ChapterReader({
               {/* Verse Text with superscript number */}
               <div className="flex-1">
                 <div
-                  dir="rtl"
-                  lang="he"
+                  dir={isHebrew ? "rtl" : "ltr"}
+                  lang={isHebrew ? "he" : "el"}
                   className="text-3xl leading-relaxed text-gray-800 flex flex-wrap gap-x-2 gap-y-1"
                 >
-                  {/* Verse number as superscript (right side for RTL) */}
-                  <sup className="text-lg text-amber-600 font-bold ml-1">{verse.verse}</sup>
+                  {/* Verse number as superscript */}
+                  <sup className={`text-lg text-amber-600 font-bold ${isHebrew ? 'ml-1' : 'mr-1'}`}>{verse.verse}</sup>
                   {(verse.words || verse.text.split(/\s+/)).map((word, wordIndex) => {
                     // Handle case where word might be an object with _ property (from XML parsing)
                     const wordText = typeof word === 'object' && word !== null && '_' in word ? (word as any)._ : word;

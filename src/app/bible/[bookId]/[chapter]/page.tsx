@@ -71,6 +71,7 @@ export default async function ChapterPage({ params }: Props) {
           hebrewName={book.name}
           chapterNum={chapterNum}
           chapterData={chapterData}
+          isHebrew={book.testament === 'tanakh'}
         />
 
         {/* Navigation */}
