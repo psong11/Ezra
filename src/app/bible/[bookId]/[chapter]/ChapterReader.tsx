@@ -348,7 +348,7 @@ export default function ChapterReader({
                 >
                   {/* Verse number as superscript (right side for RTL) */}
                   <sup className="text-lg text-amber-600 font-bold ml-1">{verse.verse}</sup>
-                  {verse.text.split(/\s+/).map((word, wordIndex) => {
+                  {(verse.words || verse.text.split(/\s+/)).map((word, wordIndex) => {
                     const isActive = clickedWord?.verse === verse.verse && clickedWord?.wordIndex === wordIndex;
                     const wordTranslation = verse.wordTranslations?.[wordIndex];
                     

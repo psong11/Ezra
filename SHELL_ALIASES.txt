@@ -1,0 +1,21 @@
+# Ezra Bible App - Quick Commands
+# Add these to your ~/.zshrc file for even faster access
+
+# Quick alias to navigate to Ezra project
+alias ezra='cd /Users/paulsong/Documents/Personal_Projects/Ezra'
+
+# Combined commands
+alias ezra-dev='cd /Users/paulsong/Documents/Personal_Projects/Ezra && ./start-dev.sh'
+alias ezra-stop='cd /Users/paulsong/Documents/Personal_Projects/Ezra && ./stop-dev.sh'
+alias ezra-status='cd /Users/paulsong/Documents/Personal_Projects/Ezra && ./status-dev.sh'
+alias ezra-logs='tail -f /Users/paulsong/Documents/Personal_Projects/Ezra/dev-server.log'
+
+# To install these aliases:
+# 1. Copy these lines to your ~/.zshrc file
+# 2. Run: source ~/.zshrc
+# 3. Then you can use from anywhere:
+#    - ezra          (navigate to project)
+#    - ezra-dev      (start dev server)
+#    - ezra-stop     (stop dev server)
+#    - ezra-status   (check if running)
+#    - ezra-logs     (watch live logs)

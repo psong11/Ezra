@@ -5,6 +5,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:start": "./start-dev.sh",
+    "dev:stop": "./stop-dev.sh",
+    "dev:status": "./status-dev.sh",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -16,7 +19,8 @@
     "test-translation": "npx tsx scripts/test-translation.ts",
     "add-translations": "npx tsx scripts/add-translations.ts",
     "import-stepbible": "npx tsx scripts/import-stepbible-data.ts",
-    "import-glosses": "npx tsx scripts/import-stepbible-simple.ts"
+    "import-glosses": "npx tsx scripts/import-stepbible-simple.ts",
+    "import-all-books": "npx tsx scripts/import-all-books.ts"
   },
   "dependencies": {
     "@google-cloud/text-to-speech": "^5.8.1",

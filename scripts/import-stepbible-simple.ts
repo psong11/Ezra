@@ -49,7 +49,7 @@ function downloadFile(url: string): Promise<string> {
  * Parse a single line of STEPBible data
  * Format: Ref\tHebrew\tTransliteration\tTranslation\tdStrongs\tGrammar\t...
  */
-function parseLine(line: string): { chapter: number; verse: number; word: string; translation: string; transliteration: string; } | null {
+function parseLine(line: string): { book: string; chapter: number; verse: number; word: string; translation: string; transliteration: string; } | null {
   const parts = line.split('\t');
   
   // Must have at least 4 columns: Ref, Hebrew, Transliteration, Translation
@@ -66,11 +66,12 @@ function parseLine(line: string): { chapter: number; verse: number; word: string
   }
   
   // Parse reference: Gen.001.002#01 = Genesis chapter 1 verse 2 word 1
-  const match = ref.match(/^[A-Za-z]+\.(\d+)\.(\d+)/);
+  const match = ref.match(/^([A-Za-z]+)\.(\d+)\.(\d+)/);
   if (!match) return null;
   
-  const chapter = parseInt(match[1]);
-  const verse = parseInt(match[2]);
+  const book = match[1];
+  const chapter = parseInt(match[2]);
+  const verse = parseInt(match[3]);
   
   // Remove forward slashes from translation (they separate prefixes/suffixes)
   const cleanTranslation = translation.replace(/\//g, '').trim();
@@ -85,6 +86,7 @@ function parseLine(line: string): { chapter: number; verse: number; word: string
   const cleanHebrew = hebrew.split(/[\/\\]/)[0] || hebrew;
   
   return {
+    book,
     chapter,
     verse,
     word: cleanHebrew,
@@ -107,16 +109,16 @@ async function importGenesis() {
   console.log(`Downloaded ${lines.length} lines`);
   
   // Parse all lines
-  const parsed: Array<{ chapter: number; verse: number; word: string; translation: string; transliteration: string; }> = [];
+  const parsed: Array<{ book: string; chapter: number; verse: number; word: string; translation: string; transliteration: string; }> = [];
   
   for (const line of lines) {
     const result = parseLine(line);
-    if (result) {
+    if (result && result.book === 'Gen') {  // Only process Genesis
       parsed.push(result);
     }
   }
   
-  console.log(`Parsed ${parsed.length} words`);
+  console.log(`Parsed ${parsed.length} Genesis words`);
   
   // Group by chapter and verse
   const verseMap = new Map<string, WordTranslation[]>();

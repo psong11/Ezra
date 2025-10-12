@@ -1,0 +1,57 @@
+
+> ezra@1.0.0 dev
+> next dev
+
+ ⚠ Port 3000 is in use, trying 3001 instead.
+ ⚠ Port 3001 is in use, trying 3002 instead.
+  ▲ Next.js 14.2.33
+  - Local:        http://localhost:3002
+  - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 2.8s
+ ○ Compiling / ...
+ ✓ Compiled / in 2.7s (460 modules)
+ GET / 307 in 3018ms
+ ✓ Compiled in 374ms (234 modules)
+ ○ Compiling /bible ...
+ ✓ Compiled /bible in 2.4s (493 modules)
+ GET /bible 200 in 2690ms
+ ✓ Compiled /bible/[bookId] in 175ms (495 modules)
+ ○ Compiling /bible/[bookId]/[chapter] ...
+ ✓ Compiled /bible/[bookId]/[chapter] in 2.2s (578 modules)
+ ✓ Compiled in 1668ms (326 modules)
+ ⨯ Failed to generate static paths for /bible/[bookId]/[chapter]:
+TypeError: __webpack_require__.C is not a function
+    at /Users/paulsong/Documents/Personal_Projects/Ezra/.next/server/app/bible/[bookId]/[chapter]/page.js:937:21
+    at Object.<anonymous> (/Users/paulsong/Documents/Personal_Projects/Ezra/.next/server/app/bible/[bookId]/[chapter]/page.js:942:3)
+    at Module._compile (node:internal/modules/cjs/loader:1233:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1287:10)
+    at Module.load (node:internal/modules/cjs/loader:1091:32)
+    at Module._load (node:internal/modules/cjs/loader:938:12)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at mod.require (/Users/paulsong/Documents/Personal_Projects/Ezra/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:119:18)
+    at requirePage (/Users/paulsong/Documents/Personal_Projects/Ezra/node_modules/next/dist/server/require.js:109:84) {
+  type: 'TypeError'
+}
+ ✓ Compiled in 922ms (589 modules)
+ GET /bible/genesis/1?id=392b81de-2dc1-4fca-a237-2d787ff707fc&vscodeBrowserReqId=1760241049786 200 in 765ms
+ ✓ Compiled in 1873ms (326 modules)
+ ✓ Compiled in 2.7s (326 modules)
+ ✓ Compiled in 5s (326 modules)
+ ✓ Compiled in 22ms (326 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/paulsong/Documents/Personal_Projects/Ezra/.next/cache/webpack/server-development/3.pack.gz_' -> '/Users/paulsong/Documents/Personal_Projects/Ezra/.next/cache/webpack/server-development/3.pack.gz'
+ ✓ Compiled in 3s (326 modules)
+ ✓ Compiled in 6.4s (326 modules)
+ ✓ Compiled in 5.5s (326 modules)
+ ✓ Compiled in 1ms (326 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/paulsong/Documents/Personal_Projects/Ezra/.next/cache/webpack/server-development/0.pack.gz_' -> '/Users/paulsong/Documents/Personal_Projects/Ezra/.next/cache/webpack/server-development/0.pack.gz'
+ ✓ Compiled in 5.6s (326 modules)
+ ✓ Compiled in 5.7s (326 modules)
+ ✓ Compiled in 6.9s (326 modules)
+ ✓ Compiled in 12.8s (326 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/paulsong/Documents/Personal_Projects/Ezra/.next/cache/webpack/server-development/0.pack.gz_' -> '/Users/paulsong/Documents/Personal_Projects/Ezra/.next/cache/webpack/server-development/0.pack.gz'
+ ✓ Compiled in 15.9s (326 modules)
+ ✓ Compiled in 33.2s (326 modules)
+ ✓ Compiled in 4.3s (326 modules)

@@ -29,6 +29,88 @@
             "κυρίῳ",
             "Ἰησοῦ",
             "Χριστῷ"
+          ],
+          "wordTranslations": [
+            {
+              "word": "Παῦλος (Paulos)",
+              "translation": "G3972G=N-NSM-P",
+              "transliteration": "Paul"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "Σιλουανὸς (Silouanos)",
+              "translation": "G4610=N-NSM-P",
+              "transliteration": "Silvanus"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "Τιμόθεος (Timotheos)",
+              "translation": "G5095=N-NSM-P",
+              "transliteration": "Timothy"
+            },
+            {
+              "word": "τῇ (tēa)",
+              "translation": "G3588=T-DSF",
+              "transliteration": "To the"
+            },
+            {
+              "word": "ἐκκλησίᾳ (ekklēsia)",
+              "translation": "G1577=N-DSF",
+              "transliteration": "church"
+            },
+            {
+              "word": "Θεσσαλονικέων (Thessalonikeōn)",
+              "translation": "G2331=N-GPM-LG",
+              "transliteration": "of [the] Thessalonians"
+            },
+            {
+              "word": "ἐν (en)",
+              "translation": "G1722=PREP",
+              "transliteration": "in"
+            },
+            {
+              "word": "θεῷ (theō)",
+              "translation": "G2316=N-DSM-T",
+              "transliteration": "God"
+            },
+            {
+              "word": "πατρὶ (patri)",
+              "translation": "G3962=N-DSM-T",
+              "transliteration": "[the] Father"
+            },
+            {
+              "word": "ἡμῶν (hēmōn)",
+              "translation": "G3165=P-1GP",
+              "transliteration": "of us"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "κυρίῳ (kuriō)",
+              "translation": "G2962G=N-DSM-T",
+              "transliteration": "in the Lord"
+            },
+            {
+              "word": "Ἰησοῦ (Iēsou)",
+              "translation": "G2424G=N-DSM-P",
+              "transliteration": "Jesus"
+            },
+            {
+              "word": "Χριστῷ· (Christō)",
+              "translation": "G5547=N-DSM-T",
+              "transliteration": "Christ:"
+            }
           ]
         },
         {
@@ -46,6 +128,68 @@
             "κυρίου",
             "Ἰησοῦ",
             "Χριστοῦ"
+          ],
+          "wordTranslations": [
+            {
+              "word": "χάρις (charis)",
+              "translation": "G5485=N-NSF",
+              "transliteration": "Grace"
+            },
+            {
+              "word": "ὑμῖν (humin)",
+              "translation": "G4771=P-2DP",
+              "transliteration": "to you"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "εἰρήνη (eirēnē)",
+              "translation": "G1515=N-NSF",
+              "transliteration": "peace"
+            },
+            {
+              "word": "ἀπὸ (apo)",
+              "translation": "G0575=PREP",
+              "transliteration": "from"
+            },
+            {
+              "word": "θεοῦ (theou)",
+              "translation": "G2316=N-GSM-T",
+              "transliteration": "God"
+            },
+            {
+              "word": "πατρὸς (patros)",
+              "translation": "G3962=N-GSM-T",
+              "transliteration": "[the] Father"
+            },
+            {
+              "word": "ἡμῶν (hēmōn)",
+              "translation": "G3165=P-1GP",
+              "transliteration": "of us"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "κυρίου (kuriou)",
+              "translation": "G2962G=N-GSM-T",
+              "transliteration": "[the] Lord"
+            },
+            {
+              "word": "Ἰησοῦ (Iēsou)",
+              "translation": "G2424G=N-GSM-P",
+              "transliteration": "Jesus"
+            },
+            {
+              "word": "Χριστοῦ.¶ (Christou)",
+              "translation": "G5547=N-GSM-T",
+              "transliteration": "Christ."
+            }
           ]
         },
         {
@@ -78,6 +222,138 @@
             "ὑμῶν",
             "εἰς",
             "ἀλλήλους"
+          ],
+          "wordTranslations": [
+            {
+              "word": "Εὐχαριστεῖν (Eucharistein)",
+              "translation": "G2168=V-PAN",
+              "transliteration": "To thank"
+            },
+            {
+              "word": "ὀφείλομεν (opheilomen)",
+              "translation": "G3784=V-PAI-1P",
+              "transliteration": "we ought"
+            },
+            {
+              "word": "τῷ (tō)",
+              "translation": "G3588=T-DSM",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "θεῷ (theō)",
+              "translation": "G2316=N-DSM-T",
+              "transliteration": "God"
+            },
+            {
+              "word": "πάντοτε (pantote)",
+              "translation": "G3842=ADV",
+              "transliteration": "always"
+            },
+            {
+              "word": "περὶ (peri)",
+              "translation": "G4012=PREP",
+              "transliteration": "concerning"
+            },
+            {
+              "word": "ὑμῶν, (humōn)",
+              "translation": "G4771=P-2GP",
+              "transliteration": "you,"
+            },
+            {
+              "word": "ἀδελφοί, (adelphoi)",
+              "translation": "G0080=N-VPM",
+              "transliteration": "brothers,"
+            },
+            {
+              "word": "καθὼς (kathōs)",
+              "translation": "G2531=CONJ",
+              "transliteration": "even as"
+            },
+            {
+              "word": "ἄξιόν (axion)",
+              "translation": "G0514=A-NSN",
+              "transliteration": "fitting"
+            },
+            {
+              "word": "ἐστιν, (estin)",
+              "translation": "G1510=V-PAI-3S",
+              "transliteration": "it is,"
+            },
+            {
+              "word": "ὅτι (hoti)",
+              "translation": "G3754H=CONJ",
+              "transliteration": "because"
+            },
+            {
+              "word": "ὑπεραυξάνει (huperauxanei)",
+              "translation": "G5232=V-PAI-3S",
+              "transliteration": "is increasing exceedingly"
+            },
+            {
+              "word": "ἡ (hē)",
+              "translation": "G3588=T-NSF",
+              "transliteration": "the"
+            },
+            {
+              "word": "πίστις (pistis)",
+              "translation": "G4102G=N-NSF",
+              "transliteration": "faith"
+            },
+            {
+              "word": "ὑμῶν (humōn)",
+              "translation": "G4771=P-2GP",
+              "transliteration": "of you"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "πλεονάζει (pleonazei)",
+              "translation": "G4121=V-PAI-3S",
+              "transliteration": "is abounding"
+            },
+            {
+              "word": "ἡ (hē)",
+              "translation": "G3588=T-NSF",
+              "transliteration": "the"
+            },
+            {
+              "word": "ἀγάπη (agapē)",
+              "translation": "G0026=N-NSF",
+              "transliteration": "love"
+            },
+            {
+              "word": "ἑνὸς (henos)",
+              "translation": "G1520=A-GSM",
+              "transliteration": "of one"
+            },
+            {
+              "word": "ἑκάστου (hekastou)",
+              "translation": "G1538=A-GSM",
+              "transliteration": "each"
+            },
+            {
+              "word": "πάντων (pantōn)",
+              "translation": "G3956=A-GPM",
+              "transliteration": "of all"
+            },
+            {
+              "word": "ὑμῶν (humōn)",
+              "translation": "G4771=P-2GP",
+              "transliteration": "you"
+            },
+            {
+              "word": "εἰς (eis)",
+              "translation": "G1519=PREP",
+              "transliteration": "to"
+            },
+            {
+              "word": "ἀλλήλους· (allēlous)",
+              "translation": "G0240=C-APM",
+              "transliteration": "one another;"
+            }
           ]
         },
         {
@@ -111,6 +387,143 @@
             "θλίψεσιν",
             "αἷς",
             "ἀνέχεσθε"
+          ],
+          "wordTranslations": [
+            {
+              "word": "ὥστε (hōste)",
+              "translation": "G5620=CONJ",
+              "transliteration": "so as for"
+            },
+            {
+              "word": "αὐτοὺς (autous)",
+              "translation": "G0846=P-APM",
+              "transliteration": "ourselves"
+            },
+            {
+              "word": "ἡμᾶς (hēmas)",
+              "translation": "G3165=P-1AP",
+              "transliteration": "us"
+            },
+            {
+              "word": "ἐν (en)",
+              "translation": "G1722=PREP",
+              "transliteration": "in"
+            },
+            {
+              "word": "ὑμῖν (humin)",
+              "translation": "G4771=P-2DP",
+              "transliteration": "you"
+            },
+            {
+              "word": "ἐγκαυχᾶσθαι (egkauchasthai)",
+              "translation": "G7013=V-PNN",
+              "transliteration": "to greatly boast"
+            },
+            {
+              "word": "ἐν (en)",
+              "translation": "G1722=PREP",
+              "transliteration": "in"
+            },
+            {
+              "word": "ταῖς (tais)",
+              "translation": "G3588=T-DPF",
+              "transliteration": "the"
+            },
+            {
+              "word": "ἐκκλησίαις (ekklēsiais)",
+              "translation": "G1577=N-DPF",
+              "transliteration": "churches"
+            },
+            {
+              "word": "τοῦ (tou)",
+              "translation": "G3588=T-GSM",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "θεοῦ (theou)",
+              "translation": "G2316=N-GSM-T",
+              "transliteration": "of God"
+            },
+            {
+              "word": "ὑπὲρ (huper)",
+              "translation": "G5228=PREP",
+              "transliteration": "about"
+            },
+            {
+              "word": "τῆς (tēs)",
+              "translation": "G3588=T-GSF",
+              "transliteration": "the"
+            },
+            {
+              "word": "ὑπομονῆς (hupomonēs)",
+              "translation": "G5281=N-GSF",
+              "transliteration": "perseverance"
+            },
+            {
+              "word": "ὑμῶν (humōn)",
+              "translation": "G4771=P-2GP",
+              "transliteration": "of you"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "πίστεως (pisteōs)",
+              "translation": "G4102G=N-GSF",
+              "transliteration": "faith"
+            },
+            {
+              "word": "ἐν (en)",
+              "translation": "G1722=PREP",
+              "transliteration": "in"
+            },
+            {
+              "word": "πᾶσιν (pasin)",
+              "translation": "G3956=A-DPM",
+              "transliteration": "all"
+            },
+            {
+              "word": "τοῖς (tois)",
+              "translation": "G3588=T-DPM",
+              "transliteration": "the"
+            },
+            {
+              "word": "διωγμοῖς (diōgmois)",
+              "translation": "G1375=N-DPM",
+              "transliteration": "persecutions"
+            },
+            {
+              "word": "ὑμῶν (humōn)",
+              "translation": "G4771=P-2GP",
+              "transliteration": "of you"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "ταῖς (tais)",
+              "translation": "G3588=T-DPF",
+              "transliteration": "in the"
+            },
+            {
+              "word": "θλίψεσιν (thlipsesin)",
+              "translation": "G2347=N-DPF",
+              "transliteration": "tribulations"
+            },
+            {
+              "word": "αἷς (hais)",
+              "translation": "G3739=R-DPF",
+              "transliteration": "that"
+            },
+            {
+              "word": "ἀνέχεσθε, (anechesthe)",
+              "translation": "G0430=V-PNI-2P",
+              "transliteration": "you are bearing,"
+            }
           ]
         },
         {
@@ -135,6 +548,98 @@
             "ἧς",
             "καὶ",
             "πάσχετε"
+          ],
+          "wordTranslations": [
+            {
+              "word": "ἔνδειγμα (endeigma)",
+              "translation": "G1730=N-NSN",
+              "transliteration": "[This is] a plain token"
+            },
+            {
+              "word": "τῆς (tēs)",
+              "translation": "G3588=T-GSF",
+              "transliteration": "of the"
+            },
+            {
+              "word": "δικαίας (dikaias)",
+              "translation": "G1342=A-GSF",
+              "transliteration": "righteous"
+            },
+            {
+              "word": "κρίσεως (kriseōs)",
+              "translation": "G2920=N-GSF",
+              "transliteration": "judgment"
+            },
+            {
+              "word": "τοῦ (tou)",
+              "translation": "G3588=T-GSM",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "θεοῦ (theou)",
+              "translation": "G2316=N-GSM-T",
+              "transliteration": "of God"
+            },
+            {
+              "word": "εἰς (eis)",
+              "translation": "G1519=PREP",
+              "transliteration": "unto"
+            },
+            {
+              "word": "τὸ (to)",
+              "translation": "G3588=T-ASN",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "καταξιωθῆναι (kataxiōthēnai)",
+              "translation": "G2661=V-APN",
+              "transliteration": "to be accounted worthy"
+            },
+            {
+              "word": "ὑμᾶς (humas)",
+              "translation": "G4771=P-2AP",
+              "transliteration": "you"
+            },
+            {
+              "word": "τῆς (tēs)",
+              "translation": "G3588=T-GSF",
+              "transliteration": "of the"
+            },
+            {
+              "word": "βασιλείας (basileias)",
+              "translation": "G0932=N-GSF",
+              "transliteration": "kingdom"
+            },
+            {
+              "word": "τοῦ (tou)",
+              "translation": "G3588=T-GSM",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "θεοῦ (theou)",
+              "translation": "G2316=N-GSM-T",
+              "transliteration": "of God"
+            },
+            {
+              "word": "ὑπὲρ (huper)",
+              "translation": "G5228=PREP",
+              "transliteration": "for"
+            },
+            {
+              "word": "ἧς (hēs)",
+              "translation": "G3739=R-GSF",
+              "transliteration": "which"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "also"
+            },
+            {
+              "word": "πάσχετε· (paschete)",
+              "translation": "G3958=V-PAI-2P",
+              "transliteration": "you suffer;"
+            }
           ]
         },
         {
@@ -150,6 +655,53 @@
             "θλίβουσιν",
             "ὑμᾶς",
             "θλῖψιν"
+          ],
+          "wordTranslations": [
+            {
+              "word": "εἴπερ (eiper)",
+              "translation": "G1487G=COND + G4007=CONJ",
+              "transliteration": "if indeed"
+            },
+            {
+              "word": "δίκαιον (dikaion)",
+              "translation": "G1342=A-NSN",
+              "transliteration": "righteous [it is]"
+            },
+            {
+              "word": "παρὰ (para)",
+              "translation": "G3844=PREP",
+              "transliteration": "with"
+            },
+            {
+              "word": "θεῷ (theō)",
+              "translation": "G2316=N-DSM-T",
+              "transliteration": "God"
+            },
+            {
+              "word": "ἀνταποδοῦναι (antapodounai)",
+              "translation": "G0467=V-2AAN",
+              "transliteration": "to repay"
+            },
+            {
+              "word": "τοῖς (tois)",
+              "translation": "G3588=T-DPM",
+              "transliteration": "those"
+            },
+            {
+              "word": "θλίβουσιν (thlibousin)",
+              "translation": "G2346=V-PAP-DPM",
+              "transliteration": "oppressing"
+            },
+            {
+              "word": "ὑμᾶς (humas)",
+              "translation": "G4771=P-2AP",
+              "transliteration": "you"
+            },
+            {
+              "word": "θλῖψιν (thlipsin)",
+              "translation": "G2347=N-ASF",
+              "transliteration": "with affliction"
+            }
           ]
         },
         {
@@ -175,6 +727,103 @@
             "ἀγγέλων",
             "δυνάμεως",
             "αὐτοῦ"
+          ],
+          "wordTranslations": [
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "ὑμῖν (humin)",
+              "translation": "G4771=P-2DP",
+              "transliteration": "to you"
+            },
+            {
+              "word": "τοῖς (tois)",
+              "translation": "G3588=T-DPM",
+              "transliteration": "those"
+            },
+            {
+              "word": "θλιβομένοις (thlibomenois)",
+              "translation": "G2346=V-PPP-DPM",
+              "transliteration": "being oppressed"
+            },
+            {
+              "word": "ἄνεσιν (anesin)",
+              "translation": "G0425=N-ASF",
+              "transliteration": "repose"
+            },
+            {
+              "word": "μεθ᾽ (meth᾽)",
+              "translation": "G3326=PREP",
+              "transliteration": "with"
+            },
+            {
+              "word": "ἡμῶν (hēmōn)",
+              "translation": "G3165=P-1GP",
+              "transliteration": "us"
+            },
+            {
+              "word": "ἐν (en)",
+              "translation": "G1722=PREP",
+              "transliteration": "at"
+            },
+            {
+              "word": "τῇ (tēa)",
+              "translation": "G3588=T-DSF",
+              "transliteration": "the"
+            },
+            {
+              "word": "ἀποκαλύψει (apokalupsei)",
+              "translation": "G0602=N-DSF",
+              "transliteration": "revelation"
+            },
+            {
+              "word": "τοῦ (tou)",
+              "translation": "G3588=T-GSM",
+              "transliteration": "of the"
+            },
+            {
+              "word": "κυρίου (kuriou)",
+              "translation": "G2962G=N-GSM-T",
+              "transliteration": "Lord"
+            },
+            {
+              "word": "Ἰησοῦ (Iēsou)",
+              "translation": "G2424G=N-GSM-P",
+              "transliteration": "Jesus"
+            },
+            {
+              "word": "ἀπ᾽ (ap᾽)",
+              "translation": "G0575=PREP",
+              "transliteration": "from"
+            },
+            {
+              "word": "οὐρανοῦ (ouranou)",
+              "translation": "G3772=N-GSM",
+              "transliteration": "heaven"
+            },
+            {
+              "word": "μετ᾽ (met᾽)",
+              "translation": "G3326=PREP",
+              "transliteration": "with"
+            },
+            {
+              "word": "ἀγγέλων (angelōn)",
+              "translation": "G0032G=N-GPM",
+              "transliteration": "[the] angels"
+            },
+            {
+              "word": "δυνάμεως (dunameōs)",
+              "translation": "G1411=N-GSF",
+              "transliteration": "mighty"
+            },
+            {
+              "word": "αὐτοῦ (autou)",
+              "translation": "G0846=P-GSM",
+              "transliteration": "of Him"
+            }
           ]
         },
         {
@@ -200,6 +849,108 @@
             "κυρίου",
             "ἡμῶν",
             "Ἰησοῦ"
+          ],
+          "wordTranslations": [
+            {
+              "word": "ἐν (en)",
+              "translation": "G1722=PREP",
+              "transliteration": "in"
+            },
+            {
+              "word": "πυρὶ (puri)",
+              "translation": "G4442=N-DSN",
+              "transliteration": "a fire"
+            },
+            {
+              "word": "φλογός, (phlogos)",
+              "translation": "G5395=N-GSF",
+              "transliteration": "of flame,"
+            },
+            {
+              "word": "διδόντος (didontos)",
+              "translation": "G1325=V-PAP-GSM",
+              "transliteration": "{8} inflicting"
+            },
+            {
+              "word": "ἐκδίκησιν (ekdikēsin)",
+              "translation": "G1557=N-ASF",
+              "transliteration": "vengeance"
+            },
+            {
+              "word": "τοῖς (tois)",
+              "translation": "G3588=T-DPM",
+              "transliteration": "on those"
+            },
+            {
+              "word": "μὴ (mē)",
+              "translation": "G3361=PRT-N",
+              "transliteration": "not"
+            },
+            {
+              "word": "εἰδόσιν (eidosin)",
+              "translation": "G6063=V-RAP-DPM",
+              "transliteration": "knowing"
+            },
+            {
+              "word": "θεὸν (theon)",
+              "translation": "G2316=N-ASM-T",
+              "transliteration": "God"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "τοῖς (tois)",
+              "translation": "G3588=T-DPM",
+              "transliteration": "on those"
+            },
+            {
+              "word": "μὴ (mē)",
+              "translation": "G3361=PRT-N",
+              "transliteration": "not"
+            },
+            {
+              "word": "ὑπακούουσιν (hupakouousin)",
+              "translation": "G5219=V-PAP-DPM",
+              "transliteration": "obeying"
+            },
+            {
+              "word": "τῷ (tō)",
+              "translation": "G3588=T-DSN",
+              "transliteration": "the"
+            },
+            {
+              "word": "εὐαγγελίῳ (euangeliō)",
+              "translation": "G2098=N-DSN",
+              "transliteration": "gospel"
+            },
+            {
+              "word": "τοῦ (tou)",
+              "translation": "G3588=T-GSM",
+              "transliteration": "of the"
+            },
+            {
+              "word": "κυρίου (kuriou)",
+              "translation": "G2962G=N-GSM-T",
+              "transliteration": "Lord"
+            },
+            {
+              "word": "ἡμῶν (hēmōn)",
+              "translation": "G3165=P-1GP",
+              "transliteration": "of us"
+            },
+            {
+              "word": "Ἰησοῦ (Iēsou)",
+              "translation": "G2424G=N-GSM-P",
+              "transliteration": "Jesus"
+            },
+            {
+              "word": "Χριστοῦ· (Christou)",
+              "translation": "G5547=N-GSM-T",
+              "transliteration": "Christ;"
+            }
           ]
         },
         {
@@ -222,6 +973,88 @@
             "τῆς",
             "ἰσχύος",
             "αὐτοῦ"
+          ],
+          "wordTranslations": [
+            {
+              "word": "οἵτινες (oitines)",
+              "translation": "G3748=R-NPM",
+              "transliteration": "who"
+            },
+            {
+              "word": "δίκην (dikēn)",
+              "translation": "G1349=N-ASF",
+              "transliteration": "[the] penalty"
+            },
+            {
+              "word": "τίσουσιν, (tisousin)",
+              "translation": "G5099=V-FAI-3P",
+              "transliteration": "will suffer"
+            },
+            {
+              "word": "ὄλεθρον (olethron)",
+              "translation": "G3639=N-ASM",
+              "transliteration": "of destruction"
+            },
+            {
+              "word": "αἰώνιον (aiōnion)",
+              "translation": "G0166=A-ASM",
+              "transliteration": "eternal"
+            },
+            {
+              "word": "ἀπὸ (apo)",
+              "translation": "G0575=PREP",
+              "transliteration": "away from"
+            },
+            {
+              "word": "προσώπου (prosōpou)",
+              "translation": "G4383=N-GSN",
+              "transliteration": "[the] presence"
+            },
+            {
+              "word": "τοῦ (tou)",
+              "translation": "G3588=T-GSM",
+              "transliteration": "of the"
+            },
+            {
+              "word": "κυρίου (kuriou)",
+              "translation": "G2962G=N-GSM-T",
+              "transliteration": "Lord"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "ἀπὸ (apo)",
+              "translation": "G0575=PREP",
+              "transliteration": "from"
+            },
+            {
+              "word": "τῆς (tēs)",
+              "translation": "G3588=T-GSF",
+              "transliteration": "the"
+            },
+            {
+              "word": "δόξης (doxēs)",
+              "translation": "G1391=N-GSF",
+              "transliteration": "glory"
+            },
+            {
+              "word": "τῆς (tēs)",
+              "translation": "G3588=T-GSF",
+              "transliteration": "of the"
+            },
+            {
+              "word": "ἰσχύος (ischuos)",
+              "translation": "G2479=N-GSF",
+              "transliteration": "power"
+            },
+            {
+              "word": "αὐτοῦ, (autou)",
+              "translation": "G0846=P-GSM",
+              "transliteration": "of Him,"
+            }
           ]
         },
         {
@@ -252,6 +1085,128 @@
             "τῇ",
             "ἡμέρᾳ",
             "ἐκείνῃ"
+          ],
+          "wordTranslations": [
+            {
+              "word": "ὅταν (hotan)",
+              "translation": "G3752=CONJ",
+              "transliteration": "when"
+            },
+            {
+              "word": "ἔλθῃ (elthē)",
+              "translation": "G2064=V-2AAS-3S",
+              "transliteration": "He may come"
+            },
+            {
+              "word": "ἐνδοξασθῆναι (endoxasthēnai)",
+              "translation": "G1740=V-APN",
+              "transliteration": "to be glorified"
+            },
+            {
+              "word": "ἐν (en)",
+              "translation": "G1722=PREP",
+              "transliteration": "in"
+            },
+            {
+              "word": "τοῖς (tois)",
+              "translation": "G3588=T-DPM",
+              "transliteration": "the"
+            },
+            {
+              "word": "ἁγίοις (hagiois)",
+              "translation": "G0040H=A-DPM",
+              "transliteration": "saints"
+            },
+            {
+              "word": "αὐτοῦ (autou)",
+              "translation": "G0846=P-GSM",
+              "transliteration": "of Him"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "θαυμασθῆναι (thaumasthēnai)",
+              "translation": "G2296=V-APN",
+              "transliteration": "to be marveled at"
+            },
+            {
+              "word": "ἐν (en)",
+              "translation": "G1722=PREP",
+              "transliteration": "among"
+            },
+            {
+              "word": "πᾶσιν (pasin)",
+              "translation": "G3956=A-DPM",
+              "transliteration": "all"
+            },
+            {
+              "word": "τοῖς (tois)",
+              "translation": "G3588=T-DPM",
+              "transliteration": "those"
+            },
+            {
+              "word": "πιστεύσασιν, (pisteusasin)",
+              "translation": "G4100=V-AAP-DPM",
+              "transliteration": "having believed,"
+            },
+            {
+              "word": "ὅτι (hoti)",
+              "translation": "G3754H=CONJ",
+              "transliteration": "because"
+            },
+            {
+              "word": "ἐπιστεύθη (episteuthē)",
+              "translation": "G4100=V-API-3S",
+              "transliteration": "was believed"
+            },
+            {
+              "word": "τὸ (to)",
+              "translation": "G3588=T-NSN",
+              "transliteration": "the"
+            },
+            {
+              "word": "μαρτύριον (marturion)",
+              "translation": "G3142=N-NSN",
+              "transliteration": "testimony"
+            },
+            {
+              "word": "ἡμῶν (hēmōn)",
+              "translation": "G3165=P-1GP",
+              "transliteration": "of us"
+            },
+            {
+              "word": "ἐφ᾽ (eph᾽)",
+              "translation": "G1909=PREP",
+              "transliteration": "to"
+            },
+            {
+              "word": "ὑμᾶς, (humas)",
+              "translation": "G4771=P-2AP",
+              "transliteration": "you"
+            },
+            {
+              "word": "ἐν (en)",
+              "translation": "G1722=PREP",
+              "transliteration": "in"
+            },
+            {
+              "word": "τῇ (tēa)",
+              "translation": "G3588=T-DSF",
+              "transliteration": "the"
+            },
+            {
+              "word": "ἡμέρᾳ (hēmera)",
+              "translation": "G2250=N-DSF",
+              "transliteration": "day"
+            },
+            {
+              "word": "ἐκείνῃ. (ekeinē)",
+              "translation": "G1565=D-DSF",
+              "transliteration": "that."
+            }
           ]
         },
         {
@@ -283,6 +1238,133 @@
             "πίστεως",
             "ἐν",
             "δυνάμει"
+          ],
+          "wordTranslations": [
+            {
+              "word": "εἰς (eis)",
+              "translation": "G1519=PREP",
+              "transliteration": "for"
+            },
+            {
+              "word": "ὃ (ho)",
+              "translation": "G3739=R-ASN",
+              "transliteration": "which"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "also"
+            },
+            {
+              "word": "προσευχόμεθα (proseuchometha)",
+              "translation": "G4336=V-PNI-1P",
+              "transliteration": "we pray"
+            },
+            {
+              "word": "πάντοτε (pantote)",
+              "translation": "G3842=ADV",
+              "transliteration": "always"
+            },
+            {
+              "word": "περὶ (peri)",
+              "translation": "G4012=PREP",
+              "transliteration": "for"
+            },
+            {
+              "word": "ὑμῶν (humōn)",
+              "translation": "G4771=P-2GP",
+              "transliteration": "you"
+            },
+            {
+              "word": "ἵνα (ina)",
+              "translation": "G2443=CONJ",
+              "transliteration": "that"
+            },
+            {
+              "word": "ὑμᾶς (humas)",
+              "translation": "G4771=P-2AP",
+              "transliteration": "you"
+            },
+            {
+              "word": "ἀξιώσῃ (axiōsē)",
+              "translation": "G0515=V-AAS-3S",
+              "transliteration": "He may count worthy"
+            },
+            {
+              "word": "τῆς (tēs)",
+              "translation": "G3588=T-GSF",
+              "transliteration": "of the"
+            },
+            {
+              "word": "κλήσεως (klēseōs)",
+              "translation": "G2821=N-GSF",
+              "transliteration": "calling"
+            },
+            {
+              "word": "ὁ (ho)",
+              "translation": "G3588=T-NSM",
+              "transliteration": "of the"
+            },
+            {
+              "word": "θεὸς (theos)",
+              "translation": "G2316=N-NSM-T",
+              "transliteration": "God"
+            },
+            {
+              "word": "ἡμῶν (hēmōn)",
+              "translation": "G3165=P-1GP",
+              "transliteration": "of us"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "πληρώσῃ (plērōsē)",
+              "translation": "G4137=V-AAS-3S",
+              "transliteration": "He may fulfill"
+            },
+            {
+              "word": "πᾶσαν (pasan)",
+              "translation": "G3956=A-ASF",
+              "transliteration": "every"
+            },
+            {
+              "word": "εὐδοκίαν (eudokian)",
+              "translation": "G2107=N-ASF",
+              "transliteration": "good pleasure"
+            },
+            {
+              "word": "ἀγαθωσύνης (agathōsunēs)",
+              "translation": "G0019=N-GSF",
+              "transliteration": "of goodness"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "ἔργον (ergon)",
+              "translation": "G2041=N-ASN",
+              "transliteration": "work"
+            },
+            {
+              "word": "πίστεως (pisteōs)",
+              "translation": "G4102G=N-GSF",
+              "transliteration": "of faith"
+            },
+            {
+              "word": "ἐν (en)",
+              "translation": "G1722=PREP",
+              "transliteration": "with"
+            },
+            {
+              "word": "δυνάμει, (dunamei)",
+              "translation": "G1411=N-DSF",
+              "transliteration": "power,"
+            }
           ]
         },
         {
@@ -313,6 +1395,133 @@
             "κυρίου",
             "Ἰησοῦ",
             "Χριστοῦ"
+          ],
+          "wordTranslations": [
+            {
+              "word": "ὅπως (hopōs)",
+              "translation": "G3704=CONJ",
+              "transliteration": "so that"
+            },
+            {
+              "word": "ἐνδοξασθῇ (endoxasthēa)",
+              "translation": "G1740=V-APS-3S",
+              "transliteration": "may be glorified"
+            },
+            {
+              "word": "τὸ (to)",
+              "translation": "G3588=T-NSN",
+              "transliteration": "the"
+            },
+            {
+              "word": "ὄνομα (onoma)",
+              "translation": "G3686=N-NSN",
+              "transliteration": "name"
+            },
+            {
+              "word": "τοῦ (tou)",
+              "translation": "G3588=T-GSM",
+              "transliteration": "of the"
+            },
+            {
+              "word": "κυρίου (kuriou)",
+              "translation": "G2962G=N-GSM-T",
+              "transliteration": "Lord"
+            },
+            {
+              "word": "ἡμῶν (hēmōn)",
+              "translation": "G3165=P-1GP",
+              "transliteration": "of us"
+            },
+            {
+              "word": "Ἰησοῦ (Iēsou)",
+              "translation": "G2424G=N-GSM-P",
+              "transliteration": "Jesus"
+            },
+            {
+              "word": "Χριστοῦ (Christou)",
+              "translation": "G5547=N-GSM-T",
+              "transliteration": "Christ"
+            },
+            {
+              "word": "ἐν (en)",
+              "translation": "G1722=PREP",
+              "transliteration": "in"
+            },
+            {
+              "word": "ὑμῖν (humin)",
+              "translation": "G4771=P-2DP",
+              "transliteration": "you"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "ὑμεῖς (humeis)",
+              "translation": "G4771=P-2NP",
+              "transliteration": "you"
+            },
+            {
+              "word": "ἐν (en)",
+              "translation": "G1722=PREP",
+              "transliteration": "in"
+            },
+            {
+              "word": "αὐτῷ (autō)",
+              "translation": "G0846=P-DSM",
+              "transliteration": "Him"
+            },
+            {
+              "word": "κατὰ (kata)",
+              "translation": "G2596=PREP",
+              "transliteration": "according to"
+            },
+            {
+              "word": "τὴν (tēn)",
+              "translation": "G3588=T-ASF",
+              "transliteration": "the"
+            },
+            {
+              "word": "χάριν (charin)",
+              "translation": "G5485=N-ASF",
+              "transliteration": "grace"
+            },
+            {
+              "word": "τοῦ (tou)",
+              "translation": "G3588=T-GSM",
+              "transliteration": "of the"
+            },
+            {
+              "word": "θεοῦ (theou)",
+              "translation": "G2316=N-GSM-T",
+              "transliteration": "God"
+            },
+            {
+              "word": "ἡμῶν (hēmōn)",
+              "translation": "G3165=P-1GP",
+              "transliteration": "of us"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "κυρίου (kuriou)",
+              "translation": "G2962G=N-GSM-T",
+              "transliteration": "[the] Lord"
+            },
+            {
+              "word": "Ἰησοῦ (Iēsou)",
+              "translation": "G2424G=N-GSM-P",
+              "transliteration": "Jesus"
+            },
+            {
+              "word": "Χριστοῦ.¶ (Christou)",
+              "translation": "G5547=N-GSM-T",
+              "transliteration": "Christ."
+            }
           ]
         }
       ]
@@ -341,6 +1550,93 @@
             "ἐπισυναγωγῆς",
             "ἐπʼ",
             "αὐτόν"
+          ],
+          "wordTranslations": [
+            {
+              "word": "Ἐρωτῶμεν (Erōtōmen)",
+              "translation": "G2065=V-PAI-1P",
+              "transliteration": "We implore"
+            },
+            {
+              "word": "δὲ (de)",
+              "translation": "G1161=CONJ",
+              "transliteration": "now"
+            },
+            {
+              "word": "ὑμᾶς, (humas)",
+              "translation": "G4771=P-2AP",
+              "transliteration": "you,"
+            },
+            {
+              "word": "ἀδελφοί, (adelphoi)",
+              "translation": "G0080=N-VPM",
+              "transliteration": "brothers,"
+            },
+            {
+              "word": "ὑπὲρ (huper)",
+              "translation": "G5228=PREP",
+              "transliteration": "by"
+            },
+            {
+              "word": "τῆς (tēs)",
+              "translation": "G3588=T-GSF",
+              "transliteration": "the"
+            },
+            {
+              "word": "παρουσίας (parousias)",
+              "translation": "G3952=N-GSF",
+              "transliteration": "coming"
+            },
+            {
+              "word": "τοῦ (tou)",
+              "translation": "G3588=T-GSM",
+              "transliteration": "of the"
+            },
+            {
+              "word": "κυρίου (kuriou)",
+              "translation": "G2962G=N-GSM-T",
+              "transliteration": "Lord"
+            },
+            {
+              "word": "ἡμῶν (hēmōn)",
+              "translation": "G3165=P-1GP",
+              "transliteration": "of us"
+            },
+            {
+              "word": "Ἰησοῦ (Iēsou)",
+              "translation": "G2424G=N-GSM-P",
+              "transliteration": "Jesus"
+            },
+            {
+              "word": "Χριστοῦ (Christou)",
+              "translation": "G5547=N-GSM-T",
+              "transliteration": "Christ"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "ἡμῶν (hēmōn)",
+              "translation": "G3165=P-1GP",
+              "transliteration": "our"
+            },
+            {
+              "word": "ἐπισυναγωγῆς (episunagōgēs)",
+              "translation": "G1997=N-GSF",
+              "transliteration": "gathering together"
+            },
+            {
+              "word": "ἐπ᾽ (ep᾽)",
+              "translation": "G1909=PREP",
+              "transliteration": "unto"
+            },
+            {
+              "word": "αὐτὸν (auton)",
+              "translation": "G0846=P-ASM",
+              "transliteration": "Him"
+            }
           ]
         },
         {
@@ -377,6 +1673,158 @@
             "ἡμέρα",
             "τοῦ",
             "κυρίου"
+          ],
+          "wordTranslations": [
+            {
+              "word": "εἰς (eis)",
+              "translation": "G1519=PREP",
+              "transliteration": "for"
+            },
+            {
+              "word": "τὸ (to)",
+              "translation": "G3588=T-ASN",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "μὴ (mē)",
+              "translation": "G3361=PRT-N",
+              "transliteration": "not"
+            },
+            {
+              "word": "ταχέως (tacheōs)",
+              "translation": "G5030=ADV",
+              "transliteration": "soon"
+            },
+            {
+              "word": "σαλευθῆναι (saleuthēnai)",
+              "translation": "G4531=V-APN",
+              "transliteration": "to be shaken"
+            },
+            {
+              "word": "ὑμᾶς (humas)",
+              "translation": "G4771=P-2AP",
+              "transliteration": "you"
+            },
+            {
+              "word": "ἀπὸ (apo)",
+              "translation": "G0575=PREP",
+              "transliteration": "in"
+            },
+            {
+              "word": "τοῦ (tou)",
+              "translation": "G3588=T-GSM",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "νοὸς (noos)",
+              "translation": "G3563=N-GSM",
+              "transliteration": "mind"
+            },
+            {
+              "word": "μηδὲ (mēde)",
+              "translation": "G3366=CONJ-N",
+              "transliteration": "nor"
+            },
+            {
+              "word": "θροεῖσθαι, (throeisthai)",
+              "translation": "G2360=V-PPN",
+              "transliteration": "to be troubled,"
+            },
+            {
+              "word": "μήτε (mēte)",
+              "translation": "G3383=CONJ-N",
+              "transliteration": "neither"
+            },
+            {
+              "word": "διὰ (dia)",
+              "translation": "G1223=PREP",
+              "transliteration": "through"
+            },
+            {
+              "word": "πνεύματος (pneumatos)",
+              "translation": "G4151G=N-GSN",
+              "transliteration": "spirit"
+            },
+            {
+              "word": "μήτε (mēte)",
+              "translation": "G3383=CONJ-N",
+              "transliteration": "nor"
+            },
+            {
+              "word": "διὰ (dia)",
+              "translation": "G1223=PREP",
+              "transliteration": "through"
+            },
+            {
+              "word": "λόγου (logou)",
+              "translation": "G3056=N-GSM",
+              "transliteration": "word"
+            },
+            {
+              "word": "μήτε (mēte)",
+              "translation": "G3383=CONJ-N",
+              "transliteration": "nor"
+            },
+            {
+              "word": "δι᾽ (di᾽)",
+              "translation": "G1223=PREP",
+              "transliteration": "through"
+            },
+            {
+              "word": "ἐπιστολῆς (epistolēs)",
+              "translation": "G1992=N-GSF",
+              "transliteration": "letter"
+            },
+            {
+              "word": "ὡς (hōs)",
+              "translation": "G5613=PRT",
+              "transliteration": "as if"
+            },
+            {
+              "word": "δι᾽ (di᾽)",
+              "translation": "G1223=PREP",
+              "transliteration": "through"
+            },
+            {
+              "word": "ἡμῶν, (hēmōn)",
+              "translation": "G3165=P-1GP",
+              "transliteration": "us,"
+            },
+            {
+              "word": "ὡς (hōs)",
+              "translation": "G5613=PRT",
+              "transliteration": "as"
+            },
+            {
+              "word": "ὅτι (hoti)",
+              "translation": "G3754G=CONJ",
+              "transliteration": "that"
+            },
+            {
+              "word": "ἐνέστηκεν (enestēken)",
+              "translation": "G1764=V-RAI-3S",
+              "transliteration": "has been present"
+            },
+            {
+              "word": "ἡ (hē)",
+              "translation": "G3588=T-NSF",
+              "transliteration": "the"
+            },
+            {
+              "word": "ἡμέρα (hēmera)",
+              "translation": "G2250=N-NSF",
+              "transliteration": "day"
+            },
+            {
+              "word": "τοῦ (tou)",
+              "translation": "G3588=T-GSM",
+              "transliteration": "of the"
+            },
+            {
+              "word": "κυρίου. (kuriou)",
+              "translation": "G2962G=N-GSM-T",
+              "transliteration": "Lord."
+            }
           ]
         },
         {
@@ -407,6 +1855,128 @@
             "υἱὸς",
             "τῆς",
             "ἀπωλείας"
+          ],
+          "wordTranslations": [
+            {
+              "word": "μή (mē)",
+              "translation": "G3361=PRT-N",
+              "transliteration": "No"
+            },
+            {
+              "word": "τις (tis)",
+              "translation": "G5100=X-NSM",
+              "transliteration": "one"
+            },
+            {
+              "word": "ὑμᾶς (humas)",
+              "translation": "G4771=P-2AP",
+              "transliteration": "you"
+            },
+            {
+              "word": "ἐξαπατήσῃ (exapatēsē)",
+              "translation": "G1818=V-AAS-3S",
+              "transliteration": "may deceive"
+            },
+            {
+              "word": "κατὰ (kata)",
+              "translation": "G2596=PREP",
+              "transliteration": "in"
+            },
+            {
+              "word": "μηδένα (mēdena)",
+              "translation": "G3367=A-ASM",
+              "transliteration": "not one"
+            },
+            {
+              "word": "τρόπον· (tropon)",
+              "translation": "G5158=N-ASM",
+              "transliteration": "way;"
+            },
+            {
+              "word": "ὅτι (hoti)",
+              "translation": "G3754H=CONJ",
+              "transliteration": "that"
+            },
+            {
+              "word": "ἐὰν (ean)",
+              "translation": "G1437=COND",
+              "transliteration": "only"
+            },
+            {
+              "word": "μὴ (mē)",
+              "translation": "G3361=PRT-N",
+              "transliteration": "unless"
+            },
+            {
+              "word": "ἔλθῃ (elthē)",
+              "translation": "G2064=V-2AAS-3S",
+              "transliteration": "shall have come"
+            },
+            {
+              "word": "ἡ (hē)",
+              "translation": "G3588=T-NSF",
+              "transliteration": "the"
+            },
+            {
+              "word": "ἀποστασία (apostasia)",
+              "translation": "G0646=N-NSF",
+              "transliteration": "apostasy"
+            },
+            {
+              "word": "πρῶτον (prōton)",
+              "translation": "G4413G=A-ASN",
+              "transliteration": "first"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "ἀποκαλυφθῇ (apokaluphthēa)",
+              "translation": "G0601=V-APS-3S",
+              "transliteration": "shall have been revealed"
+            },
+            {
+              "word": "ὁ (ho)",
+              "translation": "G3588=T-NSM",
+              "transliteration": "the"
+            },
+            {
+              "word": "ἄνθρωπος (anthrōpos)",
+              "translation": "G0444=N-NSM",
+              "transliteration": "man"
+            },
+            {
+              "word": "τῆς (tēs)",
+              "translation": "G3588=T-GSF",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "ἀνομίας, (anomias)",
+              "translation": "G0458=N-GSF",
+              "transliteration": "of lawlessness,"
+            },
+            {
+              "word": "ὁ (ho)",
+              "translation": "G3588=T-NSM",
+              "transliteration": "the"
+            },
+            {
+              "word": "υἱὸς (huios)",
+              "translation": "G5207=N-NSM",
+              "transliteration": "son"
+            },
+            {
+              "word": "τῆς (tēs)",
+              "translation": "G3588=T-GSF",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "ἀπωλείας, (apōleias)",
+              "translation": "G0684=N-GSF",
+              "transliteration": "of destruction,"
+            }
           ]
         },
         {
@@ -436,6 +2006,133 @@
             "ὅτι",
             "ἔστιν",
             "θεός"
+          ],
+          "wordTranslations": [
+            {
+              "word": "ὁ (ho)",
+              "translation": "G3588=T-NSM",
+              "transliteration": "who"
+            },
+            {
+              "word": "ἀντικείμενος (antikeimenos)",
+              "translation": "G0480=V-PNP-NSM",
+              "transliteration": "is opposing"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "ὑπεραιρόμενος (huperairomenos)",
+              "translation": "G5229=V-PMP-NSM",
+              "transliteration": "exalting himself"
+            },
+            {
+              "word": "ἐπὶ (epi)",
+              "translation": "G1909=PREP",
+              "transliteration": "above"
+            },
+            {
+              "word": "πάντα (panta)",
+              "translation": "G3956=A-ASM",
+              "transliteration": "every [one]"
+            },
+            {
+              "word": "λεγόμενον (legomenon)",
+              "translation": "G3004H=V-PPP-ASM",
+              "transliteration": "named"
+            },
+            {
+              "word": "θεὸν (theon)",
+              "translation": "G2316=N-ASM",
+              "transliteration": "god"
+            },
+            {
+              "word": "ἢ (ē)",
+              "translation": "G2228=CONJ",
+              "transliteration": "or"
+            },
+            {
+              "word": "σέβασμα (sebasma)",
+              "translation": "G4574=N-ASN",
+              "transliteration": "object of worship"
+            },
+            {
+              "word": "ὥστε (hōste)",
+              "translation": "G5620=CONJ",
+              "transliteration": "so as for"
+            },
+            {
+              "word": "αὐτὸν (auton)",
+              "translation": "G0846=P-ASM",
+              "transliteration": "him"
+            },
+            {
+              "word": "εἰς (eis)",
+              "translation": "G1519=PREP",
+              "transliteration": "in"
+            },
+            {
+              "word": "τὸν (ton)",
+              "translation": "G3588=T-ASM",
+              "transliteration": "the"
+            },
+            {
+              "word": "ναὸν (naon)",
+              "translation": "G3485=N-ASM",
+              "transliteration": "temple"
+            },
+            {
+              "word": "τοῦ (tou)",
+              "translation": "G3588=T-GSM",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "θεοῦ (theou)",
+              "translation": "G2316=N-GSM-T",
+              "transliteration": "of God"
+            },
+            {
+              "word": "ὡς (hōs)",
+              "translation": "G5613=PRT",
+              "transliteration": "as"
+            },
+            {
+              "word": "θεὸν (theon)",
+              "translation": "G2316=N-ASM",
+              "transliteration": "god"
+            },
+            {
+              "word": "καθίσαι (kathisai)",
+              "translation": "G2523=V-AAN",
+              "transliteration": "to sit down"
+            },
+            {
+              "word": "ἀποδεικνύντα (apodeiknunta)",
+              "translation": "G0584=V-PAP-ASM",
+              "transliteration": "setting forth"
+            },
+            {
+              "word": "ἑαυτὸν (he'auton)",
+              "translation": "G1438=F-3ASM",
+              "transliteration": "he himself"
+            },
+            {
+              "word": "ὅτι (hoti)",
+              "translation": "G3754G=CONJ",
+              "transliteration": "that"
+            },
+            {
+              "word": "ἐστὶν (estin)",
+              "translation": "G1510=V-PAI-3S",
+              "transliteration": "is"
+            },
+            {
+              "word": "θεός.¶ (theos)",
+              "translation": "G2316=N-NSM-T",
+              "transliteration": "God."
+            }
           ]
         },
         {
@@ -452,6 +2149,58 @@
             "ταῦτα",
             "ἔλεγον",
             "ὑμῖν"
+          ],
+          "wordTranslations": [
+            {
+              "word": "Οὐ (Ou)",
+              "translation": "G3756=PRT-N",
+              "transliteration": "Surely"
+            },
+            {
+              "word": "μνημονεύετε (mnēmoneuete)",
+              "translation": "G3421=V-PAI-2P",
+              "transliteration": "you do remember"
+            },
+            {
+              "word": "ὅτι (hoti)",
+              "translation": "G3754G=CONJ",
+              "transliteration": "that"
+            },
+            {
+              "word": "ἔτι (eti)",
+              "translation": "G2089=ADV",
+              "transliteration": "yet"
+            },
+            {
+              "word": "ὢν (ōn)",
+              "translation": "G1510=V-PAP-NSM",
+              "transliteration": "being"
+            },
+            {
+              "word": "πρὸς (pros)",
+              "translation": "G4314=PREP",
+              "transliteration": "with"
+            },
+            {
+              "word": "ὑμᾶς (humas)",
+              "translation": "G4771=P-2AP",
+              "transliteration": "you"
+            },
+            {
+              "word": "ταῦτα (tauta)",
+              "translation": "G3778=D-APN",
+              "transliteration": "these things"
+            },
+            {
+              "word": "ἔλεγον (elegon)",
+              "translation": "G3004G=V-IAI-1S",
+              "transliteration": "I was saying"
+            },
+            {
+              "word": "ὑμῖν; (humin)",
+              "translation": "G4771=P-2DP",
+              "transliteration": "to you?"
+            }
           ]
         },
         {
@@ -471,6 +2220,73 @@
             "τῷ",
             "ἑαυτοῦ",
             "καιρῷ"
+          ],
+          "wordTranslations": [
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "And"
+            },
+            {
+              "word": "νῦν (nun)",
+              "translation": "G3568=ADV",
+              "transliteration": "now"
+            },
+            {
+              "word": "τὸ (to)",
+              "translation": "G3588=T-ASN",
+              "transliteration": "that which"
+            },
+            {
+              "word": "κατέχον (katechon)",
+              "translation": "G2722=V-PAP-ASN",
+              "transliteration": "is restraining"
+            },
+            {
+              "word": "οἴδατε (oidate)",
+              "translation": "G6063=V-RAI-2P",
+              "transliteration": "you know"
+            },
+            {
+              "word": "εἰς (eis)",
+              "translation": "G1519=PREP",
+              "transliteration": "for"
+            },
+            {
+              "word": "τὸ (to)",
+              "translation": "G3588=T-ASN",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "ἀποκαλυφθῆναι (apokaluphthēnai)",
+              "translation": "G0601=V-APN",
+              "transliteration": "to be revealed"
+            },
+            {
+              "word": "αὐτὸν (auton)",
+              "translation": "G0846=P-ASM",
+              "transliteration": "him"
+            },
+            {
+              "word": "ἐν (en)",
+              "translation": "G1722=PREP",
+              "transliteration": "in"
+            },
+            {
+              "word": "τῷ (tō)",
+              "translation": "G3588=T-DSM",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "ἑαυτοῦ (he'autou)",
+              "translation": "G1438=F-3GSM",
+              "transliteration": "his own"
+            },
+            {
+              "word": "καιρῷ. (kairō)",
+              "translation": "G2540=N-DSM",
+              "transliteration": "time."
+            }
           ]
         },
         {
@@ -492,6 +2308,83 @@
             "ἐκ",
             "μέσου",
             "γένηται"
+          ],
+          "wordTranslations": [
+            {
+              "word": "τὸ (to)",
+              "translation": "G3588=T-NSN",
+              "transliteration": "The"
+            },
+            {
+              "word": "γὰρ (gar)",
+              "translation": "G1063=CONJ",
+              "transliteration": "for"
+            },
+            {
+              "word": "μυστήριον (mustērion)",
+              "translation": "G3466=N-NSN",
+              "transliteration": "mystery"
+            },
+            {
+              "word": "ἤδη (ēdē)",
+              "translation": "G2235=ADV",
+              "transliteration": "already"
+            },
+            {
+              "word": "ἐνεργεῖται (energeitai)",
+              "translation": "G1754=V-PMI-3S",
+              "transliteration": "is working"
+            },
+            {
+              "word": "τῆς (tēs)",
+              "translation": "G3588=T-GSF",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "ἀνομίας, (anomias)",
+              "translation": "G0458=N-GSF",
+              "transliteration": "of lawlessness,"
+            },
+            {
+              "word": "μόνον (monon)",
+              "translation": "G3441=A-ASN",
+              "transliteration": "only [there is]"
+            },
+            {
+              "word": "ὁ (ho)",
+              "translation": "G3588=T-NSM",
+              "transliteration": "the [one]"
+            },
+            {
+              "word": "κατέχων (katechōn)",
+              "translation": "G2722=V-PAP-NSM",
+              "transliteration": "restraining [it]"
+            },
+            {
+              "word": "ἄρτι (arti)",
+              "translation": "G0737=ADV",
+              "transliteration": "at present"
+            },
+            {
+              "word": "ἕως (he'ōs)",
+              "translation": "G2193=PREP",
+              "transliteration": "until"
+            },
+            {
+              "word": "ἐκ (ek)",
+              "translation": "G1537=PREP",
+              "transliteration": "out of"
+            },
+            {
+              "word": "μέσου (mesou)",
+              "translation": "G3319=A-GSN",
+              "transliteration": "[the] midst"
+            },
+            {
+              "word": "γένηται· (genētai)",
+              "translation": "G1096=V-2ADS-3S",
+              "transliteration": "he may be [gone];"
+            }
           ]
         },
         {
@@ -520,6 +2413,118 @@
             "τῆς",
             "παρουσίας",
             "αὐτοῦ"
+          ],
+          "wordTranslations": [
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "And"
+            },
+            {
+              "word": "τότε (tote)",
+              "translation": "G5119=ADV",
+              "transliteration": "then"
+            },
+            {
+              "word": "ἀποκαλυφθήσεται (apokaluphthēsetai)",
+              "translation": "G0601=V-FPI-3S",
+              "transliteration": "will be revealed"
+            },
+            {
+              "word": "ὁ (ho)",
+              "translation": "G3588=T-NSM",
+              "transliteration": "the"
+            },
+            {
+              "word": "ἄνομος (anomos)",
+              "translation": "G0459=A-NSM",
+              "transliteration": "lawless [one]"
+            },
+            {
+              "word": "ὃν (hon)",
+              "translation": "G3739=R-ASM",
+              "transliteration": "whom"
+            },
+            {
+              "word": "ὁ (ho)",
+              "translation": "G3588=T-NSM",
+              "transliteration": "the"
+            },
+            {
+              "word": "κύριος (kurios)",
+              "translation": "G2962G=N-NSM-T",
+              "transliteration": "Lord"
+            },
+            {
+              "word": "Ἰησοῦς (Iēsous)",
+              "translation": "G2424G=N-NSM-P",
+              "transliteration": "Jesus"
+            },
+            {
+              "word": "ἀνελεῖ (anelei)",
+              "translation": "G0337=V-2FAI-3S",
+              "transliteration": "will execute"
+            },
+            {
+              "word": "τῷ (tō)",
+              "translation": "G3588=T-DSN",
+              "transliteration": "with the"
+            },
+            {
+              "word": "πνεύματι (pneumati)",
+              "translation": "G4151H=N-DSN",
+              "transliteration": "breath"
+            },
+            {
+              "word": "τοῦ (tou)",
+              "translation": "G3588=T-GSN",
+              "transliteration": "of the"
+            },
+            {
+              "word": "στόματος (stomatos)",
+              "translation": "G4750=N-GSN",
+              "transliteration": "mouth"
+            },
+            {
+              "word": "αὐτοῦ (autou)",
+              "translation": "G0846=P-GSM",
+              "transliteration": "of Him"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "καταργήσει (katargēsei)",
+              "translation": "G2673=V-FAI-3S",
+              "transliteration": "will annul"
+            },
+            {
+              "word": "τῇ (tēa)",
+              "translation": "G3588=T-DSF",
+              "transliteration": "by the"
+            },
+            {
+              "word": "ἐπιφανείᾳ (epiphaneia)",
+              "translation": "G2015=N-DSF",
+              "transliteration": "appearing"
+            },
+            {
+              "word": "τῆς (tēs)",
+              "translation": "G3588=T-GSF",
+              "transliteration": "of the"
+            },
+            {
+              "word": "παρουσίας (parousias)",
+              "translation": "G3952=N-GSF",
+              "transliteration": "coming"
+            },
+            {
+              "word": "αὐτοῦ· (autou)",
+              "translation": "G0846=P-GSM",
+              "transliteration": "of Him;"
+            }
           ]
         },
         {
@@ -542,6 +2547,88 @@
             "καὶ",
             "τέρασιν",
             "ψεύδους"
+          ],
+          "wordTranslations": [
+            {
+              "word": "οὗ (hou)",
+              "translation": "G3739=R-GSM",
+              "transliteration": "whose"
+            },
+            {
+              "word": "ἐστιν (estin)",
+              "translation": "G1510=V-PAI-3S",
+              "transliteration": "is"
+            },
+            {
+              "word": "ἡ (hē)",
+              "translation": "G3588=T-NSF",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "παρουσία (parousia)",
+              "translation": "G3952=N-NSF",
+              "transliteration": "coming"
+            },
+            {
+              "word": "κατ᾽ (kat᾽)",
+              "translation": "G2596=PREP",
+              "transliteration": "according to"
+            },
+            {
+              "word": "ἐνέργειαν (energeian)",
+              "translation": "G1753=N-ASF",
+              "transliteration": "[the] working"
+            },
+            {
+              "word": "τοῦ (tou)",
+              "translation": "G3588=T-GSM",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "σατανᾶ (satana)",
+              "translation": "G4567=N-GSM-T",
+              "transliteration": "of Satan"
+            },
+            {
+              "word": "ἐν (en)",
+              "translation": "G1722=PREP",
+              "transliteration": "in"
+            },
+            {
+              "word": "πάσῃ (pasē)",
+              "translation": "G3956=A-DSF",
+              "transliteration": "every"
+            },
+            {
+              "word": "δυνάμει (dunamei)",
+              "translation": "G1411=N-DSF",
+              "transliteration": "power"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "σημείοις (sēmeiois)",
+              "translation": "G4592=N-DPN",
+              "transliteration": "in signs"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "τέρασιν (terasin)",
+              "translation": "G5059=N-DPN",
+              "transliteration": "in wonders"
+            },
+            {
+              "word": "ψεύδους (pseudous)",
+              "translation": "G5579=N-GSN",
+              "transliteration": "of falsehood"
+            }
           ]
         },
         {
@@ -567,6 +2654,113 @@
             "τὸ",
             "σωθῆναι",
             "αὐτούς"
+          ],
+          "wordTranslations": [
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "ἐν (en)",
+              "translation": "G1722=PREP",
+              "transliteration": "in"
+            },
+            {
+              "word": "πάσῃ (pasē)",
+              "translation": "G3956=A-DSF",
+              "transliteration": "every"
+            },
+            {
+              "word": "ἀπάτῃ (apatē)",
+              "translation": "G0539=N-DSF",
+              "transliteration": "deceit"
+            },
+            {
+              "word": "τῆς (tēs)",
+              "translation": "G3588=T-GSF",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "ἀδικίας (adikias)",
+              "translation": "G0093=N-GSF",
+              "transliteration": "of wickedness"
+            },
+            {
+              "word": "ἐν (en)",
+              "translation": "G1722=PREP",
+              "transliteration": "in"
+            },
+            {
+              "word": "τοῖς (tois)",
+              "translation": "G3588=T-DPM",
+              "transliteration": "unto those"
+            },
+            {
+              "word": "ἀπολλυμένοις, (apollumenois)",
+              "translation": "G0622=V-PEP-DPM",
+              "transliteration": "perishing,"
+            },
+            {
+              "word": "ἀνθ᾽ (anth᾽)",
+              "translation": "G0473=PREP",
+              "transliteration": "in return for"
+            },
+            {
+              "word": "ὧν (hōn)",
+              "translation": "G3739=R-GPN",
+              "transliteration": "which"
+            },
+            {
+              "word": "τὴν (tēn)",
+              "translation": "G3588=T-ASF",
+              "transliteration": "the"
+            },
+            {
+              "word": "ἀγάπην (agapēn)",
+              "translation": "G0026=N-ASF",
+              "transliteration": "love"
+            },
+            {
+              "word": "τῆς (tēs)",
+              "translation": "G3588=T-GSF",
+              "transliteration": "of the"
+            },
+            {
+              "word": "ἀληθείας (alētheias)",
+              "translation": "G0225=N-GSF",
+              "transliteration": "truth"
+            },
+            {
+              "word": "οὐκ (ouk)",
+              "translation": "G3756=PRT-N",
+              "transliteration": "not"
+            },
+            {
+              "word": "ἐδέξαντο (edexanto)",
+              "translation": "G1209=V-ADI-3P",
+              "transliteration": "they received"
+            },
+            {
+              "word": "εἰς (eis)",
+              "translation": "G1519=PREP",
+              "transliteration": "in order for"
+            },
+            {
+              "word": "τὸ (to)",
+              "translation": "G3588=T-ASN",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "σωθῆναι (sōthēnai)",
+              "translation": "G4982=V-APN",
+              "transliteration": "to be saved"
+            },
+            {
+              "word": "αὐτούς· (autous)",
+              "translation": "G0846=P-APM",
+              "transliteration": "them;"
+            }
           ]
         },
         {
@@ -588,6 +2782,83 @@
             "αὐτοὺς",
             "τῷ",
             "ψεύδει"
+          ],
+          "wordTranslations": [
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "And"
+            },
+            {
+              "word": "διὰ (dia)",
+              "translation": "G1223=PREP",
+              "transliteration": "because of"
+            },
+            {
+              "word": "τοῦτο (touto)",
+              "translation": "G3778=D-ASN",
+              "transliteration": "this"
+            },
+            {
+              "word": "πέμπει (pempei)",
+              "translation": "G3992=V-PAI-3S",
+              "transliteration": "sends"
+            },
+            {
+              "word": "αὐτοῖς (autois)",
+              "translation": "G0846=P-DPM",
+              "transliteration": "to them"
+            },
+            {
+              "word": "ὁ (ho)",
+              "translation": "G3588=T-NSM",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "θεὸς (theos)",
+              "translation": "G2316=N-NSM-T",
+              "transliteration": "God"
+            },
+            {
+              "word": "ἐνέργειαν (energeian)",
+              "translation": "G1753=N-ASF",
+              "transliteration": "a powerful"
+            },
+            {
+              "word": "πλάνης (planēs)",
+              "translation": "G4106=N-GSF",
+              "transliteration": "delusion"
+            },
+            {
+              "word": "εἰς (eis)",
+              "translation": "G1519=PREP",
+              "transliteration": "so"
+            },
+            {
+              "word": "τὸ (to)",
+              "translation": "G3588=T-ASN",
+              "transliteration": "that"
+            },
+            {
+              "word": "πιστεῦσαι (pisteusai)",
+              "translation": "G4100=V-AAN",
+              "transliteration": "to believe"
+            },
+            {
+              "word": "αὐτοὺς (autous)",
+              "translation": "G0846=P-APM",
+              "transliteration": "they"
+            },
+            {
+              "word": "τῷ (tō)",
+              "translation": "G3588=T-DSN",
+              "transliteration": "what"
+            },
+            {
+              "word": "ψεύδει, (pseudei)",
+              "translation": "G5579=N-DSN",
+              "transliteration": "[is] false,"
+            }
           ]
         },
         {
@@ -606,6 +2877,73 @@
             "εὐδοκήσαντες",
             "τῇ",
             "ἀδικίᾳ"
+          ],
+          "wordTranslations": [
+            {
+              "word": "ἵνα (ina)",
+              "translation": "G2443=CONJ",
+              "transliteration": "in order that"
+            },
+            {
+              "word": "κριθῶσιν (krithōsin)",
+              "translation": "G2919=V-APS-3P",
+              "transliteration": "may be judged"
+            },
+            {
+              "word": "πάντες (pantes)",
+              "translation": "G3956=A-NPM",
+              "transliteration": "all"
+            },
+            {
+              "word": "οἱ (hoi)",
+              "translation": "G3588=T-NPM",
+              "transliteration": "those"
+            },
+            {
+              "word": "μὴ (mē)",
+              "translation": "G3361=PRT-N",
+              "transliteration": "not"
+            },
+            {
+              "word": "πιστεύσαντες (pisteusantes)",
+              "translation": "G4100=V-AAP-NPM",
+              "transliteration": "having believed"
+            },
+            {
+              "word": "τῇ (tēa)",
+              "translation": "G3588=T-DSF",
+              "transliteration": "the"
+            },
+            {
+              "word": "ἀληθείᾳ (alētheia)",
+              "translation": "G0225=N-DSF",
+              "transliteration": "truth"
+            },
+            {
+              "word": "ἀλλ᾽ (all᾽)",
+              "translation": "G0235=CONJ",
+              "transliteration": "but"
+            },
+            {
+              "word": "εὐδοκήσαντες (eudokēsantes)",
+              "translation": "G2106=V-AAP-NPM",
+              "transliteration": "having delighted"
+            },
+            {
+              "word": "ἐν (en)",
+              "translation": "G1722=PREP",
+              "transliteration": "in"
+            },
+            {
+              "word": "τῇ (tēa)",
+              "translation": "G3588=T-DSF",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "ἀδικίᾳ.¶ (adikia)",
+              "translation": "G0093=N-DSF",
+              "transliteration": "in unrighteousness."
+            }
           ]
         },
         {
@@ -639,6 +2977,143 @@
             "καὶ",
             "πίστει",
             "ἀληθείας"
+          ],
+          "wordTranslations": [
+            {
+              "word": "Ἡμεῖς (Hēmeis)",
+              "translation": "G3165=P-1NP",
+              "transliteration": "We ourselves"
+            },
+            {
+              "word": "δὲ (de)",
+              "translation": "G1161=CONJ",
+              "transliteration": "however"
+            },
+            {
+              "word": "ὀφείλομεν (opheilomen)",
+              "translation": "G3784=V-PAI-1P",
+              "transliteration": "ought"
+            },
+            {
+              "word": "εὐχαριστεῖν (eucharistein)",
+              "translation": "G2168=V-PAN",
+              "transliteration": "to give thanks"
+            },
+            {
+              "word": "τῷ (tō)",
+              "translation": "G3588=T-DSM",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "θεῷ (theō)",
+              "translation": "G2316=N-DSM-T",
+              "transliteration": "to God"
+            },
+            {
+              "word": "πάντοτε (pantote)",
+              "translation": "G3842=ADV",
+              "transliteration": "always"
+            },
+            {
+              "word": "περὶ (peri)",
+              "translation": "G4012=PREP",
+              "transliteration": "concerning"
+            },
+            {
+              "word": "ὑμῶν, (humōn)",
+              "translation": "G4771=P-2GP",
+              "transliteration": "you,"
+            },
+            {
+              "word": "ἀδελφοὶ (adelphoi)",
+              "translation": "G0080=N-VPM",
+              "transliteration": "brothers"
+            },
+            {
+              "word": "ἠγαπημένοι (ēgapēmenoi)",
+              "translation": "G0025=V-RPP-VPM",
+              "transliteration": "beloved"
+            },
+            {
+              "word": "ὑπὸ (hupo)",
+              "translation": "G5259G=PREP",
+              "transliteration": "by"
+            },
+            {
+              "word": "κυρίου, (kuriou)",
+              "translation": "G2962G=N-GSM-T",
+              "transliteration": "[the] Lord,"
+            },
+            {
+              "word": "ὅτι (hoti)",
+              "translation": "G3754G=CONJ",
+              "transliteration": "that"
+            },
+            {
+              "word": "εἵλατο (eilato)",
+              "translation": "G0138=V-AMI-3S",
+              "transliteration": "has chosen"
+            },
+            {
+              "word": "ὑμᾶς (humas)",
+              "translation": "G4771=P-2AP",
+              "transliteration": "you"
+            },
+            {
+              "word": "ὁ (ho)",
+              "translation": "G3588=T-NSM",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "θεὸς (theos)",
+              "translation": "G2316=N-NSM-T",
+              "transliteration": "God"
+            },
+            {
+              "word": "ἀπαρχὴν (aparchēn)",
+              "translation": "G0536=N-ASF",
+              "transliteration": "from [the] beginning"
+            },
+            {
+              "word": "εἰς (eis)",
+              "translation": "G1519=PREP",
+              "transliteration": "unto"
+            },
+            {
+              "word": "σωτηρίαν (sōtērian)",
+              "translation": "G4991=N-ASF",
+              "transliteration": "salvation"
+            },
+            {
+              "word": "ἐν (en)",
+              "translation": "G1722=PREP",
+              "transliteration": "in"
+            },
+            {
+              "word": "ἁγιασμῷ (hagiasmō)",
+              "translation": "G0038=N-DSM",
+              "transliteration": "[the] sanctification"
+            },
+            {
+              "word": "πνεύματος (pneumatos)",
+              "translation": "G4151G=N-GSN",
+              "transliteration": "of [the] Spirit"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "πίστει (pistei)",
+              "translation": "G4102G=N-DSF",
+              "transliteration": "[by] faith"
+            },
+            {
+              "word": "ἀληθείας, (alētheias)",
+              "translation": "G0225=N-GSF",
+              "transliteration": "of [the] truth,"
+            }
           ]
         },
         {
@@ -661,6 +3136,93 @@
             "ἡμῶν",
             "Ἰησοῦ",
             "Χριστοῦ"
+          ],
+          "wordTranslations": [
+            {
+              "word": "εἰς (eis)",
+              "translation": "G1519=PREP",
+              "transliteration": "to"
+            },
+            {
+              "word": "ὃ (ho)",
+              "translation": "G3739=R-ASN",
+              "transliteration": "this"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "also"
+            },
+            {
+              "word": "ἐκάλεσεν (ekalesen)",
+              "translation": "G2564G=V-AAI-3S",
+              "transliteration": "He called"
+            },
+            {
+              "word": "ὑμᾶς (humas)",
+              "translation": "G4771=P-2AP",
+              "transliteration": "you"
+            },
+            {
+              "word": "διὰ (dia)",
+              "translation": "G1223=PREP",
+              "transliteration": "through"
+            },
+            {
+              "word": "τοῦ (tou)",
+              "translation": "G3588=T-GSN",
+              "transliteration": "the"
+            },
+            {
+              "word": "εὐαγγελίου (euangeliou)",
+              "translation": "G2098=N-GSN",
+              "transliteration": "gospel"
+            },
+            {
+              "word": "ἡμῶν (hēmōn)",
+              "translation": "G3165=P-1GP",
+              "transliteration": "of us"
+            },
+            {
+              "word": "εἰς (eis)",
+              "translation": "G1519=PREP",
+              "transliteration": "to"
+            },
+            {
+              "word": "περιποίησιν (peripoiēsin)",
+              "translation": "G4047=N-ASF",
+              "transliteration": "[the] obtaining"
+            },
+            {
+              "word": "δόξης (doxēs)",
+              "translation": "G1391=N-GSF",
+              "transliteration": "of [the] glory"
+            },
+            {
+              "word": "τοῦ (tou)",
+              "translation": "G3588=T-GSM",
+              "transliteration": "of the"
+            },
+            {
+              "word": "κυρίου (kuriou)",
+              "translation": "G2962G=N-GSM-T",
+              "transliteration": "Lord"
+            },
+            {
+              "word": "ἡμῶν (hēmōn)",
+              "translation": "G3165=P-1GP",
+              "transliteration": "of us"
+            },
+            {
+              "word": "Ἰησοῦ (Iēsou)",
+              "translation": "G2424G=N-GSM-P",
+              "transliteration": "Jesus"
+            },
+            {
+              "word": "Χριστοῦ.¶ (Christou)",
+              "translation": "G5547=N-GSM-T",
+              "transliteration": "Christ."
+            }
           ]
         },
         {
@@ -684,6 +3246,93 @@
             "διʼ",
             "ἐπιστολῆς",
             "ἡμῶν"
+          ],
+          "wordTranslations": [
+            {
+              "word": "Ἄρα (Ara)",
+              "translation": "G0686=CONJ",
+              "transliteration": "So"
+            },
+            {
+              "word": "οὖν, (oun)",
+              "translation": "G3767=CONJ",
+              "transliteration": "then,"
+            },
+            {
+              "word": "ἀδελφοί, (adelphoi)",
+              "translation": "G0080=N-VPM",
+              "transliteration": "brothers,"
+            },
+            {
+              "word": "στήκετε (stēkete)",
+              "translation": "G4739=V-PAM-2P",
+              "transliteration": "do stand firm"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "κρατεῖτε (krateite)",
+              "translation": "G2902=V-PAM-2P",
+              "transliteration": "do hold fast"
+            },
+            {
+              "word": "τὰς (tas)",
+              "translation": "G3588=T-APF",
+              "transliteration": "to the"
+            },
+            {
+              "word": "παραδόσεις (paradoseis)",
+              "translation": "G3862=N-APF",
+              "transliteration": "traditions"
+            },
+            {
+              "word": "ἃς (has)",
+              "translation": "G3739=R-APF",
+              "transliteration": "that"
+            },
+            {
+              "word": "ἐδιδάχθητε (edidachthēte)",
+              "translation": "G1321=V-API-2P",
+              "transliteration": "you were taught"
+            },
+            {
+              "word": "εἴτε (eite)",
+              "translation": "G1535=COND",
+              "transliteration": "whether"
+            },
+            {
+              "word": "διὰ (dia)",
+              "translation": "G1223=PREP",
+              "transliteration": "through"
+            },
+            {
+              "word": "λόγου (logou)",
+              "translation": "G3056=N-GSM",
+              "transliteration": "word"
+            },
+            {
+              "word": "εἴτε (eite)",
+              "translation": "G1535=COND",
+              "transliteration": "or"
+            },
+            {
+              "word": "δι᾽ (di᾽)",
+              "translation": "G1223=PREP",
+              "transliteration": "through"
+            },
+            {
+              "word": "ἐπιστολῆς (epistolēs)",
+              "translation": "G1992=N-GSF",
+              "transliteration": "letter"
+            },
+            {
+              "word": "ἡμῶν. (hēmōn)",
+              "translation": "G3165=P-1GP",
+              "transliteration": "from us."
+            }
           ]
         },
         {
@@ -714,6 +3363,133 @@
             "ἀγαθὴν",
             "ἐν",
             "χάριτι"
+          ],
+          "wordTranslations": [
+            {
+              "word": "αὐτὸς (autos)",
+              "translation": "G0846=P-NSM",
+              "transliteration": "Himself"
+            },
+            {
+              "word": "δὲ (de)",
+              "translation": "G1161=CONJ",
+              "transliteration": "now"
+            },
+            {
+              "word": "ὁ (ho)",
+              "translation": "G3588=T-NSM",
+              "transliteration": "the"
+            },
+            {
+              "word": "κύριος (kurios)",
+              "translation": "G2962G=N-NSM-T",
+              "transliteration": "Lord"
+            },
+            {
+              "word": "ἡμῶν (hēmōn)",
+              "translation": "G3165=P-1GP",
+              "transliteration": "of us"
+            },
+            {
+              "word": "Ἰησοῦς (Iēsous)",
+              "translation": "G2424G=N-NSM-P",
+              "transliteration": "Jesus"
+            },
+            {
+              "word": "Χριστὸς (Christos)",
+              "translation": "G5547=N-NSM-T",
+              "transliteration": "Christ"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "ὁ (ho)",
+              "translation": "G3588=T-NSM",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "θεὸς (theos)",
+              "translation": "G2316=N-NSM-T",
+              "transliteration": "God"
+            },
+            {
+              "word": "ὁ (ho)",
+              "translation": "G3588=T-NSM",
+              "transliteration": "the"
+            },
+            {
+              "word": "πατὴρ (patēr)",
+              "translation": "G3962=N-NSM-T",
+              "transliteration": "Father"
+            },
+            {
+              "word": "ἡμῶν, (hēmōn)",
+              "translation": "G3165=P-1GP",
+              "transliteration": "of us,"
+            },
+            {
+              "word": "ὁ (ho)",
+              "translation": "G3588=T-NSM",
+              "transliteration": "the [One]"
+            },
+            {
+              "word": "ἀγαπήσας (agapēsas)",
+              "translation": "G0025=V-AAP-NSM",
+              "transliteration": "having loved"
+            },
+            {
+              "word": "ἡμᾶς (hēmas)",
+              "translation": "G3165=P-1AP",
+              "transliteration": "us"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "δοὺς (dous)",
+              "translation": "G1325=V-2AAP-NSM",
+              "transliteration": "having given [us]"
+            },
+            {
+              "word": "παράκλησιν (paraklēsin)",
+              "translation": "G3874=N-ASF",
+              "transliteration": "comfort"
+            },
+            {
+              "word": "αἰωνίαν (aiōnian)",
+              "translation": "G0166=A-ASF",
+              "transliteration": "eternal"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "ἐλπίδα (elpida)",
+              "translation": "G1680=N-ASF",
+              "transliteration": "hope"
+            },
+            {
+              "word": "ἀγαθὴν (agathēn)",
+              "translation": "G0018=A-ASF",
+              "transliteration": "good"
+            },
+            {
+              "word": "ἐν (en)",
+              "translation": "G1722=PREP",
+              "transliteration": "by"
+            },
+            {
+              "word": "χάριτι, (chariti)",
+              "translation": "G5485=N-DSF",
+              "transliteration": "grace,"
+            }
           ]
         },
         {
@@ -732,6 +3508,73 @@
             "καὶ",
             "λόγῳ",
             "ἀγαθῷ"
+          ],
+          "wordTranslations": [
+            {
+              "word": "παρακαλέσαι (parakalesai)",
+              "translation": "G3870=V-AAO-3S",
+              "transliteration": "would He encourage"
+            },
+            {
+              "word": "ὑμῶν (humōn)",
+              "translation": "G4771=P-2GP",
+              "transliteration": "your"
+            },
+            {
+              "word": "τὰς (tas)",
+              "translation": "G3588=T-APF",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "καρδίας (kardias)",
+              "translation": "G2588=N-APF",
+              "transliteration": "hearts"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "στηρίξαι (stērixai)",
+              "translation": "G4741=V-AAO-3S",
+              "transliteration": "would He strengthen"
+            },
+            {
+              "word": "ὑμᾶς (humas)",
+              "translation": "G4771=P-2AP",
+              "transliteration": "you"
+            },
+            {
+              "word": "ἐν (en)",
+              "translation": "G1722=PREP",
+              "transliteration": "in"
+            },
+            {
+              "word": "παντὶ (panti)",
+              "translation": "G3956=A-DSN",
+              "transliteration": "every"
+            },
+            {
+              "word": "ἔργῳ (ergō)",
+              "translation": "G2041=N-DSN",
+              "transliteration": "work"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "λόγῳ (logō)",
+              "translation": "G3056=N-DSM",
+              "transliteration": "word"
+            },
+            {
+              "word": "ἀγαθῷ.¶ (agathō)",
+              "translation": "G0018=A-DSM",
+              "transliteration": "good."
+            }
           ]
         }
       ]
@@ -761,6 +3604,98 @@
             "καὶ",
             "πρὸς",
             "ὑμᾶς"
+          ],
+          "wordTranslations": [
+            {
+              "word": "Τὸ (To)",
+              "translation": "G3588=T-ASN",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "λοιπόν, (loipon)",
+              "translation": "G3063=A-ASN",
+              "transliteration": "Finally,"
+            },
+            {
+              "word": "προσεύχεσθε, (proseuchesthe)",
+              "translation": "G4336=V-PNM-2P",
+              "transliteration": "do pray,"
+            },
+            {
+              "word": "ἀδελφοί, (adelphoi)",
+              "translation": "G0080=N-VPM",
+              "transliteration": "brothers,"
+            },
+            {
+              "word": "περὶ (peri)",
+              "translation": "G4012=PREP",
+              "transliteration": "for"
+            },
+            {
+              "word": "ἡμῶν, (hēmōn)",
+              "translation": "G3165=P-1GP",
+              "transliteration": "us,"
+            },
+            {
+              "word": "ἵνα (ina)",
+              "translation": "G2443=CONJ",
+              "transliteration": "that"
+            },
+            {
+              "word": "ὁ (ho)",
+              "translation": "G3588=T-NSM",
+              "transliteration": "the"
+            },
+            {
+              "word": "λόγος (logos)",
+              "translation": "G3056=N-NSM",
+              "transliteration": "word"
+            },
+            {
+              "word": "τοῦ (tou)",
+              "translation": "G3588=T-GSM",
+              "transliteration": "of the"
+            },
+            {
+              "word": "κυρίου (kuriou)",
+              "translation": "G2962G=N-GSM-T",
+              "transliteration": "Lord"
+            },
+            {
+              "word": "τρέχῃ (trechē)",
+              "translation": "G5143=V-PAS-3S",
+              "transliteration": "may spread quickly"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "δοξάζηται (doxazētai)",
+              "translation": "G1392=V-PPS-3S",
+              "transliteration": "may be glorified"
+            },
+            {
+              "word": "καθὼς (kathōs)",
+              "translation": "G2531=CONJ",
+              "transliteration": "even as"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "also"
+            },
+            {
+              "word": "πρὸς (pros)",
+              "translation": "G4314=PREP",
+              "transliteration": "with"
+            },
+            {
+              "word": "ὑμᾶς (humas)",
+              "translation": "G4771=P-2AP",
+              "transliteration": "you"
+            }
           ]
         },
         {
@@ -781,6 +3716,78 @@
             "πάντων",
             "ἡ",
             "πίστις"
+          ],
+          "wordTranslations": [
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "ἵνα (ina)",
+              "translation": "G2443=CONJ",
+              "transliteration": "that"
+            },
+            {
+              "word": "ῥυσθῶμεν (rhusthōmen)",
+              "translation": "G4506=V-APS-1P",
+              "transliteration": "we may be delivered"
+            },
+            {
+              "word": "ἀπὸ (apo)",
+              "translation": "G0575=PREP",
+              "transliteration": "from"
+            },
+            {
+              "word": "τῶν (tōn)",
+              "translation": "G3588=T-GPM",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "ἀτόπων (atopōn)",
+              "translation": "G0824=A-GPM",
+              "transliteration": "perverse"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "πονηρῶν (ponērōn)",
+              "translation": "G4190=A-GPM",
+              "transliteration": "evil"
+            },
+            {
+              "word": "ἀνθρώπων· (anthrōpōn)",
+              "translation": "G0444=N-GPM",
+              "transliteration": "men;"
+            },
+            {
+              "word": "οὐ (ou)",
+              "translation": "G3756=PRT-N",
+              "transliteration": "not"
+            },
+            {
+              "word": "γὰρ (gar)",
+              "translation": "G1063=CONJ",
+              "transliteration": "for"
+            },
+            {
+              "word": "πάντων (pantōn)",
+              "translation": "G3956=A-GPM",
+              "transliteration": "all [are]"
+            },
+            {
+              "word": "ἡ (hē)",
+              "translation": "G3588=T-NSF",
+              "transliteration": "of the"
+            },
+            {
+              "word": "πίστις. (pistis)",
+              "translation": "G4102G=N-NSF",
+              "transliteration": "faith."
+            }
           ]
         },
         {
@@ -800,6 +3807,73 @@
             "ἀπὸ",
             "τοῦ",
             "πονηροῦ"
+          ],
+          "wordTranslations": [
+            {
+              "word": "πιστὸς (pistos)",
+              "translation": "G4103=A-NSM",
+              "transliteration": "faithful"
+            },
+            {
+              "word": "δέ (de)",
+              "translation": "G1161=CONJ",
+              "transliteration": "however"
+            },
+            {
+              "word": "ἐστιν (estin)",
+              "translation": "G1510=V-PAI-3S",
+              "transliteration": "is"
+            },
+            {
+              "word": "ὁ (ho)",
+              "translation": "G3588=T-NSM",
+              "transliteration": "the"
+            },
+            {
+              "word": "κύριος, (kurios)",
+              "translation": "G2962G=N-NSM-T",
+              "transliteration": "Lord,"
+            },
+            {
+              "word": "ὃς (hos)",
+              "translation": "G3739=R-NSM",
+              "transliteration": "who"
+            },
+            {
+              "word": "στηρίξει (stērixei)",
+              "translation": "G4741=V-FAI-3S",
+              "transliteration": "will strengthen"
+            },
+            {
+              "word": "ὑμᾶς (humas)",
+              "translation": "G4771=P-2AP",
+              "transliteration": "you"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "φυλάξει (phulaxei)",
+              "translation": "G5442I=V-FAI-3S",
+              "transliteration": "He will keep [you]"
+            },
+            {
+              "word": "ἀπὸ (apo)",
+              "translation": "G0575=PREP",
+              "transliteration": "from"
+            },
+            {
+              "word": "τοῦ (tou)",
+              "translation": "G3588=T-GSM",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "πονηροῦ. (ponērou)",
+              "translation": "G4190=A-GSM",
+              "transliteration": "evil."
+            }
           ]
         },
         {
@@ -819,6 +3893,78 @@
             "ποιεῖτε",
             "καὶ",
             "ποιήσετε"
+          ],
+          "wordTranslations": [
+            {
+              "word": "πεποίθαμεν (pepoithamen)",
+              "translation": "G3982=V-2RAI-1P",
+              "transliteration": "We have been persuaded"
+            },
+            {
+              "word": "δὲ (de)",
+              "translation": "G1161=CONJ",
+              "transliteration": "now"
+            },
+            {
+              "word": "ἐν (en)",
+              "translation": "G1722=PREP",
+              "transliteration": "in"
+            },
+            {
+              "word": "κυρίῳ (kuriō)",
+              "translation": "G2962G=N-DSM-T",
+              "transliteration": "[the] Lord"
+            },
+            {
+              "word": "ἐφ᾽ (eph᾽)",
+              "translation": "G1909=PREP",
+              "transliteration": "as to"
+            },
+            {
+              "word": "ὑμᾶς (humas)",
+              "translation": "G4771=P-2AP",
+              "transliteration": "you"
+            },
+            {
+              "word": "ὅτι (hoti)",
+              "translation": "G3754G=CONJ",
+              "transliteration": "that"
+            },
+            {
+              "word": "ἃ (ha)",
+              "translation": "G3739=R-APN",
+              "transliteration": "[the] things that"
+            },
+            {
+              "word": "παραγγέλλομεν (parangellomen)",
+              "translation": "G3853=V-PAI-1P",
+              "transliteration": "we command"
+            },
+            {
+              "word": "ὑμῖν (humin)",
+              "translation": "G4771=P-2DP",
+              "transliteration": "to you"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "both"
+            },
+            {
+              "word": "ποιεῖτε (poieite)",
+              "translation": "G4160G=V-PAI-2P",
+              "transliteration": "you are doing"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "ποιήσετε. (poiēsete)",
+              "translation": "G4160G=V-FAI-2P",
+              "transliteration": "you will do."
+            }
           ]
         },
         {
@@ -843,6 +3989,98 @@
             "ὑπομονὴν",
             "τοῦ",
             "Χριστοῦ"
+          ],
+          "wordTranslations": [
+            {
+              "word": "ὁ (ho)",
+              "translation": "G3588=T-NSM",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "δὲ (de)",
+              "translation": "G1161=CONJ",
+              "transliteration": "And"
+            },
+            {
+              "word": "κύριος (kurios)",
+              "translation": "G2962G=N-NSM-T",
+              "transliteration": "the Lord"
+            },
+            {
+              "word": "κατευθύναι (kateuthunai)",
+              "translation": "G2720=V-AAO-3S",
+              "transliteration": "would direct"
+            },
+            {
+              "word": "ὑμῶν (humōn)",
+              "translation": "G4771=P-2GP",
+              "transliteration": "your"
+            },
+            {
+              "word": "τὰς (tas)",
+              "translation": "G3588=T-APF",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "καρδίας (kardias)",
+              "translation": "G2588=N-APF",
+              "transliteration": "hearts"
+            },
+            {
+              "word": "εἰς (eis)",
+              "translation": "G1519=PREP",
+              "transliteration": "into"
+            },
+            {
+              "word": "τὴν (tēn)",
+              "translation": "G3588=T-ASF",
+              "transliteration": "the"
+            },
+            {
+              "word": "ἀγάπην (agapēn)",
+              "translation": "G0026=N-ASF",
+              "transliteration": "love"
+            },
+            {
+              "word": "τοῦ (tou)",
+              "translation": "G3588=T-GSM",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "θεοῦ (theou)",
+              "translation": "G2316=N-GSM-T",
+              "transliteration": "of God"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "εἰς (eis)",
+              "translation": "G1519=PREP",
+              "transliteration": "into"
+            },
+            {
+              "word": "τὴν (tēn)",
+              "translation": "G3588=T-ASF",
+              "transliteration": "the"
+            },
+            {
+              "word": "ὑπομονὴν (hupomonēn)",
+              "translation": "G5281=N-ASF",
+              "transliteration": "steadfastness"
+            },
+            {
+              "word": "τοῦ (tou)",
+              "translation": "G3588=T-GSM",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "Χριστοῦ.¶ (Christou)",
+              "translation": "G5547=N-GSM-T",
+              "transliteration": "of Christ."
+            }
           ]
         },
         {
@@ -876,6 +4114,143 @@
             "παρελάβοσαν",
             "παρʼ",
             "ἡμῶν"
+          ],
+          "wordTranslations": [
+            {
+              "word": "Παραγγέλλομεν (Parangellomen)",
+              "translation": "G3853=V-PAI-1P",
+              "transliteration": "We command"
+            },
+            {
+              "word": "δὲ (de)",
+              "translation": "G1161=CONJ",
+              "transliteration": "now"
+            },
+            {
+              "word": "ὑμῖν, (humin)",
+              "translation": "G4771=P-2DP",
+              "transliteration": "you,"
+            },
+            {
+              "word": "ἀδελφοί, (adelphoi)",
+              "translation": "G0080=N-VPM",
+              "transliteration": "brothers,"
+            },
+            {
+              "word": "ἐν (en)",
+              "translation": "G1722=PREP",
+              "transliteration": "in"
+            },
+            {
+              "word": "ὀνόματι (onomati)",
+              "translation": "G3686=N-DSN",
+              "transliteration": "[the] name"
+            },
+            {
+              "word": "τοῦ (tou)",
+              "translation": "G3588=T-GSM",
+              "transliteration": "of the"
+            },
+            {
+              "word": "κυρίου (kuriou)",
+              "translation": "G2962G=N-GSM-T",
+              "transliteration": "Lord"
+            },
+            {
+              "word": "ἡμῶν (hēmōn)",
+              "translation": "G3165=P-1GP",
+              "transliteration": "of us"
+            },
+            {
+              "word": "Ἰησοῦ (Iēsou)",
+              "translation": "G2424G=N-GSM-P",
+              "transliteration": "Jesus"
+            },
+            {
+              "word": "Χριστοῦ, (Christou)",
+              "translation": "G5547=N-GSM-T",
+              "transliteration": "Christ,"
+            },
+            {
+              "word": "στέλλεσθαι (stellesthai)",
+              "translation": "G4724=V-PMN",
+              "transliteration": "are to withdraw"
+            },
+            {
+              "word": "ὑμᾶς (humas)",
+              "translation": "G4771=P-2AP",
+              "transliteration": "you"
+            },
+            {
+              "word": "ἀπὸ (apo)",
+              "translation": "G0575=PREP",
+              "transliteration": "from"
+            },
+            {
+              "word": "παντὸς (pantos)",
+              "translation": "G3956=A-GSM",
+              "transliteration": "every"
+            },
+            {
+              "word": "ἀδελφοῦ (adelphou)",
+              "translation": "G0080=N-GSM",
+              "transliteration": "brother"
+            },
+            {
+              "word": "ἀτάκτως (ataktōs)",
+              "translation": "G0814=ADV",
+              "transliteration": "idly"
+            },
+            {
+              "word": "περιπατοῦντος (peripatountos)",
+              "translation": "G4043=V-PAP-GSM",
+              "transliteration": "walking"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "μὴ (mē)",
+              "translation": "G3361=PRT-N",
+              "transliteration": "not"
+            },
+            {
+              "word": "κατὰ (kata)",
+              "translation": "G2596=PREP",
+              "transliteration": "according to"
+            },
+            {
+              "word": "τὴν (tēn)",
+              "translation": "G3588=T-ASF",
+              "transliteration": "the"
+            },
+            {
+              "word": "παράδοσιν (paradosin)",
+              "translation": "G3862=N-ASF",
+              "transliteration": "tradition"
+            },
+            {
+              "word": "ἣν (hēn)",
+              "translation": "G3739=R-ASF",
+              "transliteration": "that"
+            },
+            {
+              "word": "παρελάβοσαν (parelabosan)",
+              "translation": "G3880=V-2AAI-3P",
+              "transliteration": "they received"
+            },
+            {
+              "word": "παρ᾽ (par᾽)",
+              "translation": "G3844=PREP",
+              "transliteration": "from"
+            },
+            {
+              "word": "ἡμῶν. (hēmōn)",
+              "translation": "G3165=P-1GP",
+              "transliteration": "us."
+            }
           ]
         },
         {
@@ -894,6 +4269,68 @@
             "ἠτακτήσαμεν",
             "ἐν",
             "ὑμῖν"
+          ],
+          "wordTranslations": [
+            {
+              "word": "αὐτοὶ (autoi)",
+              "translation": "G0846=P-NPM",
+              "transliteration": "Yourselves"
+            },
+            {
+              "word": "γὰρ (gar)",
+              "translation": "G1063=CONJ",
+              "transliteration": "for"
+            },
+            {
+              "word": "οἴδατε (oidate)",
+              "translation": "G6063=V-RAI-2P",
+              "transliteration": "you know"
+            },
+            {
+              "word": "πῶς (pōs)",
+              "translation": "G4459=PRT-I",
+              "transliteration": "how"
+            },
+            {
+              "word": "δεῖ (dei)",
+              "translation": "G1163=V-PAI-3S",
+              "transliteration": "it behooves [you]"
+            },
+            {
+              "word": "μιμεῖσθαι (mimeisthai)",
+              "translation": "G3401=V-PNN",
+              "transliteration": "to imitate"
+            },
+            {
+              "word": "ἡμᾶς· (hēmas)",
+              "translation": "G3165=P-1AP",
+              "transliteration": "us;"
+            },
+            {
+              "word": "ὅτι (hoti)",
+              "translation": "G3754H=CONJ",
+              "transliteration": "because"
+            },
+            {
+              "word": "οὐκ (ouk)",
+              "translation": "G3756=PRT-N",
+              "transliteration": "not"
+            },
+            {
+              "word": "ἠτακτήσαμεν (ētaktēsamen)",
+              "translation": "G0812=V-AAI-1P",
+              "transliteration": "we were idle"
+            },
+            {
+              "word": "ἐν (en)",
+              "translation": "G1722=PREP",
+              "transliteration": "among"
+            },
+            {
+              "word": "ὑμῖν, (humin)",
+              "translation": "G4771=P-2DP",
+              "transliteration": "you,"
+            }
           ]
         },
         {
@@ -921,6 +4358,113 @@
             "ἐπιβαρῆσαί",
             "τινα",
             "ὑμῶν"
+          ],
+          "wordTranslations": [
+            {
+              "word": "οὐδὲ (oude)",
+              "translation": "G3761=CONJ-N",
+              "transliteration": "nor"
+            },
+            {
+              "word": "δωρεὰν (dōrean)",
+              "translation": "G1432=ADV",
+              "transliteration": "without payment"
+            },
+            {
+              "word": "ἄρτον (arton)",
+              "translation": "G0740=N-ASM",
+              "transliteration": "bread"
+            },
+            {
+              "word": "ἐφάγομεν (ephagomen)",
+              "translation": "G5315=V-AAI-1P",
+              "transliteration": "did we eat"
+            },
+            {
+              "word": "παρά (para)",
+              "translation": "G3844=PREP",
+              "transliteration": "from"
+            },
+            {
+              "word": "τινος, (tinos)",
+              "translation": "G5100=X-GSM",
+              "transliteration": "anyone,"
+            },
+            {
+              "word": "ἀλλ᾽ (all᾽)",
+              "translation": "G0235=CONJ",
+              "transliteration": "but"
+            },
+            {
+              "word": "ἐν (en)",
+              "translation": "G1722=PREP",
+              "transliteration": "in"
+            },
+            {
+              "word": "κόπῳ (kopō)",
+              "translation": "G2873=N-DSM",
+              "transliteration": "labor"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "μόχθῳ (mochthō)",
+              "translation": "G3449=N-DSM",
+              "transliteration": "hardship"
+            },
+            {
+              "word": "νυκτὸς (nuktos)",
+              "translation": "G3571=N-GSF",
+              "transliteration": "night"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "ἡμέρας (hēmeras)",
+              "translation": "G2250=N-GSF",
+              "transliteration": "day"
+            },
+            {
+              "word": "ἐργαζόμενοι (ergazomenoi)",
+              "translation": "G2038=V-PNP-NPM",
+              "transliteration": "working"
+            },
+            {
+              "word": "πρὸς (pros)",
+              "translation": "G4314=PREP",
+              "transliteration": "in order"
+            },
+            {
+              "word": "τὸ (to)",
+              "translation": "G3588=T-ASN",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "μὴ (mē)",
+              "translation": "G3361=PRT-N",
+              "transliteration": "not"
+            },
+            {
+              "word": "ἐπιβαρῆσαί (epibarēsai)",
+              "translation": "G1912=V-AAN",
+              "transliteration": "to be burdensome to"
+            },
+            {
+              "word": "τινα (tina)",
+              "translation": "G5100=X-ASM",
+              "transliteration": "any"
+            },
+            {
+              "word": "ὑμῶν· (humōn)",
+              "translation": "G4771=P-2GP",
+              "transliteration": "of you;"
+            }
           ]
         },
         {
@@ -942,6 +4486,83 @@
             "τὸ",
             "μιμεῖσθαι",
             "ἡμᾶς"
+          ],
+          "wordTranslations": [
+            {
+              "word": "οὐχ (ouch)",
+              "translation": "G3756=PRT-N",
+              "transliteration": "not"
+            },
+            {
+              "word": "ὅτι (hoti)",
+              "translation": "G3754H=CONJ",
+              "transliteration": "that "
+            },
+            {
+              "word": "οὐκ (ouk)",
+              "translation": "G3756=PRT-N",
+              "transliteration": "not"
+            },
+            {
+              "word": "ἔχομεν (echomen)",
+              "translation": "G2192=V-PAI-1P",
+              "transliteration": "we have"
+            },
+            {
+              "word": "ἐξουσίαν, (exousian)",
+              "translation": "G1849=N-ASF",
+              "transliteration": "[the] right,"
+            },
+            {
+              "word": "ἀλλ᾽ (all᾽)",
+              "translation": "G0235=CONJ",
+              "transliteration": "but"
+            },
+            {
+              "word": "ἵνα (ina)",
+              "translation": "G2443=CONJ",
+              "transliteration": "that"
+            },
+            {
+              "word": "ἑαυτοὺς (he'autous)",
+              "translation": "G1438=F-1APM",
+              "transliteration": "ourselves"
+            },
+            {
+              "word": "τύπον (tupon)",
+              "translation": "G5179=N-ASM",
+              "transliteration": "[as] an example"
+            },
+            {
+              "word": "δῶμεν (dōmen)",
+              "translation": "G1325=V-2AAS-1P",
+              "transliteration": "we may offer"
+            },
+            {
+              "word": "ὑμῖν (humin)",
+              "translation": "G4771=P-2DP",
+              "transliteration": "to you"
+            },
+            {
+              "word": "εἰς (eis)",
+              "translation": "G1519=PREP",
+              "transliteration": "for"
+            },
+            {
+              "word": "τὸ (to)",
+              "translation": "G3588=T-ASN",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "μιμεῖσθαι (mimeisthai)",
+              "translation": "G3401=V-PNN",
+              "transliteration": "you to imitate"
+            },
+            {
+              "word": "ἡμᾶς. (hēmas)",
+              "translation": "G3165=P-1AP",
+              "transliteration": "us."
+            }
           ]
         },
         {
@@ -965,6 +4586,93 @@
             "ἐργάζεσθαι",
             "μηδὲ",
             "ἐσθιέτω"
+          ],
+          "wordTranslations": [
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "Even"
+            },
+            {
+              "word": "γὰρ (gar)",
+              "translation": "G1063=CONJ",
+              "transliteration": "for"
+            },
+            {
+              "word": "ὅτε (hote)",
+              "translation": "G3753=CONJ",
+              "transliteration": "when"
+            },
+            {
+              "word": "ἦμεν (ēmen)",
+              "translation": "G1510=V-IAI-1P",
+              "transliteration": "we were"
+            },
+            {
+              "word": "πρὸς (pros)",
+              "translation": "G4314=PREP",
+              "transliteration": "with"
+            },
+            {
+              "word": "ὑμᾶς, (humas)",
+              "translation": "G4771=P-2AP",
+              "transliteration": "you,"
+            },
+            {
+              "word": "τοῦτο (touto)",
+              "translation": "G3778=D-ASN",
+              "transliteration": "this"
+            },
+            {
+              "word": "παρηγγέλλομεν (parēngellomen)",
+              "translation": "G3853=V-IAI-1P",
+              "transliteration": "we were commanding"
+            },
+            {
+              "word": "ὑμῖν (humin)",
+              "translation": "G4771=P-2DP",
+              "transliteration": "you"
+            },
+            {
+              "word": "ὅτι (hoti)",
+              "translation": "G3754G=CONJ",
+              "transliteration": "that"
+            },
+            {
+              "word": "εἴ (ei)",
+              "translation": "G1487G=COND",
+              "transliteration": "if"
+            },
+            {
+              "word": "τις (tis)",
+              "translation": "G5100=X-NSM",
+              "transliteration": "anyone"
+            },
+            {
+              "word": "οὐ (ou)",
+              "translation": "G3756=PRT-N",
+              "transliteration": "not"
+            },
+            {
+              "word": "θέλει (thelei)",
+              "translation": "G2309=V-PAI-3S",
+              "transliteration": "is willing"
+            },
+            {
+              "word": "ἐργάζεσθαι (ergazesthai)",
+              "translation": "G2038=V-PNN",
+              "transliteration": "to work"
+            },
+            {
+              "word": "μηδὲ (mēde)",
+              "translation": "G3366=ADV-N",
+              "transliteration": "neither"
+            },
+            {
+              "word": "ἐσθιέτω. (esthietō)",
+              "translation": "G2068=V-PAM-3S",
+              "transliteration": "he should eat."
+            }
           ]
         },
         {
@@ -982,6 +4690,63 @@
             "ἐργαζομένους",
             "ἀλλὰ",
             "περιεργαζομένους"
+          ],
+          "wordTranslations": [
+            {
+              "word": "Ἀκούομεν (Akouomen)",
+              "translation": "G0191=V-PAI-1P",
+              "transliteration": "We hear"
+            },
+            {
+              "word": "γάρ (gar)",
+              "translation": "G1063=CONJ",
+              "transliteration": "for"
+            },
+            {
+              "word": "τινας (tinas)",
+              "translation": "G5100=X-APM",
+              "transliteration": "some"
+            },
+            {
+              "word": "περιπατοῦντας (peripatountas)",
+              "translation": "G4043=V-PAP-APM",
+              "transliteration": "are walking"
+            },
+            {
+              "word": "ἐν (en)",
+              "translation": "G1722=PREP",
+              "transliteration": "among"
+            },
+            {
+              "word": "ὑμῖν (humin)",
+              "translation": "G4771=P-2DP",
+              "transliteration": "you"
+            },
+            {
+              "word": "ἀτάκτως, (ataktōs)",
+              "translation": "G0814=ADV",
+              "transliteration": "idly,"
+            },
+            {
+              "word": "μηδὲν (mēden)",
+              "translation": "G3367=A-ASN-N",
+              "transliteration": "not at all"
+            },
+            {
+              "word": "ἐργαζομένους (ergazomenous)",
+              "translation": "G2038=V-PNP-APM",
+              "transliteration": "working"
+            },
+            {
+              "word": "ἀλλὰ (alla)",
+              "translation": "G0235=CONJ",
+              "transliteration": "but"
+            },
+            {
+              "word": "περιεργαζομένους.¶ (periergazomenous)",
+              "translation": "G4020=V-PNP-APM",
+              "transliteration": "being busybodies."
+            }
           ]
         },
         {
@@ -1006,6 +4771,108 @@
             "ἑαυτῶν",
             "ἄρτον",
             "ἐσθίωσιν"
+          ],
+          "wordTranslations": [
+            {
+              "word": "Τοῖς (Tois)",
+              "translation": "G3588=T-DPM",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "δὲ (de)",
+              "translation": "G1161=CONJ",
+              "transliteration": "Now"
+            },
+            {
+              "word": "τοιούτοις (toioutois)",
+              "translation": "G5108=D-DPM",
+              "transliteration": "to such"
+            },
+            {
+              "word": "παραγγέλλομεν (parangellomen)",
+              "translation": "G3853=V-PAI-1P",
+              "transliteration": "we warn"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "παρακαλοῦμεν (parakaloumen)",
+              "translation": "G3870=V-PAI-1P",
+              "transliteration": "we exhort"
+            },
+            {
+              "word": "ἐν (en)",
+              "translation": "G1722=PREP",
+              "transliteration": "by"
+            },
+            {
+              "word": "τοῦ (tou)",
+              "translation": "G3588=T-GSM",
+              "transliteration": "the"
+            },
+            {
+              "word": "κυρίῳ (kuriō)",
+              "translation": "G2962G=N-DSM-T",
+              "transliteration": "Lord"
+            },
+            {
+              "word": "ἡμῶν (hēmōn)",
+              "translation": "G3165=P-1GP",
+              "transliteration": "of us"
+            },
+            {
+              "word": "Ἰησοῦ (Iēsou)",
+              "translation": "G2424G=N-DSM-P",
+              "transliteration": "Jesus"
+            },
+            {
+              "word": "Χριστῷ (Christō)",
+              "translation": "G5547=N-DSM-T",
+              "transliteration": "Christ"
+            },
+            {
+              "word": "ἵνα (ina)",
+              "translation": "G2443=CONJ",
+              "transliteration": "so that"
+            },
+            {
+              "word": "μετὰ (meta)",
+              "translation": "G3326=PREP",
+              "transliteration": "with"
+            },
+            {
+              "word": "ἡσυχίας (hēsuchias)",
+              "translation": "G2271=N-GSF",
+              "transliteration": "quietness"
+            },
+            {
+              "word": "ἐργαζόμενοι (ergazomenoi)",
+              "translation": "G2038=V-PNP-NPM",
+              "transliteration": "working"
+            },
+            {
+              "word": "τὸν (ton)",
+              "translation": "G3588=T-ASM",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "ἑαυτῶν (he'autōn)",
+              "translation": "G1438=F-3GPM",
+              "transliteration": "their own"
+            },
+            {
+              "word": "ἄρτον (arton)",
+              "translation": "G0740=N-ASM",
+              "transliteration": "bread"
+            },
+            {
+              "word": "ἐσθίωσιν. (esthiōsin)",
+              "translation": "G2068=V-PAS-3P",
+              "transliteration": "they may eat."
+            }
           ]
         },
         {
@@ -1018,6 +4885,38 @@
             "μὴ",
             "ἐγκακήσητε",
             "καλοποιοῦντες"
+          ],
+          "wordTranslations": [
+            {
+              "word": "ὑμεῖς (humeis)",
+              "translation": "G4771=P-2NP",
+              "transliteration": "you yourselves"
+            },
+            {
+              "word": "δέ, (de)",
+              "translation": "G1161=CONJ",
+              "transliteration": "now,"
+            },
+            {
+              "word": "ἀδελφοί, (adelphoi)",
+              "translation": "G0080=N-VPM",
+              "transliteration": "brothers,"
+            },
+            {
+              "word": "μὴ (mē)",
+              "translation": "G3361=PRT-N",
+              "transliteration": "not"
+            },
+            {
+              "word": "ἐγκακήσητε (egkakēsēte)",
+              "translation": "G1573=V-AAS-2P",
+              "transliteration": "may grow weary"
+            },
+            {
+              "word": "καλοποιοῦντες.¶ (kalopoiountes)",
+              "translation": "G2569=V-PAP-NPM",
+              "transliteration": "[in] well-doing."
+            }
           ]
         },
         {
@@ -1042,6 +4941,103 @@
             "αὐτῷ",
             "ἵνα",
             "ἐντραπῇ"
+          ],
+          "wordTranslations": [
+            {
+              "word": "Εἰ (Ei)",
+              "translation": "G1487G=COND",
+              "transliteration": "If"
+            },
+            {
+              "word": "δέ (de)",
+              "translation": "G1161=CONJ",
+              "transliteration": "then"
+            },
+            {
+              "word": "τις (tis)",
+              "translation": "G5100=X-NSM",
+              "transliteration": "anyone"
+            },
+            {
+              "word": "οὐχ (ouch)",
+              "translation": "G3756=PRT-N",
+              "transliteration": "not"
+            },
+            {
+              "word": "ὑπακούει (hupakouei)",
+              "translation": "G5219=V-PAI-3S",
+              "transliteration": "obey"
+            },
+            {
+              "word": "τῷ (tō)",
+              "translation": "G3588=T-DSM",
+              "transliteration": "this"
+            },
+            {
+              "word": "λόγῳ (logō)",
+              "translation": "G3056=N-DSM",
+              "transliteration": "instruction"
+            },
+            {
+              "word": "ἡμῶν (hēmōn)",
+              "translation": "G3165=P-1GP",
+              "transliteration": "of us"
+            },
+            {
+              "word": "διὰ (dia)",
+              "translation": "G1223=PREP",
+              "transliteration": "through"
+            },
+            {
+              "word": "τῆς (tēs)",
+              "translation": "G3588=T-GSF",
+              "transliteration": "the"
+            },
+            {
+              "word": "ἐπιστολῆς, (epistolēs)",
+              "translation": "G1992=N-GSF",
+              "transliteration": "letter,"
+            },
+            {
+              "word": "τοῦτον (touton)",
+              "translation": "G3778=D-ASM",
+              "transliteration": "of this [man]"
+            },
+            {
+              "word": "σημειοῦσθε (sēmeiousthe)",
+              "translation": "G4593=V-PMM-2P",
+              "transliteration": "do take note"
+            },
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "and"
+            },
+            {
+              "word": "μὴ (mē)",
+              "translation": "G3361=PRT-N",
+              "transliteration": "not"
+            },
+            {
+              "word": "συναναμίγνυσθαι (sunanamignusthai)",
+              "translation": "G4874=V-PMN",
+              "transliteration": "to mix with"
+            },
+            {
+              "word": "αὐτῷ (autō)",
+              "translation": "G0846=P-DSM",
+              "transliteration": "him"
+            },
+            {
+              "word": "ἵνα (ina)",
+              "translation": "G2443=CONJ",
+              "transliteration": "so that"
+            },
+            {
+              "word": "ἐντραπῇ· (entrapēa)",
+              "translation": "G1788=V-2APS-3S",
+              "transliteration": "he may be ashamed;"
+            }
           ]
         },
         {
@@ -1057,6 +5053,53 @@
             "νουθετεῖτε",
             "ὡς",
             "ἀδελφόν"
+          ],
+          "wordTranslations": [
+            {
+              "word": "καὶ (kai)",
+              "translation": "G2532=CONJ",
+              "transliteration": "And yet"
+            },
+            {
+              "word": "μὴ (mē)",
+              "translation": "G3361=PRT-N",
+              "transliteration": "not"
+            },
+            {
+              "word": "ὡς (hōs)",
+              "translation": "G5613=PRT",
+              "transliteration": "as"
+            },
+            {
+              "word": "ἐχθρὸν (echthron)",
+              "translation": "G2190=N-ASM",
+              "transliteration": "an enemy"
+            },
+            {
+              "word": "ἡγεῖσθε, (hēgeisthe)",
+              "translation": "G2233=V-PNM-2P",
+              "transliteration": "do esteem [him],"
+            },
+            {
+              "word": "ἀλλὰ (alla)",
+              "translation": "G0235=CONJ",
+              "transliteration": "but"
+            },
+            {
+              "word": "νουθετεῖτε (noutheteite)",
+              "translation": "G3560=V-PAM-2P",
+              "transliteration": "do admonish [him]"
+            },
+            {
+              "word": "ὡς (hōs)",
+              "translation": "G5613=PRT",
+              "transliteration": "as"
+            },
+            {
+              "word": "ἀδελφόν.¶ (adelphon)",
+              "translation": "G0080=N-ASM",
+              "transliteration": "a brother."
+            }
           ]
         },
         {
@@ -1083,6 +5126,108 @@
             "μετὰ",
             "πάντων",
             "ὑμῶν"
+          ],
+          "wordTranslations": [
+            {
+              "word": "Αὐτὸς (Autos)",
+              "translation": "G0846=P-NSM",
+              "transliteration": "Himself"
+            },
+            {
+              "word": "δὲ (de)",
+              "translation": "G1161=CONJ",
+              "transliteration": "now"
+            },
+            {
+              "word": "ὁ (ho)",
+              "translation": "G3588=T-NSM",
+              "transliteration": "the"
+            },
+            {
+              "word": "κύριος (kurios)",
+              "translation": "G2962G=N-NSM-T",
+              "transliteration": "Lord"
+            },
+            {
+              "word": "τῆς (tēs)",
+              "translation": "G3588=T-GSF",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "εἰρήνης (eirēnēs)",
+              "translation": "G1515=N-GSF",
+              "transliteration": "of peace"
+            },
+            {
+              "word": "δῴη (dōē)",
+              "translation": "G1325=V-2AAO-3S",
+              "transliteration": "would give"
+            },
+            {
+              "word": "ὑμῖν (humin)",
+              "translation": "G4771=P-2DP",
+              "transliteration": "you"
+            },
+            {
+              "word": "τὴν (tēn)",
+              "translation": "G3588=T-ASF",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "εἰρήνην (eirēnēn)",
+              "translation": "G1515=N-ASF",
+              "transliteration": "peace"
+            },
+            {
+              "word": "διὰ (dia)",
+              "translation": "G1223=PREP",
+              "transliteration": "through"
+            },
+            {
+              "word": "παντὸς (pantos)",
+              "translation": "G3956=A-GSM",
+              "transliteration": "all [times]"
+            },
+            {
+              "word": "ἐν (en)",
+              "translation": "G1722=PREP",
+              "transliteration": "in"
+            },
+            {
+              "word": "παντὶ (panti)",
+              "translation": "G3956=A-DSM",
+              "transliteration": "every"
+            },
+            {
+              "word": "τρόπῳ. (tropō)",
+              "translation": "G5158=N-DSM",
+              "transliteration": "way."
+            },
+            {
+              "word": "ὁ (ho)",
+              "translation": "G3588=T-NSM",
+              "transliteration": "The"
+            },
+            {
+              "word": "κύριος (kurios)",
+              "translation": "G2962G=N-NSM-T",
+              "transliteration": "Lord [be]"
+            },
+            {
+              "word": "μετὰ (meta)",
+              "translation": "G3326=PREP",
+              "transliteration": "with"
+            },
+            {
+              "word": "πάντων (pantōn)",
+              "translation": "G3956=A-GPM",
+              "transliteration": "all"
+            },
+            {
+              "word": "ὑμῶν.¶ (humōn)",
+              "translation": "G4771=P-2GP",
+              "transliteration": "of you."
+            }
           ]
         },
         {
@@ -1103,6 +5248,78 @@
             "ἐπιστολῇ",
             "οὕτως",
             "γράφω"
+          ],
+          "wordTranslations": [
+            {
+              "word": "Ὁ (Ho)",
+              "translation": "G3588=T-NSM",
+              "transliteration": "The"
+            },
+            {
+              "word": "ἀσπασμὸς (aspasmos)",
+              "translation": "G0783=N-NSM",
+              "transliteration": "greeting"
+            },
+            {
+              "word": "τῇ (tēa)",
+              "translation": "G3588=T-DSF",
+              "transliteration": "<the>"
+            },
+            {
+              "word": "ἐμῇ (emēa)",
+              "translation": "G1473=S-1SDSF",
+              "transliteration": "in my own"
+            },
+            {
+              "word": "χειρὶ (cheiri)",
+              "translation": "G5495=N-DSF",
+              "transliteration": "hand —"
+            },
+            {
+              "word": "Παύλου, (Paulou)",
+              "translation": "G3972G=N-GSM-P",
+              "transliteration": "by Paul,"
+            },
+            {
+              "word": "ὅ (ho)",
+              "translation": "G3739=R-NSN",
+              "transliteration": "which"
+            },
+            {
+              "word": "ἐστιν (estin)",
+              "translation": "G1510=V-PAI-3S",
+              "transliteration": "is"
+            },
+            {
+              "word": "σημεῖον (sēmeion)",
+              "translation": "G4592=N-NSN",
+              "transliteration": "[my] sign"
+            },
+            {
+              "word": "ἐν (en)",
+              "translation": "G1722=PREP",
+              "transliteration": "in"
+            },
+            {
+              "word": "πάσῃ (pasē)",
+              "translation": "G3956=A-DSF",
+              "transliteration": "every"
+            },
+            {
+              "word": "ἐπιστολῇ· (epistolēa)",
+              "translation": "G1992=N-DSF",
+              "transliteration": "letter;"
+            },
+            {
+              "word": "οὕτως (houtōs)",
+              "translation": "G3779=ADV",
+              "transliteration": "In this manner"
+            },
+            {
+              "word": "γράφω.¶ (graphō)",
+              "translation": "G1125=V-PAI-1S",
+              "transliteration": "I write."
+            }
           ]
         },
         {
@@ -1119,6 +5336,93 @@
             "μετὰ",
             "πάντων",
             "ὑμῶν"
+          ],
+          "wordTranslations": [
+            {
+              "word": "Ἡ (Hē)",
+              "translation": "G3588=T-NSF",
+              "transliteration": "The"
+            },
+            {
+              "word": "χάρις (charis)",
+              "translation": "G5485=N-NSF",
+              "transliteration": "grace"
+            },
+            {
+              "word": "τοῦ (tou)",
+              "translation": "G3588=T-GSM",
+              "transliteration": "of the"
+            },
+            {
+              "word": "κυρίου (kuriou)",
+              "translation": "G2962G=N-GSM-T",
+              "transliteration": "Lord"
+            },
+            {
+              "word": "ἡμῶν (hēmōn)",
+              "translation": "G3165=P-1GP",
+              "transliteration": "of us"
+            },
+            {
+              "word": "Ἰησοῦ (Iēsou)",
+              "translation": "G2424G=N-GSM-P",
+              "transliteration": "Jesus"
+            },
+            {
+              "word": "Χριστοῦ (Christou)",
+              "translation": "G5547=N-GSM-T",
+              "transliteration": "Christ"
+            },
+            {
+              "word": "μετὰ (meta)",
+              "translation": "G3326=PREP",
+              "transliteration": "[be] with"
+            },
+            {
+              "word": "πάντων (pantōn)",
+              "translation": "G3956=A-GPM",
+              "transliteration": "all"
+            },
+            {
+              "word": "ὑμῶν (humōn)",
+              "translation": "G4771=P-2GP",
+              "transliteration": "of you"
+            },
+            {
+              "word": "ἀμήν.¶ (amēn)",
+              "translation": "G0281=INJ-HEB",
+              "transliteration": "Amen."
+            },
+            {
+              "word": "πρός (pros)",
+              "translation": "G4314=PREP",
+              "transliteration": "to"
+            },
+            {
+              "word": "Θεσσαλονικείς (Thessalonikeis)",
+              "translation": "G2331=N-APM-LG",
+              "transliteration": "Thessalonica"
+            },
+            {
+              "word": "δευτέρᾳ (deutera)",
+              "translation": "G1208=A-NSF",
+              "transliteration": "second"
+            },
+            {
+              "word": "ἐγράφη (egraphē)",
+              "translation": "G1125=V-2API-3S",
+              "transliteration": "it was written"
+            },
+            {
+              "word": "ἀπό (apo)",
+              "translation": "G0575=PREP",
+              "transliteration": "from"
+            },
+            {
+              "word": "Ἀθηνῶν (Athēnōn)",
+              "translation": "G0116=N-GPF-L",
+              "transliteration": "Athens"
+            }
           ]
         }
       ]
