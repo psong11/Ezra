@@ -79,7 +79,7 @@ const BOOK_PATHS: Record<string, { folder: 'hebrew' | 'greek'; file: string }> =
 
 export async function loadBook(bookId: string): Promise<BibleBookData> {
   const bookPath = BOOK_PATHS[bookId];
-  if (!bookPath) throw new Error(\`Book not found: \${bookId}\`);
+  if (!bookPath) throw new Error(`Book not found: ${bookId}`);
   const filePath = path.join(process.cwd(), 'src', 'data', 'bible', bookPath.folder, bookPath.file);
   const fileContent = fs.readFileSync(filePath, 'utf-8');
   return JSON.parse(fileContent);
@@ -87,26 +87,26 @@ export async function loadBook(bookId: string): Promise<BibleBookData> {
 
 export function getChapter(book: BibleBookData, chapter: number) {
   const chapterData = book.chapters.find(c => c.chapter === chapter);
-  if (!chapterData) throw new Error(\`Chapter \${chapter} not found\`);
+  if (!chapterData) throw new Error(`Chapter ${chapter} not found`);
   return chapterData;
 }
 
 export function getChapterText(book: BibleBookData, chapter: number): string {
   const chapterData = book.chapters.find(c => c.chapter === chapter);
-  if (!chapterData) throw new Error(\`Chapter \${chapter} not found\`);
+  if (!chapterData) throw new Error(`Chapter ${chapter} not found`);
   return chapterData.verses.map(v => v.text).join(' ');
 }
 
 export function getVerseText(book: BibleBookData, chapter: number, verse: number): string {
   const chapterData = book.chapters.find(c => c.chapter === chapter);
-  if (!chapterData) throw new Error(\`Chapter \${chapter} not found\`);
+  if (!chapterData) throw new Error(`Chapter ${chapter} not found`);
   const verseData = chapterData.verses.find(v => v.verse === verse);
-  if (!verseData) throw new Error(\`Verse \${chapter}:\${verse} not found\`);
+  if (!verseData) throw new Error(`Verse ${chapter}:${verse} not found`);
   return verseData.text;
 }
 
 export function getChapterVerses(book: BibleBookData, chapter: number) {
   const chapterData = book.chapters.find(c => c.chapter === chapter);
-  if (!chapterData) throw new Error(\`Chapter \${chapter} not found\`);
+  if (!chapterData) throw new Error(`Chapter ${chapter} not found`);
   return chapterData.verses;
 }
