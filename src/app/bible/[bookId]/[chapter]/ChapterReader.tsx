@@ -363,36 +363,6 @@ export default function ChapterReader({
 
   return (
     <div className="space-y-6">
-      {/* Hover Audio Enable Button */}
-      {!hoverAudioEnabled && (
-        <div className="bg-blue-50 border-2 border-blue-300 rounded-lg p-4">
-          <div className="flex items-center justify-between">
-            <div className="flex-1">
-              <h3 className="text-lg font-semibold text-blue-900 mb-1">
-                🎵 Enable Hover-to-Speak
-              </h3>
-              <p className="text-sm text-blue-700">
-                Hover over any word to hear it pronounced instantly
-              </p>
-            </div>
-            <button
-              onClick={enableHoverAudio}
-              className="ml-4 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold shadow-md"
-            >
-              Enable
-            </button>
-          </div>
-        </div>
-      )}
-
-      {hoverAudioEnabled && (
-        <div className="bg-green-50 border-2 border-green-300 rounded-lg p-3">
-          <p className="text-sm text-green-800 text-center">
-            ✅ Hover audio enabled - hover over any word to hear it pronounced
-          </p>
-        </div>
-      )}
-
       {/* Listen to Full Chapter Button */}
       <div className="space-y-4">
         <button
@@ -472,13 +442,6 @@ export default function ChapterReader({
                       <span
                         key={wordIndex}
                         className="relative inline-flex flex-col items-center cursor-pointer hover:text-amber-600 hover:bg-amber-50 px-1 rounded transition-colors"
-                        onMouseEnter={() => {
-                          setHoveredWord({ verse: verse.verse, wordIndex });
-                          speakWord(wordText);
-                        }}
-                        onMouseLeave={() => {
-                          setHoveredWord(null);
-                        }}
                         onClick={() => {
                           // Toggle: if same word is clicked, close it; otherwise open new one
                           if (isActive) {
