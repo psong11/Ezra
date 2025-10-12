@@ -170,6 +170,132 @@ export const BIBLE_BOOKS: BibleBook[] = [
     order: 18,
     totalChapters: 1,
     abbreviation: 'Obad'
+  },
+  {
+    id: 'jonah',
+    name: 'יונה',
+    nameEnglish: 'Jonah',
+    testament: 'tanakh',
+    order: 19,
+    totalChapters: 4,
+    abbreviation: 'Jonah'
+  },
+  {
+    id: 'micah',
+    name: 'מיכה',
+    nameEnglish: 'Micah',
+    testament: 'tanakh',
+    order: 20,
+    totalChapters: 7,
+    abbreviation: 'Mic'
+  },
+  {
+    id: 'nahum',
+    name: 'נחום',
+    nameEnglish: 'Nahum',
+    testament: 'tanakh',
+    order: 21,
+    totalChapters: 3,
+    abbreviation: 'Nah'
+  },
+  {
+    id: 'habakkuk',
+    name: 'חבקוק',
+    nameEnglish: 'Habakkuk',
+    testament: 'tanakh',
+    order: 22,
+    totalChapters: 3,
+    abbreviation: 'Hab'
+  },
+  {
+    id: 'zephaniah',
+    name: 'צפניה',
+    nameEnglish: 'Zephaniah',
+    testament: 'tanakh',
+    order: 23,
+    totalChapters: 3,
+    abbreviation: 'Zeph'
+  },
+  {
+    id: 'haggai',
+    name: 'חגי',
+    nameEnglish: 'Haggai',
+    testament: 'tanakh',
+    order: 24,
+    totalChapters: 2,
+    abbreviation: 'Hag'
+  },
+  {
+    id: 'zechariah',
+    name: 'זכריה',
+    nameEnglish: 'Zechariah',
+    testament: 'tanakh',
+    order: 25,
+    totalChapters: 14,
+    abbreviation: 'Zech'
+  },
+  {
+    id: 'malachi',
+    name: 'מלאכי',
+    nameEnglish: 'Malachi',
+    testament: 'tanakh',
+    order: 26,
+    totalChapters: 3,
+    abbreviation: 'Mal'
+  },
+  {
+    id: 'psalms',
+    name: 'תהלים',
+    nameEnglish: 'Psalms',
+    testament: 'tanakh',
+    order: 27,
+    totalChapters: 150,
+    abbreviation: 'Ps'
+  },
+  {
+    id: 'proverbs',
+    name: 'משלי',
+    nameEnglish: 'Proverbs',
+    testament: 'tanakh',
+    order: 28,
+    totalChapters: 31,
+    abbreviation: 'Prov'
+  },
+  {
+    id: 'job',
+    name: 'איוב',
+    nameEnglish: 'Job',
+    testament: 'tanakh',
+    order: 29,
+    totalChapters: 42,
+    abbreviation: 'Job'
+  },
+  {
+    id: 'song-of-songs',
+    name: 'שיר השירים',
+    nameEnglish: 'Song of Songs',
+    testament: 'tanakh',
+    order: 30,
+    totalChapters: 8,
+    abbreviation: 'Song'
+  },
+  {
+    id: 'ruth',
+    name: 'רות',
+    nameEnglish: 'Ruth',
+    testament: 'tanakh',
+    order: 31,
+    totalChapters: 4,
+    abbreviation: 'Ruth'
+  },
+  {
+    id: 'lamentations',
+    name: 'איכה',
+    nameEnglish: 'Lamentations',
+    testament: 'tanakh',
+    order: 32,
+    totalChapters: 5,
+    abbreviation: 'Lam'
   }
 ];
 

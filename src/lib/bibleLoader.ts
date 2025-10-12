@@ -23,6 +23,20 @@ import hoseaData from '@/data/bible/hebrew/hosea.json';
 import joelData from '@/data/bible/hebrew/joel.json';
 import amosData from '@/data/bible/hebrew/amos.json';
 import obadiahData from '@/data/bible/hebrew/obadiah.json';
+import jonahData from '@/data/bible/hebrew/jonah.json';
+import micahData from '@/data/bible/hebrew/micah.json';
+import nahumData from '@/data/bible/hebrew/nahum.json';
+import habakkukData from '@/data/bible/hebrew/habakkuk.json';
+import zephaniahData from '@/data/bible/hebrew/zephaniah.json';
+import haggaiData from '@/data/bible/hebrew/haggai.json';
+import zechariahData from '@/data/bible/hebrew/zechariah.json';
+import malachiData from '@/data/bible/hebrew/malachi.json';
+import psalmsData from '@/data/bible/hebrew/psalms.json';
+import proverbsData from '@/data/bible/hebrew/proverbs.json';
+import jobData from '@/data/bible/hebrew/job.json';
+import song_of_songsData from '@/data/bible/hebrew/song-of-songs.json';
+import ruthData from '@/data/bible/hebrew/ruth.json';
+import lamentationsData from '@/data/bible/hebrew/lamentations.json';
 
 /**
  * Load a Bible book's data
@@ -65,8 +79,36 @@ export async function loadBook(bookId: string): Promise<BibleBookData> {
       return amosData as BibleBookData;
     case 'obadiah':
       return obadiahData as BibleBookData;
+    case 'jonah':
+      return jonahData as BibleBookData;
+    case 'micah':
+      return micahData as BibleBookData;
+    case 'nahum':
+      return nahumData as BibleBookData;
+    case 'habakkuk':
+      return habakkukData as BibleBookData;
+    case 'zephaniah':
+      return zephaniahData as BibleBookData;
+    case 'haggai':
+      return haggaiData as BibleBookData;
+    case 'zechariah':
+      return zechariahData as BibleBookData;
+    case 'malachi':
+      return malachiData as BibleBookData;
+    case 'psalms':
+      return psalmsData as BibleBookData;
+    case 'proverbs':
+      return proverbsData as BibleBookData;
+    case 'job':
+      return jobData as BibleBookData;
+    case 'song-of-songs':
+      return song_of_songsData as BibleBookData;
+    case 'ruth':
+      return ruthData as BibleBookData;
+    case 'lamentations':
+      return lamentationsData as BibleBookData;
     default:
-      throw new Error(`Book not found: ${bookId}. Available books: genesis, exodus, leviticus, numbers, deuteronomy, joshua, judges, 1-samuel, 2-samuel, 1-kings, 2-kings, isaiah, jeremiah, ezekiel, hosea, joel, amos, obadiah`);
+      throw new Error(`Book not found: ${bookId}. Available books: genesis, exodus, leviticus, numbers, deuteronomy, joshua, judges, 1-samuel, 2-samuel, 1-kings, 2-kings, isaiah, jeremiah, ezekiel, hosea, joel, amos, obadiah, jonah, micah, nahum, habakkuk, zephaniah, haggai, zechariah, malachi, psalms, proverbs, job, song-of-songs, ruth, lamentations`);
   }
 }
 

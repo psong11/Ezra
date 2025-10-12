@@ -207,8 +207,149 @@ export const TANAKH_BOOKS: BookConfig[] = [
     testament: 'prophets',
     totalChapters: 1
   },
-  // TODO: Add remaining books (Jonah, Micah, Nahum, Habakkuk, Zephaniah, Haggai, Zechariah, Malachi)
-  // TODO: Add Writings section (Ruth, Psalms, Job, Proverbs, Ecclesiastes, Song of Songs, Lamentations, Daniel, Esther, Ezra, Nehemiah, Chronicles)
+  {
+    xmlFile: 'Jonah.xml',
+    bookId: 'jonah',
+    nameEnglish: 'Jonah',
+    nameHebrew: 'יונה',
+    abbreviation: 'Jonah',
+    order: 19,
+    testament: 'prophets',
+    totalChapters: 4
+  },
+  {
+    xmlFile: 'Micah.xml',
+    bookId: 'micah',
+    nameEnglish: 'Micah',
+    nameHebrew: 'מיכה',
+    abbreviation: 'Mic',
+    order: 20,
+    testament: 'prophets',
+    totalChapters: 7
+  },
+  {
+    xmlFile: 'Nahum.xml',
+    bookId: 'nahum',
+    nameEnglish: 'Nahum',
+    nameHebrew: 'נחום',
+    abbreviation: 'Nah',
+    order: 21,
+    testament: 'prophets',
+    totalChapters: 3
+  },
+  {
+    xmlFile: 'Habakkuk.xml',
+    bookId: 'habakkuk',
+    nameEnglish: 'Habakkuk',
+    nameHebrew: 'חבקוק',
+    abbreviation: 'Hab',
+    order: 22,
+    testament: 'prophets',
+    totalChapters: 3
+  },
+  {
+    xmlFile: 'Zephaniah.xml',
+    bookId: 'zephaniah',
+    nameEnglish: 'Zephaniah',
+    nameHebrew: 'צפניה',
+    abbreviation: 'Zeph',
+    order: 23,
+    testament: 'prophets',
+    totalChapters: 3
+  },
+  {
+    xmlFile: 'Haggai.xml',
+    bookId: 'haggai',
+    nameEnglish: 'Haggai',
+    nameHebrew: 'חגי',
+    abbreviation: 'Hag',
+    order: 24,
+    testament: 'prophets',
+    totalChapters: 2
+  },
+  {
+    xmlFile: 'Zechariah.xml',
+    bookId: 'zechariah',
+    nameEnglish: 'Zechariah',
+    nameHebrew: 'זכריה',
+    abbreviation: 'Zech',
+    order: 25,
+    testament: 'prophets',
+    totalChapters: 14
+  },
+  {
+    xmlFile: 'Malachi.xml',
+    bookId: 'malachi',
+    nameEnglish: 'Malachi',
+    nameHebrew: 'מלאכי',
+    abbreviation: 'Mal',
+    order: 26,
+    testament: 'prophets',
+    totalChapters: 3
+  },
+
+  // KETUVIM (כתובים) - Writings - 13 books
+  {
+    xmlFile: 'Psalms.xml',
+    bookId: 'psalms',
+    nameEnglish: 'Psalms',
+    nameHebrew: 'תהלים',
+    abbreviation: 'Ps',
+    order: 27,
+    testament: 'writings',
+    totalChapters: 150
+  },
+  {
+    xmlFile: 'Proverbs.xml',
+    bookId: 'proverbs',
+    nameEnglish: 'Proverbs',
+    nameHebrew: 'משלי',
+    abbreviation: 'Prov',
+    order: 28,
+    testament: 'writings',
+    totalChapters: 31
+  },
+  {
+    xmlFile: 'Job.xml',
+    bookId: 'job',
+    nameEnglish: 'Job',
+    nameHebrew: 'איוב',
+    abbreviation: 'Job',
+    order: 29,
+    testament: 'writings',
+    totalChapters: 42
+  },
+  {
+    xmlFile: 'Song_of_Songs.xml',
+    bookId: 'song-of-songs',
+    nameEnglish: 'Song of Songs',
+    nameHebrew: 'שיר השירים',
+    abbreviation: 'Song',
+    order: 30,
+    testament: 'writings',
+    totalChapters: 8
+  },
+  {
+    xmlFile: 'Ruth.xml',
+    bookId: 'ruth',
+    nameEnglish: 'Ruth',
+    nameHebrew: 'רות',
+    abbreviation: 'Ruth',
+    order: 31,
+    testament: 'writings',
+    totalChapters: 4
+  },
+  {
+    xmlFile: 'Lamentations.xml',
+    bookId: 'lamentations',
+    nameEnglish: 'Lamentations',
+    nameHebrew: 'איכה',
+    abbreviation: 'Lam',
+    order: 32,
+    testament: 'writings',
+    totalChapters: 5
+  },
+  // TODO: Add remaining 7 books: Ecclesiastes, Esther, Daniel, Ezra, Nehemiah, Chronicles 1&2
 ];
 
 // Helper function to get books by testament
