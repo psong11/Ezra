@@ -350,11 +350,12 @@ export default function ChapterReader({
                   <sup className="text-lg text-amber-600 font-bold ml-1">{verse.verse}</sup>
                   {verse.text.split(/\s+/).map((word, wordIndex) => {
                     const isActive = clickedWord?.verse === verse.verse && clickedWord?.wordIndex === wordIndex;
+                    const wordTranslation = verse.wordTranslations?.[wordIndex];
                     
                     return (
                       <span
                         key={wordIndex}
-                        className="relative inline-block cursor-pointer hover:text-amber-600 hover:bg-amber-50 px-1 rounded transition-colors"
+                        className="relative inline-flex flex-col items-center cursor-pointer hover:text-amber-600 hover:bg-amber-50 px-1 rounded transition-colors"
                         onClick={() => {
                           // Toggle: if same word is clicked, close it; otherwise open new one
                           if (isActive) {
@@ -367,7 +368,17 @@ export default function ChapterReader({
                           }
                         }}
                       >
-                        {word}
+                        {/* Original Hebrew/Greek word */}
+                        <span className="text-3xl">{word}</span>
+                        
+                        {/* English translation directly below (only if available and not empty) */}
+                        {wordTranslation?.translation && (
+                          <span className="text-xs text-gray-500 mt-1 whitespace-nowrap">
+                            {wordTranslation.translation}
+                          </span>
+                        )}
+                        
+                        {/* Detailed tooltip on click */}
                         {isActive && (
                           <WordTooltip
                             explanation={wordExplanation}
@@ -379,6 +390,15 @@ export default function ChapterReader({
                     );
                   })}
                 </div>
+
+                {/* English Translation */}
+                {verse.translation && (
+                  <div className="mt-3 pt-3 border-t border-gray-200">
+                    <p className="text-base leading-relaxed text-gray-600 italic">
+                      {verse.translation}
+                    </p>
+                  </div>
+                )}
               </div>
             </div>
           ))}

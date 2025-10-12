@@ -2,10 +2,18 @@
  * Bible-related TypeScript type definitions
  */
 
+export interface WordTranslation {
+  word: string;
+  translation: string;
+  transliteration?: string;
+}
+
 export interface BibleVerse {
   verse: number;
   text: string;
   words?: string[]; // Optional: Individual Hebrew words
+  translation?: string; // English translation of the verse
+  wordTranslations?: WordTranslation[]; // Word-by-word translations
 }
 
 export interface BibleChapter {

@@ -12,11 +12,16 @@
     "test:ui": "vitest --ui",
     "test:tts": "npx tsx scripts/test-google-tts.ts",
     "test:tts-api": "npx tsx scripts/test-tts-api.ts",
-    "integrate-books": "npx tsx scripts/integrate-books.ts"
+    "integrate-books": "npx tsx scripts/integrate-books.ts",
+    "test-translation": "npx tsx scripts/test-translation.ts",
+    "add-translations": "npx tsx scripts/add-translations.ts",
+    "import-stepbible": "npx tsx scripts/import-stepbible-data.ts",
+    "import-glosses": "npx tsx scripts/import-stepbible-simple.ts"
   },
   "dependencies": {
     "@google-cloud/text-to-speech": "^5.8.1",
     "@types/xml2js": "^0.4.14",
+    "dotenv": "^17.2.3",
     "next": "^14.2.0",
     "openai": "^6.2.0",
     "react": "^18.3.0",
