@@ -349,6 +349,8 @@ export default function ChapterReader({
                   {/* Verse number as superscript (right side for RTL) */}
                   <sup className="text-lg text-amber-600 font-bold ml-1">{verse.verse}</sup>
                   {(verse.words || verse.text.split(/\s+/)).map((word, wordIndex) => {
+                    // Handle case where word might be an object with _ property (from XML parsing)
+                    const wordText = typeof word === 'object' && word !== null && '_' in word ? (word as any)._ : word;
                     const isActive = clickedWord?.verse === verse.verse && clickedWord?.wordIndex === wordIndex;
                     const wordTranslation = verse.wordTranslations?.[wordIndex];
                     
@@ -363,13 +365,13 @@ export default function ChapterReader({
                             setWordExplanation(null);
                             setExplanationError(null);
                           } else {
-                            setClickedWord({ verse: verse.verse, wordIndex, word });
-                            fetchWordExplanation(word, verse.verse, verse.text);
+                            setClickedWord({ verse: verse.verse, wordIndex, word: wordText });
+                            fetchWordExplanation(wordText, verse.verse, verse.text);
                           }
                         }}
                       >
                         {/* Original Hebrew/Greek word */}
-                        <span className="text-3xl">{word}</span>
+                        <span className="text-3xl">{wordText}</span>
                         
                         {/* English translation directly below (only if available and not empty) */}
                         {wordTranslation?.translation && (
