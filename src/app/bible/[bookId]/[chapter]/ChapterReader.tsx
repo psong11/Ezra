@@ -38,6 +38,8 @@ export default function ChapterReader({
   const [isLoadingExplanation, setIsLoadingExplanation] = useState(false);
   const [explanationError, setExplanationError] = useState<string | null>(null);
   const audioRef = useRef<HTMLAudioElement>(null);
+  const wordAudioRef = useRef<HTMLAudioElement | null>(null);
+  const [hoveredWord, setHoveredWord] = useState<{ verse: number; wordIndex: number } | null>(null);
 
   // Auto-play when audioUrl changes
   useEffect(() => {
@@ -236,6 +238,56 @@ export default function ChapterReader({
     }
   };
 
+  // Speak a single word on hover
+  const speakWord = async (word: string) => {
+    try {
+      // Stop any currently playing word audio
+      if (wordAudioRef.current) {
+        wordAudioRef.current.pause();
+        wordAudioRef.current = null;
+      }
+
+      const cleanedWord = prepareHebrewForTTS(word);
+      const languageCode = isHebrew ? 'he-IL' : 'el-GR';
+      const voiceName = isHebrew ? 'he-IL-Wavenet-A' : 'el-GR-Wavenet-A';
+
+      const response = await fetch('/api/tts', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          text: cleanedWord,
+          languageCode,
+          voiceName,
+        }),
+      });
+
+      if (!response.ok) {
+        console.error('Failed to generate word TTS');
+        return;
+      }
+
+      const audioBlob = await response.blob();
+      const url = URL.createObjectURL(audioBlob);
+      
+      const audio = new Audio(url);
+      wordAudioRef.current = audio;
+      
+      audio.play().catch(err => {
+        console.error('Failed to play word audio:', err);
+      });
+
+      // Clean up when audio ends
+      audio.onended = () => {
+        URL.revokeObjectURL(url);
+        wordAudioRef.current = null;
+      };
+    } catch (err) {
+      console.error('Error speaking word:', err);
+    }
+  };
+
   // Fetch word explanation from OpenAI API
   const fetchWordExplanation = async (word: string, verseNum: number, verseText: string) => {
     setIsLoadingExplanation(true);
@@ -360,6 +412,13 @@ export default function ChapterReader({
                       <span
                         key={wordIndex}
                         className="relative inline-flex flex-col items-center cursor-pointer hover:text-amber-600 hover:bg-amber-50 px-1 rounded transition-colors"
+                        onMouseEnter={() => {
+                          setHoveredWord({ verse: verse.verse, wordIndex });
+                          speakWord(wordText);
+                        }}
+                        onMouseLeave={() => {
+                          setHoveredWord(null);
+                        }}
                         onClick={() => {
                           // Toggle: if same word is clicked, close it; otherwise open new one
                           if (isActive) {
