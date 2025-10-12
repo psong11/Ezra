@@ -55,3 +55,7 @@ TypeError: __webpack_require__.C is not a function
  ✓ Compiled in 15.9s (326 modules)
  ✓ Compiled in 33.2s (326 modules)
  ✓ Compiled in 4.3s (326 modules)
+ ✓ Compiled in 6ms (326 modules)
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, rename '/Users/paulsong/Documents/Personal_Projects/Ezra/.next/cache/webpack/server-development/0.pack.gz_' -> '/Users/paulsong/Documents/Personal_Projects/Ezra/.next/cache/webpack/server-development/0.pack.gz'
+ ✓ Compiled in 14.4s (326 modules)
+ ✓ Compiled in 23.2s (326 modules)

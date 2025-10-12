@@ -132,16 +132,15 @@ function downloadFile(url: string): Promise<string> {
 
 /**
  * Parse a single line of STEPBible data
+ * Hebrew format: Ref | Hebrew | Transliteration | Translation | Strong's | ...
+ * Greek format: Ref | Greek (transliteration) | Translation | Strong's | ...
  */
-function parseLine(line: string): { book: string; chapter: number; verse: number; word: string; translation: string; transliteration: string; } | null {
+function parseLine(line: string, isGreek: boolean = false): { book: string; chapter: number; verse: number; word: string; translation: string; transliteration: string; } | null {
   const parts = line.split('\t');
   
   if (parts.length < 4) return null;
   
   const ref = parts[0];
-  const originalWord = parts[1];
-  const transliteration = parts[2];
-  const translation = parts[3];
   
   // Skip header lines
   if (!ref || ref.startsWith('#') || ref.startsWith('$') || ref.startsWith('Eng')) {
@@ -156,6 +155,31 @@ function parseLine(line: string): { book: string; chapter: number; verse: number
   const chapter = parseInt(match[2]);
   const verse = parseInt(match[3]);
   
+  let originalWord: string;
+  let transliteration: string;
+  let translation: string;
+  
+  if (isGreek) {
+    // Greek format: Column 1 has "Word (transliteration)", Column 2 has translation
+    const wordAndTranslit = parts[1]; // e.g., "Βίβλος (Biblos)"
+    translation = parts[2]; // e.g., "[The] book"
+    
+    // Extract word and transliteration from "Word (translit)" format
+    const wordMatch = wordAndTranslit.match(/^([^\(]+)\s*\(([^\)]+)\)/);
+    if (wordMatch) {
+      originalWord = wordMatch[1].trim();
+      transliteration = wordMatch[2].trim();
+    } else {
+      originalWord = wordAndTranslit.trim();
+      transliteration = '';
+    }
+  } else {
+    // Hebrew format: separate columns
+    originalWord = parts[1];
+    transliteration = parts[2];
+    translation = parts[3];
+  }
+  
   // Clean translation
   const cleanTranslation = translation.replace(/\//g, '').trim();
   const finalTranslation = cleanTranslation
@@ -163,7 +187,7 @@ function parseLine(line: string): { book: string; chapter: number; verse: number
     .replace(/\[[^\]]*\]/g, '')
     .trim();
   
-  // Clean word (remove pointing/cantillation)
+  // Clean word (remove pointing/cantillation for Hebrew)
   const cleanWord = originalWord.split(/[\/\\]/)[0] || originalWord;
   
   return {
@@ -179,7 +203,7 @@ function parseLine(line: string): { book: string; chapter: number; verse: number
 /**
  * Process a single file and return word data grouped by book
  */
-async function processFile(url: string, fileNum: number, totalFiles: number): Promise<Map<string, Map<string, WordTranslation[]>>> {
+async function processFile(url: string, fileNum: number, totalFiles: number, isGreek: boolean = false): Promise<Map<string, Map<string, WordTranslation[]>>> {
   console.log(`\n📥 Downloading file ${fileNum}/${totalFiles}...`);
   const content = await downloadFile(url);
   const lines = content.split('\n');
@@ -190,7 +214,7 @@ async function processFile(url: string, fileNum: number, totalFiles: number): Pr
   
   let parsedCount = 0;
   for (const line of lines) {
-    const result = parseLine(line);
+    const result = parseLine(line, isGreek);
     if (result) {
       parsedCount++;
       
@@ -287,7 +311,7 @@ async function importAllBooks() {
   console.log('═══════════════════════════════════════════════════');
   
   for (let i = 0; i < GREEK_FILES.length; i++) {
-    const bookData = await processFile(GREEK_FILES[i], i + 1, GREEK_FILES.length);
+    const bookData = await processFile(GREEK_FILES[i], i + 1, GREEK_FILES.length, true); // Pass isGreek=true
     
     console.log('\n   📝 Updating book files...');
     for (const [bookCode, verseMap] of bookData.entries()) {
