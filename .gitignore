@@ -43,3 +43,7 @@ public/tts-cache/
 *.swp
 *.swo
 *~
+
+# Dev server
+.dev-server.pid
+dev-server.log

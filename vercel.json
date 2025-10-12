@@ -1,0 +1,11 @@
+{
+  "functions": {
+    "app/**/*.tsx": {
+      "maxDuration": 30
+    },
+    "api/**/*.ts": {
+      "maxDuration": 30
+    }
+  },
+  "outputDirectory": ".next"
+}
