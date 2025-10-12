@@ -349,7 +349,76 @@ export const TANAKH_BOOKS: BookConfig[] = [
     testament: 'writings',
     totalChapters: 5
   },
-  // TODO: Add remaining 7 books: Ecclesiastes, Esther, Daniel, Ezra, Nehemiah, Chronicles 1&2
+  {
+    xmlFile: 'Ecclesiastes.xml',
+    bookId: 'ecclesiastes',
+    nameEnglish: 'Ecclesiastes',
+    nameHebrew: 'קהלת',
+    abbreviation: 'Eccl',
+    order: 33,
+    testament: 'writings',
+    totalChapters: 12
+  },
+  {
+    xmlFile: 'Esther.xml',
+    bookId: 'esther',
+    nameEnglish: 'Esther',
+    nameHebrew: 'אסתר',
+    abbreviation: 'Esth',
+    order: 34,
+    testament: 'writings',
+    totalChapters: 10
+  },
+  {
+    xmlFile: 'Daniel.xml',
+    bookId: 'daniel',
+    nameEnglish: 'Daniel',
+    nameHebrew: 'דניאל',
+    abbreviation: 'Dan',
+    order: 35,
+    testament: 'writings',
+    totalChapters: 12
+  },
+  {
+    xmlFile: 'Ezra.xml',
+    bookId: 'ezra',
+    nameEnglish: 'Ezra',
+    nameHebrew: 'עזרא',
+    abbreviation: 'Ezra',
+    order: 36,
+    testament: 'writings',
+    totalChapters: 10
+  },
+  {
+    xmlFile: 'Nehemiah.xml',
+    bookId: 'nehemiah',
+    nameEnglish: 'Nehemiah',
+    nameHebrew: 'נחמיה',
+    abbreviation: 'Neh',
+    order: 37,
+    testament: 'writings',
+    totalChapters: 13
+  },
+  {
+    xmlFile: 'Chronicles_1.xml',
+    bookId: '1-chronicles',
+    nameEnglish: '1 Chronicles',
+    nameHebrew: 'דברי הימים א',
+    abbreviation: '1Chr',
+    order: 38,
+    testament: 'writings',
+    totalChapters: 29
+  },
+  {
+    xmlFile: 'Chronicles_2.xml',
+    bookId: '2-chronicles',
+    nameEnglish: '2 Chronicles',
+    nameHebrew: 'דברי הימים ב',
+    abbreviation: '2Chr',
+    order: 39,
+    testament: 'writings',
+    totalChapters: 36
+  },
 ];
 
 // Helper function to get books by testament

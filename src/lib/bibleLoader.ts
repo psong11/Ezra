@@ -37,6 +37,13 @@ import jobData from '@/data/bible/hebrew/job.json';
 import song_of_songsData from '@/data/bible/hebrew/song-of-songs.json';
 import ruthData from '@/data/bible/hebrew/ruth.json';
 import lamentationsData from '@/data/bible/hebrew/lamentations.json';
+import ecclesiastesData from '@/data/bible/hebrew/ecclesiastes.json';
+import estherData from '@/data/bible/hebrew/esther.json';
+import danielData from '@/data/bible/hebrew/daniel.json';
+import ezraData from '@/data/bible/hebrew/ezra.json';
+import nehemiahData from '@/data/bible/hebrew/nehemiah.json';
+import _1_chroniclesData from '@/data/bible/hebrew/1-chronicles.json';
+import _2_chroniclesData from '@/data/bible/hebrew/2-chronicles.json';
 
 /**
  * Load a Bible book's data
@@ -107,8 +114,22 @@ export async function loadBook(bookId: string): Promise<BibleBookData> {
       return ruthData as BibleBookData;
     case 'lamentations':
       return lamentationsData as BibleBookData;
+    case 'ecclesiastes':
+      return ecclesiastesData as BibleBookData;
+    case 'esther':
+      return estherData as BibleBookData;
+    case 'daniel':
+      return danielData as BibleBookData;
+    case 'ezra':
+      return ezraData as BibleBookData;
+    case 'nehemiah':
+      return nehemiahData as BibleBookData;
+    case '1-chronicles':
+      return _1_chroniclesData as BibleBookData;
+    case '2-chronicles':
+      return _2_chroniclesData as BibleBookData;
     default:
-      throw new Error(`Book not found: ${bookId}. Available books: genesis, exodus, leviticus, numbers, deuteronomy, joshua, judges, 1-samuel, 2-samuel, 1-kings, 2-kings, isaiah, jeremiah, ezekiel, hosea, joel, amos, obadiah, jonah, micah, nahum, habakkuk, zephaniah, haggai, zechariah, malachi, psalms, proverbs, job, song-of-songs, ruth, lamentations`);
+      throw new Error(`Book not found: ${bookId}. Available books: genesis, exodus, leviticus, numbers, deuteronomy, joshua, judges, 1-samuel, 2-samuel, 1-kings, 2-kings, isaiah, jeremiah, ezekiel, hosea, joel, amos, obadiah, jonah, micah, nahum, habakkuk, zephaniah, haggai, zechariah, malachi, psalms, proverbs, job, song-of-songs, ruth, lamentations, ecclesiastes, esther, daniel, ezra, nehemiah, 1-chronicles, 2-chronicles`);
   }
 }
 

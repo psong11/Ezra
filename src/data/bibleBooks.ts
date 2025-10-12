@@ -296,6 +296,69 @@ export const BIBLE_BOOKS: BibleBook[] = [
     order: 32,
     totalChapters: 5,
     abbreviation: 'Lam'
+  },
+  {
+    id: 'ecclesiastes',
+    name: 'קהלת',
+    nameEnglish: 'Ecclesiastes',
+    testament: 'tanakh',
+    order: 33,
+    totalChapters: 12,
+    abbreviation: 'Eccl'
+  },
+  {
+    id: 'esther',
+    name: 'אסתר',
+    nameEnglish: 'Esther',
+    testament: 'tanakh',
+    order: 34,
+    totalChapters: 10,
+    abbreviation: 'Esth'
+  },
+  {
+    id: 'daniel',
+    name: 'דניאל',
+    nameEnglish: 'Daniel',
+    testament: 'tanakh',
+    order: 35,
+    totalChapters: 12,
+    abbreviation: 'Dan'
+  },
+  {
+    id: 'ezra',
+    name: 'עזרא',
+    nameEnglish: 'Ezra',
+    testament: 'tanakh',
+    order: 36,
+    totalChapters: 10,
+    abbreviation: 'Ezra'
+  },
+  {
+    id: 'nehemiah',
+    name: 'נחמיה',
+    nameEnglish: 'Nehemiah',
+    testament: 'tanakh',
+    order: 37,
+    totalChapters: 13,
+    abbreviation: 'Neh'
+  },
+  {
+    id: '1-chronicles',
+    name: 'דברי הימים א',
+    nameEnglish: '1 Chronicles',
+    testament: 'tanakh',
+    order: 38,
+    totalChapters: 29,
+    abbreviation: '1Chr'
+  },
+  {
+    id: '2-chronicles',
+    name: 'דברי הימים ב',
+    nameEnglish: '2 Chronicles',
+    testament: 'tanakh',
+    order: 39,
+    totalChapters: 36,
+    abbreviation: '2Chr'
   }
 ];
 
