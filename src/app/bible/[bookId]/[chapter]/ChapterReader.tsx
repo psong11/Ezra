@@ -39,7 +39,18 @@ export default function ChapterReader({
   const [explanationError, setExplanationError] = useState<string | null>(null);
   const audioRef = useRef<HTMLAudioElement>(null);
   const wordAudioRef = useRef<HTMLAudioElement | null>(null);
+  const audioContextRef = useRef<AudioContext | null>(null);
   const [hoveredWord, setHoveredWord] = useState<{ verse: number; wordIndex: number } | null>(null);
+  const [hoverAudioEnabled, setHoverAudioEnabled] = useState(false);
+  const wordAudioCache = useRef<Map<string, AudioBuffer>>(new Map());
+
+  // Initialize AudioContext on first user interaction
+  useEffect(() => {
+    if (hoverAudioEnabled && !audioContextRef.current) {
+      audioContextRef.current = new (window.AudioContext || (window as any).webkitAudioContext)();
+      console.log('🔊 Audio context initialized for hover playback');
+    }
+  }, [hoverAudioEnabled]);
 
   // Auto-play when audioUrl changes
   useEffect(() => {
@@ -238,54 +249,73 @@ export default function ChapterReader({
     }
   };
 
-  // Speak a single word on hover
+  // Speak a single word on hover using AudioContext for instant playback
   const speakWord = async (word: string) => {
+    if (!hoverAudioEnabled || !audioContextRef.current) {
+      return;
+    }
+
     try {
+      const cleanedWord = prepareHebrewForTTS(word);
+      const cacheKey = `${isHebrew ? 'he' : 'el'}-${cleanedWord}`;
+
+      // Check cache first
+      let audioBuffer = wordAudioCache.current.get(cacheKey);
+
+      if (!audioBuffer) {
+        // Fetch audio from API
+        const languageCode = isHebrew ? 'he-IL' : 'el-GR';
+        const voiceName = isHebrew ? 'he-IL-Wavenet-A' : 'el-GR-Wavenet-A';
+
+        const response = await fetch('/api/tts', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            text: cleanedWord,
+            languageCode,
+            voiceName,
+          }),
+        });
+
+        if (!response.ok) {
+          console.error('Failed to generate word TTS');
+          return;
+        }
+
+        const audioBlob = await response.arrayBuffer();
+        audioBuffer = await audioContextRef.current.decodeAudioData(audioBlob);
+        
+        // Cache the decoded audio buffer
+        wordAudioCache.current.set(cacheKey, audioBuffer);
+      }
+
       // Stop any currently playing word audio
       if (wordAudioRef.current) {
-        wordAudioRef.current.pause();
-        wordAudioRef.current = null;
+        try {
+          (wordAudioRef.current as any).stop();
+        } catch (e) {
+          // Ignore if already stopped
+        }
       }
 
-      const cleanedWord = prepareHebrewForTTS(word);
-      const languageCode = isHebrew ? 'he-IL' : 'el-GR';
-      const voiceName = isHebrew ? 'he-IL-Wavenet-A' : 'el-GR-Wavenet-A';
-
-      const response = await fetch('/api/tts', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          text: cleanedWord,
-          languageCode,
-          voiceName,
-        }),
-      });
-
-      if (!response.ok) {
-        console.error('Failed to generate word TTS');
-        return;
-      }
-
-      const audioBlob = await response.blob();
-      const url = URL.createObjectURL(audioBlob);
+      // Play audio immediately using AudioContext
+      const source = audioContextRef.current.createBufferSource();
+      source.buffer = audioBuffer;
+      source.connect(audioContextRef.current.destination);
+      source.start(0);
       
-      const audio = new Audio(url);
-      wordAudioRef.current = audio;
-      
-      audio.play().catch(err => {
-        console.error('Failed to play word audio:', err);
-      });
+      wordAudioRef.current = source as any;
 
-      // Clean up when audio ends
-      audio.onended = () => {
-        URL.revokeObjectURL(url);
-        wordAudioRef.current = null;
-      };
     } catch (err) {
       console.error('Error speaking word:', err);
     }
+  };
+
+  // Enable hover audio (gets user permission)
+  const enableHoverAudio = () => {
+    setHoverAudioEnabled(true);
   };
 
   // Fetch word explanation from OpenAI API
@@ -333,6 +363,36 @@ export default function ChapterReader({
 
   return (
     <div className="space-y-6">
+      {/* Hover Audio Enable Button */}
+      {!hoverAudioEnabled && (
+        <div className="bg-blue-50 border-2 border-blue-300 rounded-lg p-4">
+          <div className="flex items-center justify-between">
+            <div className="flex-1">
+              <h3 className="text-lg font-semibold text-blue-900 mb-1">
+                🎵 Enable Hover-to-Speak
+              </h3>
+              <p className="text-sm text-blue-700">
+                Hover over any word to hear it pronounced instantly
+              </p>
+            </div>
+            <button
+              onClick={enableHoverAudio}
+              className="ml-4 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold shadow-md"
+            >
+              Enable
+            </button>
+          </div>
+        </div>
+      )}
+
+      {hoverAudioEnabled && (
+        <div className="bg-green-50 border-2 border-green-300 rounded-lg p-3">
+          <p className="text-sm text-green-800 text-center">
+            ✅ Hover audio enabled - hover over any word to hear it pronounced
+          </p>
+        </div>
+      )}
+
       {/* Listen to Full Chapter Button */}
       <div className="space-y-4">
         <button
