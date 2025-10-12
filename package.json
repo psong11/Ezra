@@ -11,7 +11,8 @@
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:tts": "npx tsx scripts/test-google-tts.ts",
-    "test:tts-api": "npx tsx scripts/test-tts-api.ts"
+    "test:tts-api": "npx tsx scripts/test-tts-api.ts",
+    "integrate-books": "npx tsx scripts/integrate-books.ts"
   },
   "dependencies": {
     "@google-cloud/text-to-speech": "^5.8.1",
