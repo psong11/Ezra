@@ -24,6 +24,7 @@ const NT_BOOKS: FileMapping[] = [
   { htmlFile: 'Acts.xml.html', xmlFile: 'Acts.xml', bookName: 'Acts' },
   
   // Paul's Letters
+  { htmlFile: 'Rom.xml.html', xmlFile: 'Rom.xml', bookName: 'Romans' },
   { htmlFile: '1Cor.xml.html', xmlFile: '1Cor.xml', bookName: '1 Corinthians' },
   { htmlFile: '2Cor.xml.html', xmlFile: '2Cor.xml', bookName: '2 Corinthians' },
   { htmlFile: 'Gal.xml.html', xmlFile: 'Gal.xml', bookName: 'Galatians' },

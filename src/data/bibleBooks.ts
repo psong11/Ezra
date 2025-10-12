@@ -368,6 +368,240 @@ export const BIBLE_BOOKS: BibleBook[] = [
     order: 40,
     totalChapters: 28,
     abbreviation: 'Matt'
+  },
+  {
+    id: 'mark',
+    name: 'ΚΑΤΑ ΜΑΡΚΟΝ',
+    nameEnglish: 'Mark',
+    testament: 'new-testament',
+    order: 41,
+    totalChapters: 16,
+    abbreviation: 'Mark'
+  },
+  {
+    id: 'luke',
+    name: 'ΚΑΤΑ ΛΟΥΚΑΝ',
+    nameEnglish: 'Luke',
+    testament: 'new-testament',
+    order: 42,
+    totalChapters: 24,
+    abbreviation: 'Luke'
+  },
+  {
+    id: 'john',
+    name: 'ΚΑΤΑ ΙΩΑΝΝΗΝ',
+    nameEnglish: 'John',
+    testament: 'new-testament',
+    order: 43,
+    totalChapters: 21,
+    abbreviation: 'John'
+  },
+  {
+    id: 'acts',
+    name: 'ΠΡΑΞΕΙΣ ΑΠΟΣΤΟΛΩΝ',
+    nameEnglish: 'Acts',
+    testament: 'new-testament',
+    order: 44,
+    totalChapters: 28,
+    abbreviation: 'Acts'
+  },
+  {
+    id: 'romans',
+    name: 'ΠΡΟΣ ΡΩΜΑΙΟΥΣ',
+    nameEnglish: 'Romans',
+    testament: 'new-testament',
+    order: 45,
+    totalChapters: 16,
+    abbreviation: 'Rom'
+  },
+  {
+    id: '1-corinthians',
+    name: 'ΠΡΟΣ ΚΟΡΙΝΘΙΟΥΣ Α',
+    nameEnglish: '1 Corinthians',
+    testament: 'new-testament',
+    order: 46,
+    totalChapters: 16,
+    abbreviation: '1Cor'
+  },
+  {
+    id: '2-corinthians',
+    name: 'ΠΡΟΣ ΚΟΡΙΝΘΙΟΥΣ Β',
+    nameEnglish: '2 Corinthians',
+    testament: 'new-testament',
+    order: 47,
+    totalChapters: 13,
+    abbreviation: '2Cor'
+  },
+  {
+    id: 'galatians',
+    name: 'ΠΡΟΣ ΓΑΛΑΤΑΣ',
+    nameEnglish: 'Galatians',
+    testament: 'new-testament',
+    order: 48,
+    totalChapters: 6,
+    abbreviation: 'Gal'
+  },
+  {
+    id: 'ephesians',
+    name: 'ΠΡΟΣ ΕΦΕΣΙΟΥΣ',
+    nameEnglish: 'Ephesians',
+    testament: 'new-testament',
+    order: 49,
+    totalChapters: 6,
+    abbreviation: 'Eph'
+  },
+  {
+    id: 'philippians',
+    name: 'ΠΡΟΣ ΦΙΛΙΠΠΗΣΙΟΥΣ',
+    nameEnglish: 'Philippians',
+    testament: 'new-testament',
+    order: 50,
+    totalChapters: 4,
+    abbreviation: 'Phil'
+  },
+  {
+    id: 'colossians',
+    name: 'ΠΡΟΣ ΚΟΛΟΣΣΑΕΙΣ',
+    nameEnglish: 'Colossians',
+    testament: 'new-testament',
+    order: 51,
+    totalChapters: 4,
+    abbreviation: 'Col'
+  },
+  {
+    id: '1-thessalonians',
+    name: 'ΠΡΟΣ ΘΕΣΣΑΛΟΝΙΚΕΙΣ Α',
+    nameEnglish: '1 Thessalonians',
+    testament: 'new-testament',
+    order: 52,
+    totalChapters: 5,
+    abbreviation: '1Thess'
+  },
+  {
+    id: '2-thessalonians',
+    name: 'ΠΡΟΣ ΘΕΣΣΑΛΟΝΙΚΕΙΣ Β',
+    nameEnglish: '2 Thessalonians',
+    testament: 'new-testament',
+    order: 53,
+    totalChapters: 3,
+    abbreviation: '2Thess'
+  },
+  {
+    id: '1-timothy',
+    name: 'ΠΡΟΣ ΤΙΜΟΘΕΟΝ Α',
+    nameEnglish: '1 Timothy',
+    testament: 'new-testament',
+    order: 54,
+    totalChapters: 6,
+    abbreviation: '1Tim'
+  },
+  {
+    id: '2-timothy',
+    name: 'ΠΡΟΣ ΤΙΜΟΘΕΟΝ Β',
+    nameEnglish: '2 Timothy',
+    testament: 'new-testament',
+    order: 55,
+    totalChapters: 4,
+    abbreviation: '2Tim'
+  },
+  {
+    id: 'titus',
+    name: 'ΠΡΟΣ ΤΙΤΟΝ',
+    nameEnglish: 'Titus',
+    testament: 'new-testament',
+    order: 56,
+    totalChapters: 3,
+    abbreviation: 'Titus'
+  },
+  {
+    id: 'philemon',
+    name: 'ΠΡΟΣ ΦΙΛΗΜΟΝΑ',
+    nameEnglish: 'Philemon',
+    testament: 'new-testament',
+    order: 57,
+    totalChapters: 1,
+    abbreviation: 'Phlm'
+  },
+  {
+    id: 'hebrews',
+    name: 'ΠΡΟΣ ΕΒΡΑΙΟΥΣ',
+    nameEnglish: 'Hebrews',
+    testament: 'new-testament',
+    order: 58,
+    totalChapters: 13,
+    abbreviation: 'Heb'
+  },
+  {
+    id: 'james',
+    name: 'ΙΑΚΩΒΟΥ',
+    nameEnglish: 'James',
+    testament: 'new-testament',
+    order: 59,
+    totalChapters: 5,
+    abbreviation: 'Jas'
+  },
+  {
+    id: '1-peter',
+    name: 'ΠΕΤΡΟΥ Α',
+    nameEnglish: '1 Peter',
+    testament: 'new-testament',
+    order: 60,
+    totalChapters: 5,
+    abbreviation: '1Pet'
+  },
+  {
+    id: '2-peter',
+    name: 'ΠΕΤΡΟΥ Β',
+    nameEnglish: '2 Peter',
+    testament: 'new-testament',
+    order: 61,
+    totalChapters: 3,
+    abbreviation: '2Pet'
+  },
+  {
+    id: '1-john',
+    name: 'ΙΩΑΝΝΟΥ Α',
+    nameEnglish: '1 John',
+    testament: 'new-testament',
+    order: 62,
+    totalChapters: 5,
+    abbreviation: '1John'
+  },
+  {
+    id: '2-john',
+    name: 'ΙΩΑΝΝΟΥ Β',
+    nameEnglish: '2 John',
+    testament: 'new-testament',
+    order: 63,
+    totalChapters: 1,
+    abbreviation: '2John'
+  },
+  {
+    id: '3-john',
+    name: 'ΙΩΑΝΝΟΥ Γ',
+    nameEnglish: '3 John',
+    testament: 'new-testament',
+    order: 64,
+    totalChapters: 1,
+    abbreviation: '3John'
+  },
+  {
+    id: 'jude',
+    name: 'ΙΟΥΔΑ',
+    nameEnglish: 'Jude',
+    testament: 'new-testament',
+    order: 65,
+    totalChapters: 1,
+    abbreviation: 'Jude'
+  },
+  {
+    id: 'revelation',
+    name: 'ΑΠΟΚΑΛΥΨΙΣ ΙΩΑΝΝΟΥ',
+    nameEnglish: 'Revelation',
+    testament: 'new-testament',
+    order: 66,
+    totalChapters: 22,
+    abbreviation: 'Rev'
   }
 ];
 

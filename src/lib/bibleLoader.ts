@@ -45,6 +45,32 @@ import nehemiahData from '@/data/bible/hebrew/nehemiah.json';
 import _1_chroniclesData from '@/data/bible/hebrew/1-chronicles.json';
 import _2_chroniclesData from '@/data/bible/hebrew/2-chronicles.json';
 import matthewData from '@/data/bible/greek/matthew.json';
+import markData from '@/data/bible/greek/mark.json';
+import lukeData from '@/data/bible/greek/luke.json';
+import johnData from '@/data/bible/greek/john.json';
+import actsData from '@/data/bible/greek/acts.json';
+import romansData from '@/data/bible/greek/romans.json';
+import _1_corinthiansData from '@/data/bible/greek/1-corinthians.json';
+import _2_corinthiansData from '@/data/bible/greek/2-corinthians.json';
+import galatiansData from '@/data/bible/greek/galatians.json';
+import ephesiansData from '@/data/bible/greek/ephesians.json';
+import philippiansData from '@/data/bible/greek/philippians.json';
+import colossiansData from '@/data/bible/greek/colossians.json';
+import _1_thessaloniansData from '@/data/bible/greek/1-thessalonians.json';
+import _2_thessaloniansData from '@/data/bible/greek/2-thessalonians.json';
+import _1_timothyData from '@/data/bible/greek/1-timothy.json';
+import _2_timothyData from '@/data/bible/greek/2-timothy.json';
+import titusData from '@/data/bible/greek/titus.json';
+import philemonData from '@/data/bible/greek/philemon.json';
+import hebrewsData from '@/data/bible/greek/hebrews.json';
+import jamesData from '@/data/bible/greek/james.json';
+import _1_peterData from '@/data/bible/greek/1-peter.json';
+import _2_peterData from '@/data/bible/greek/2-peter.json';
+import _1_johnData from '@/data/bible/greek/1-john.json';
+import _2_johnData from '@/data/bible/greek/2-john.json';
+import _3_johnData from '@/data/bible/greek/3-john.json';
+import judeData from '@/data/bible/greek/jude.json';
+import revelationData from '@/data/bible/greek/revelation.json';
 
 /**
  * Load a Bible book's data
@@ -131,8 +157,60 @@ export async function loadBook(bookId: string): Promise<BibleBookData> {
       return _2_chroniclesData as BibleBookData;
     case 'matthew':
       return matthewData as BibleBookData;
+    case 'mark':
+      return markData as BibleBookData;
+    case 'luke':
+      return lukeData as BibleBookData;
+    case 'john':
+      return johnData as BibleBookData;
+    case 'acts':
+      return actsData as BibleBookData;
+    case 'romans':
+      return romansData as BibleBookData;
+    case '1-corinthians':
+      return _1_corinthiansData as BibleBookData;
+    case '2-corinthians':
+      return _2_corinthiansData as BibleBookData;
+    case 'galatians':
+      return galatiansData as BibleBookData;
+    case 'ephesians':
+      return ephesiansData as BibleBookData;
+    case 'philippians':
+      return philippiansData as BibleBookData;
+    case 'colossians':
+      return colossiansData as BibleBookData;
+    case '1-thessalonians':
+      return _1_thessaloniansData as BibleBookData;
+    case '2-thessalonians':
+      return _2_thessaloniansData as BibleBookData;
+    case '1-timothy':
+      return _1_timothyData as BibleBookData;
+    case '2-timothy':
+      return _2_timothyData as BibleBookData;
+    case 'titus':
+      return titusData as BibleBookData;
+    case 'philemon':
+      return philemonData as BibleBookData;
+    case 'hebrews':
+      return hebrewsData as BibleBookData;
+    case 'james':
+      return jamesData as BibleBookData;
+    case '1-peter':
+      return _1_peterData as BibleBookData;
+    case '2-peter':
+      return _2_peterData as BibleBookData;
+    case '1-john':
+      return _1_johnData as BibleBookData;
+    case '2-john':
+      return _2_johnData as BibleBookData;
+    case '3-john':
+      return _3_johnData as BibleBookData;
+    case 'jude':
+      return judeData as BibleBookData;
+    case 'revelation':
+      return revelationData as BibleBookData;
     default:
-      throw new Error(`Book not found: ${bookId}. Available books: genesis, exodus, leviticus, numbers, deuteronomy, joshua, judges, 1-samuel, 2-samuel, 1-kings, 2-kings, isaiah, jeremiah, ezekiel, hosea, joel, amos, obadiah, jonah, micah, nahum, habakkuk, zephaniah, haggai, zechariah, malachi, psalms, proverbs, job, song-of-songs, ruth, lamentations, ecclesiastes, esther, daniel, ezra, nehemiah, 1-chronicles, 2-chronicles, matthew`);
+      throw new Error(`Book not found: ${bookId}. Available books: genesis, exodus, leviticus, numbers, deuteronomy, joshua, judges, 1-samuel, 2-samuel, 1-kings, 2-kings, isaiah, jeremiah, ezekiel, hosea, joel, amos, obadiah, jonah, micah, nahum, habakkuk, zephaniah, haggai, zechariah, malachi, psalms, proverbs, job, song-of-songs, ruth, lamentations, ecclesiastes, esther, daniel, ezra, nehemiah, 1-chronicles, 2-chronicles, matthew, mark, luke, john, acts, romans, 1-corinthians, 2-corinthians, galatians, ephesians, philippians, colossians, 1-thessalonians, 2-thessalonians, 1-timothy, 2-timothy, titus, philemon, hebrews, james, 1-peter, 2-peter, 1-john, 2-john, 3-john, jude, revelation`);
   }
 }
 
