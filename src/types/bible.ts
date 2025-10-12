@@ -15,9 +15,9 @@ export interface BibleChapter {
 
 export interface BibleBook {
   id: string;
-  name: string;              // Hebrew name
+  name: string;              // Hebrew name or Greek name
   nameEnglish: string;
-  testament: 'tanakh' | 'new';
+  testament: 'tanakh' | 'new' | 'new-testament';
   order: number;
   totalChapters: number;
   abbreviation: string;
@@ -26,14 +26,16 @@ export interface BibleBook {
 export interface BibleBookData {
   book: {
     id: string;
-    name: string;            // Hebrew name
-    nameEnglish: string;
-    testament: 'tanakh' | 'new';
-    order: number;
-    totalChapters: number;
-    totalVerses: number;
-    language: string;
-    abbreviation: string;
+    name: string;            // Hebrew name or Greek name
+    nameEnglish?: string;
+    nameGreek?: string;      // Greek name for NT books
+    nameHebrew?: string;     // Hebrew name for Tanakh books
+    testament: 'tanakh' | 'new' | 'new-testament';
+    order?: number;
+    totalChapters?: number;
+    totalVerses?: number;
+    language?: string;
+    abbreviation?: string;
   };
   chapters: BibleChapter[];
 }

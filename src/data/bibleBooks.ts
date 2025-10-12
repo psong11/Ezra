@@ -359,6 +359,15 @@ export const BIBLE_BOOKS: BibleBook[] = [
     order: 39,
     totalChapters: 36,
     abbreviation: '2Chr'
+  },
+  {
+    id: 'matthew',
+    name: 'ΚΑΤΑ ΜΑΘΘΑΙΟΝ',
+    nameEnglish: 'Matthew',
+    testament: 'new-testament',
+    order: 40,
+    totalChapters: 28,
+    abbreviation: 'Matt'
   }
 ];
 
@@ -382,6 +391,11 @@ export const BOOK_CATEGORIES = {
   writings: {
     name: 'Writings',
     hebrewName: 'כתובים',
-    books: BIBLE_BOOKS.filter(b => b.order >= 27).map(b => b.id)
+    books: BIBLE_BOOKS.filter(b => b.order >= 27 && b.order <= 39).map(b => b.id)
+  },
+  'new-testament': {
+    name: 'New Testament',
+    hebrewName: 'הברית החדשה',
+    books: BIBLE_BOOKS.filter(b => b.order >= 40).map(b => b.id)
   }
 };

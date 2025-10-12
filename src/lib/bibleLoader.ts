@@ -44,6 +44,7 @@ import ezraData from '@/data/bible/hebrew/ezra.json';
 import nehemiahData from '@/data/bible/hebrew/nehemiah.json';
 import _1_chroniclesData from '@/data/bible/hebrew/1-chronicles.json';
 import _2_chroniclesData from '@/data/bible/hebrew/2-chronicles.json';
+import matthewData from '@/data/bible/greek/matthew.json';
 
 /**
  * Load a Bible book's data
@@ -128,8 +129,10 @@ export async function loadBook(bookId: string): Promise<BibleBookData> {
       return _1_chroniclesData as BibleBookData;
     case '2-chronicles':
       return _2_chroniclesData as BibleBookData;
+    case 'matthew':
+      return matthewData as BibleBookData;
     default:
-      throw new Error(`Book not found: ${bookId}. Available books: genesis, exodus, leviticus, numbers, deuteronomy, joshua, judges, 1-samuel, 2-samuel, 1-kings, 2-kings, isaiah, jeremiah, ezekiel, hosea, joel, amos, obadiah, jonah, micah, nahum, habakkuk, zephaniah, haggai, zechariah, malachi, psalms, proverbs, job, song-of-songs, ruth, lamentations, ecclesiastes, esther, daniel, ezra, nehemiah, 1-chronicles, 2-chronicles`);
+      throw new Error(`Book not found: ${bookId}. Available books: genesis, exodus, leviticus, numbers, deuteronomy, joshua, judges, 1-samuel, 2-samuel, 1-kings, 2-kings, isaiah, jeremiah, ezekiel, hosea, joel, amos, obadiah, jonah, micah, nahum, habakkuk, zephaniah, haggai, zechariah, malachi, psalms, proverbs, job, song-of-songs, ruth, lamentations, ecclesiastes, esther, daniel, ezra, nehemiah, 1-chronicles, 2-chronicles, matthew`);
   }
 }
 
