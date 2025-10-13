@@ -332,7 +332,7 @@ export default function ChapterReader({
         },
         body: JSON.stringify({
           word,
-          language: 'Hebrew',
+          language: isHebrew ? 'Hebrew' : 'Greek',
           verse: verseText,
           bookName: bookName,
           chapterNum: chapterNum,

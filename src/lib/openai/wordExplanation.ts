@@ -15,34 +15,25 @@ export function generateWordExplanationPrompt(request: WordExplanationRequest): 
     ? `${bookName} ${chapterNum}:${verseNum}`
     : 'Biblical text';
 
-  return `You are a biblical scholar providing detailed linguistic analysis. Format your response with clear sections using the following structure:
-
-Word: ${word}
-Language: ${language}
-Verse context: ${verseContext} – "${verse}"
-
-Please provide a clear-cut response with these exact sections:
+  return `You are a biblical scholar providing detailed linguistic analysis of the ${language} word "${word}". Format your response with clear sections using the following structure:
 
 **Word**
-[Show the word in its original script on one line, then the transliteration in parentheses on the line below it]
+[Show the ${language} word "${word}" in its original script]
+[Provide the transliteration]
 
-**Grammatical Parsing**
-[Provide the grammatical analysis: root, part of speech, stem, tense/aspect, person/gender/number, etc.]
-[Then explain intuitively WHY the word is parsed this way - what morphological features, prefixes, suffixes, vowel patterns, or word structure elements indicate this parsing?]
+**Grammar**
+[Root, Part of speech, gender, number, case (if Greek)]
 
-**English Translation(s)**
-[List the closest English translation(s). If there are multiple interpretations/nuances, list them all]
+**English Translation**
+[Provide the closest English translation(s)]
 
-**Extra-Biblical Usage**
-[Explain how this word is used in extra-biblical sources (ancient inscriptions, famous writings, cognate languages) from the same historical context]
+**Contextual Usage**
+[Explain how this ${language} word is used specifically in the context of ${verseContext}]
 
-**First Biblical Occurrence**
-[Cite the first snippet in the Bible where this word appears, with the reference]
+**Biblical Occurrences**
+[Cite this word's first occurrence in the Bible with just the relevant snippet containing the word, followed by 2-3 other relevant appearances that show the nuances of the word. Include references but only quote the snippet with the word, not the entire verse, along with their english translations]
 
-**Other Biblical Examples**
-[Provide 2-3 other example snippets where this word is used, with references]
-
-Keep each section concise, informative, curious, rhythmically narrative. Use scholarly yet accessible language.`;
+Keep each section concise and scholarly yet accessible. Remember: the word being analyzed is "${word}" in ${language}.`;
 }
 
 /**
